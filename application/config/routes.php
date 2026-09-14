@@ -17,6 +17,9 @@ $route['blog/view'] = 'blog/view';
 $route['blog/view/(:num)'] = 'blog/view/$1';
 $route['blog/([a-z0-9-]+)'] = 'blog/read/$1';
 $route['blog'] = 'blog/view';
+$route['pricing'] = 'about/price';
+$route['price'] = 'about/price';
+$route['shifting-charges'] = 'about/price';
 $route['privacy-policy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
 

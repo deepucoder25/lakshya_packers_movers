@@ -1,15 +1,19 @@
 /* ==========================================================================
-   Global Variables & Design Tokens
+   Global Variables & Design Tokens (Derived from Brand Logo)
    ========================================================================== */
+html, body {
+    font-family: 'Outfit', sans-serif;
+}
+
 :root {
-  --bc-bg: #f8fafc;
-  --bc-border: #e2e8f0;
-  --bc-title-color: #0f172a;
-  --bc-link-color: #64748b;
-  --bc-link-hover: #ff7a16;
-  --bc-active-color: #1e293b;
-  --bc-sep-color: #94a3b8;
-  --bc-desc-color: #64748b;
+  /* Brand Core Color Palette (7 Essential Variables) */
+  --primary-blue: #1c459e;      /* Brand Primary Blue */
+  --primary-orange: #ff5f00;    /* Brand Primary Orange */
+  --dark-navy: #0b1528;         /* Dark Navy for Topbar & Accents */
+  --text-dark: #1e293b;         /* Dark Slate for Headings & Text */
+  --text-muted: #64748b;        /* Muted Gray for Subtext & Icons */
+  --bg-light: #f8fafc;          /* Clean Light Surface Background */
+  --border-color: #e2e8f0;      /* Subtle Border & Divider Lines */
 }
 
 /* ==========================================================================
@@ -19,8 +23,8 @@
 .service-breadcrumbs,
 .site-breadcrumb,
 .page_breadcrumbs {
-  background-color: var(--bc-bg);
-  border-bottom: 1px solid var(--bc-border);
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
   padding: 22px 0;
   position: relative;
   width: 100%;
@@ -46,7 +50,7 @@
 .page_breadcrumbs h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--bc-title-color);
+  color: var(--text-dark);
   margin: 0;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -55,7 +59,7 @@
 .dynamic-bc-section .dyn-bc-desc,
 .service-breadcrumbs .bc-desc {
   font-size: 0.875rem;
-  color: var(--bc-desc-color);
+  color: var(--text-muted);
   margin: 0;
   line-height: 1.5;
   max-width: 650px;
@@ -82,7 +86,7 @@
 .bc-nav a,
 .breadcrumb-menu a,
 .page_breadcrumbs .breadcrumb a {
-  color: var(--bc-link-color);
+  color: var(--text-muted);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -94,12 +98,12 @@
 .bc-nav a:hover,
 .breadcrumb-menu a:hover,
 .page_breadcrumbs .breadcrumb a:hover {
-  color: var(--bc-link-hover);
+  color: var(--primary-orange);
 }
 
 .dyn-bc-sep,
 .bc-sep {
-  color: var(--bc-sep-color);
+  color: var(--text-muted);
   font-size: 0.75rem;
   display: inline-flex;
   align-items: center;
@@ -110,13 +114,11 @@
 .bc-current,
 .breadcrumb-menu .active,
 .page_breadcrumbs .breadcrumb .active {
-  color: var(--bc-active-color);
+  color: var(--text-dark);
   font-weight: 600;
 }
 
-/* ==========================================================================
-   Responsive Styles
-   ========================================================================== */
+/* Responsive Breadcrumbs */
 @media (max-width: 768px) {
   .dynamic-bc-section,
   .service-breadcrumbs,
@@ -145,4 +147,471 @@
     font-size: 0.8125rem;
     gap: 6px;
   }
+}
+
+/* ==========================================================================
+   Navigation Header Styles (Custom Brand Tokens & Dynamic Behaviors Only)
+   ========================================================================== */
+
+/* Header Sticky Effect */
+.site-header {
+  z-index: 1050;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-header.sticky-header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 20px rgba(11, 21, 40, 0.06);
+  transition: all 0.3s ease;
+}
+
+/* Top Announcement Bar */
+.site-topbar {
+  background: var(--dark-navy);
+  background: linear-gradient(90deg, #091326 0%, #112348 50%, #091326 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.topbar-capsule {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.topbar-item {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+.topbar-item .topbar-icon {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.topbar-item .topbar-highlight {
+  color: var(--primary-orange);
+}
+
+.topbar-item a:hover {
+  color: var(--primary-orange) !important;
+}
+
+/* Logo */
+.site-logo-img {
+  height: 70px;
+  max-width: 220px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.site-logo-link:hover .site-logo-img {
+  transform: scale(1.02);
+}
+
+/* Desktop Navigation Links */
+.desktop-nav-menu {
+  gap: 10px;
+}
+
+.desktop-nav-link {
+  gap: 5px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.02em;
+  padding: 8px 13px;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.desktop-nav-link .nav-arrow {
+  font-size: 0.7rem;
+  margin-left: 2px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.85;
+}
+
+.desktop-nav-link:hover {
+  color: var(--primary-orange);
+  background-color: rgba(255, 95, 0, 0.08);
+}
+
+.desktop-nav-link:hover .nav-arrow {
+  transform: rotate(180deg);
+  color: var(--primary-orange);
+}
+
+/* Active State - Sleek Soft Pill Highlight */
+.desktop-nav-link.active {
+  color: var(--primary-orange);
+  background-color: rgba(255, 95, 0, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 95, 0, 0.22);
+}
+
+/* Dropdown Menus */
+.nav-dropdown {
+  top: 100%;
+  min-width: 250px;
+  padding: 10px 0;
+  box-shadow: 0 14px 35px rgba(11, 21, 40, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1060;
+}
+
+.desktop-nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item-link {
+  gap: 10px;
+  color: #334155;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item-link i {
+  font-size: 1rem;
+  color: var(--primary-blue);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item-link:hover {
+  background-color: #f0f4fd;
+  color: var(--primary-orange);
+  padding-left: 22px !important;
+}
+
+.dropdown-item-link:hover i {
+  color: var(--primary-orange);
+  transform: scale(1.15);
+}
+
+/* CTA Button: "Get a Free Quote >" */
+.btn-nav-quote {
+  gap: 8px;
+  background: var(--primary-orange);
+  background: linear-gradient(135deg, #ff6b00 0%, #ff4b00 100%);
+  font-size: 0.9375rem;
+  padding: 11px 22px;
+  box-shadow: 0 4px 14px rgba(255, 95, 0, 0.28);
+  transition: all 0.25s ease;
+}
+
+.btn-nav-quote i:first-child {
+  font-size: 1.05rem;
+}
+
+.btn-nav-quote .btn-chevron {
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-nav-quote:hover {
+  background: linear-gradient(135deg, #ff7a1a 0%, #ea4000 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 95, 0, 0.4);
+  color: #ffffff;
+}
+
+.btn-nav-quote:hover .btn-chevron {
+  transform: translateX(4px);
+}
+
+.btn-nav-quote:active {
+  transform: translateY(0);
+}
+
+/* Mobile Toggle */
+.mobile-nav-actions {
+  gap: 12px;
+}
+
+.mobile-menu-toggle {
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  background: var(--bg-light);
+  border-color: var(--border-color) !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background-color: var(--dark-navy);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu-toggle:hover {
+  background: #f0f4fd;
+  border-color: var(--primary-blue) !important;
+}
+
+/* Mobile Offcanvas Drawer */
+.mobile-drawer-overlay {
+  background: rgba(11, 21, 40, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1090;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-drawer-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer {
+  width: 320px;
+  max-width: 86vw;
+  z-index: 1100;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-drawer.active {
+  transform: translateX(0);
+}
+
+.btn-drawer-close {
+  width: 36px;
+  height: 36px;
+  background: var(--bg-light);
+  border-color: var(--border-color) !important;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-drawer-close:hover {
+  background: rgba(255, 95, 0, 0.08);
+  color: var(--primary-orange);
+  border-color: var(--primary-orange) !important;
+  transform: rotate(90deg);
+}
+
+.mobile-nav-link,
+.mobile-dropdown-btn {
+  padding: 11px 14px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-text i {
+  font-size: 1.05rem;
+  color: var(--primary-blue);
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-dropdown-btn:hover {
+  background: var(--bg-light);
+  color: var(--primary-orange);
+}
+
+.mobile-nav-link:hover .mobile-nav-text i,
+.mobile-dropdown-btn:hover .mobile-nav-text i {
+  color: var(--primary-orange);
+}
+
+/* Mobile Active State - Sleek Pill */
+.mobile-nav-link.active {
+  background: rgba(255, 95, 0, 0.08);
+  color: var(--primary-orange);
+  box-shadow: inset 0 0 0 1px rgba(255, 95, 0, 0.2);
+}
+
+.mobile-nav-link.active .mobile-nav-text i {
+  color: var(--primary-orange);
+}
+
+.mobile-dropdown-btn i.arrow-icon {
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+  color: var(--text-muted);
+}
+
+.mobile-nav-item.open .mobile-dropdown-btn {
+  background: var(--bg-light);
+  color: var(--primary-orange);
+}
+
+.mobile-nav-item.open .mobile-dropdown-btn .mobile-nav-text i {
+  color: var(--primary-orange);
+}
+
+.mobile-nav-item.open .mobile-dropdown-btn i.arrow-icon {
+  transform: rotate(180deg);
+  color: var(--primary-orange);
+}
+
+.mobile-dropdown-menu {
+  display: none;
+  margin: 4px 0 6px 0;
+  padding: 6px 10px 6px 14px;
+  background: var(--bg-light);
+  border-left: 3px solid var(--primary-orange);
+}
+
+.mobile-nav-item.open .mobile-dropdown-menu {
+  display: block;
+}
+
+.mobile-sub-link {
+  gap: 9px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.mobile-sub-link i {
+  color: var(--primary-blue);
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-sub-link:hover {
+  color: var(--primary-orange);
+  background: #ffffff;
+  padding-left: 12px !important;
+}
+
+.mobile-sub-link:hover i {
+  color: var(--primary-orange);
+  transform: scale(1.15);
+}
+
+.drawer-footer {
+  background: var(--bg-light);
+}
+
+.drawer-contact-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.drawer-contact-btn {
+  font-size: 0.8125rem;
+  transition: all 0.2s ease;
+}
+
+.drawer-contact-btn.btn-call {
+  background: #ffffff;
+  color: var(--primary-orange);
+  border-color: rgba(255, 95, 0, 0.25) !important;
+}
+
+.drawer-contact-btn.btn-call:hover {
+  background: var(--primary-orange);
+  color: #ffffff;
+}
+
+.drawer-contact-btn.btn-whatsapp {
+  background: #ffffff;
+  color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.25) !important;
+}
+
+.drawer-contact-btn.btn-whatsapp:hover {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints for Navigation
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .desktop-nav-menu {
+    gap: 6px;
+  }
+  .desktop-nav-link {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .topbar-capsule {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: flex-start !important;
+    gap: 16px;
+  }
+  .topbar-capsule::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbar-item {
+    font-size: 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   Pricing Page Section Styles
+   ========================================================================== */
+.pricing-page-section {
+  background-color: var(--bg-light);
+}
+
+.pricing-box {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+}
+
+.pricing-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.1) !important;
+}
+
+.pricing-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f0f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-box:hover .pricing-icon-wrapper {
+  transform: scale(1.1);
+  background: rgba(255, 95, 0, 0.08);
+}
+
+.pricing-box:hover .pricing-icon-wrapper i {
+  color: var(--primary-orange) !important;
+}
+
+.pricing-page-section .table thead th {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #475569;
+}
+
+.pricing-page-section .table tbody td {
+  font-size: 0.9375rem;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }

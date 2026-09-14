@@ -60,5 +60,14 @@ class About extends MX_Controller
         $data['view_file'] = "terms";
         echo Modules::run('template/layout2', $data);
     }
+
+    function price()
+    {
+        $data['title'] = "Packers and Movers Charges & Estimated Pricing Guide | " . $this->comp['company3'];
+        $data['description'] = "Check transparent packers and movers price charts, estimated shifting cost calculator for 1 BHK, 2 BHK, 3 BHK, car transport, and bike shifting at " . $this->comp['company3'] . ".";
+        $data['module'] = "about";
+        $data['view_file'] = "price";
+        echo Modules::run('template/layout2', $data);
+    }
 }
 

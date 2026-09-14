@@ -1,9 +1,5 @@
 <body>
   <?php
-  $megaWhatsappLink = !empty($whatsapphtml) ? $whatsapphtml : 'https://wa.me/918260207030';
-  $navPhone = !empty($phone) ? $phone : '+91 8260207030';
-  $navPhoneClean = preg_replace('/[^0-9+]/', '', $navPhone);
-
   $ci =& get_instance();
   $class = strtolower($ci->router->fetch_class());
   $method = strtolower($ci->router->fetch_method());
@@ -49,9 +45,8 @@
   <?= json_encode($nav_schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) ?>
   </script>
 
-  <!-- Site Header (Top Announcement Bar + Main Navbar) -->
-  <header class="site-header position-relative w-100 bg-white" id="siteHeader">
-    <!-- Topbar Banner Matching Screenshot -->
+  <!-- Top Announcement Bar -->
+  <header class="site-topbar-header position-relative w-100" id="siteHeader">
     <div class="site-topbar py-2 text-white">
       <div class="container">
         <div class="topbar-capsule d-flex align-items-center justify-content-between rounded px-3 py-1 w-100">
@@ -85,104 +80,102 @@
 
           <div class="topbar-item d-inline-flex align-items-center gap-2 text-nowrap">
             <i class="bi bi-telephone-outbound topbar-icon"></i>
-            <span>24/7 Support: <a href="tel:<?= $navPhoneClean ?>" class="text-white text-decoration-none fw-semibold"><?= $navPhone ?></a></span>
+            <span>24/7 Support: <a <?= $phonehtml ?> class="text-white text-decoration-none fw-semibold"><?= $phone ?></a></span>
           </div>
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- Main Navigation Bar - Zero Margin & Padding On Container -->
-    <nav class="site-main-navbar w-100 bg-white border-bottom shadow-sm m-0 p-0" id="mainNavbar">
-      <div class="container">
-        <div class="navbar-inner d-flex align-items-center justify-content-between w-100">
-          <!-- Logo -->
-          <a href="<?= site_url() ?>" class="site-logo-link d-inline-flex align-items-center text-decoration-none" title="Lakshya Packers and Movers">
-            <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="Lakshya Packers and Movers Logo" class="site-logo-img">
-          </a>
+  <!-- Main Navigation Bar - Sticky Top on Scroll -->
+  <nav class="site-main-navbar sticky-top w-100 bg-white border-bottom shadow-sm m-0 p-0" id="mainNavbar">
+    <div class="container">
+      <div class="navbar-inner d-flex align-items-center justify-content-between w-100">
+        <!-- Logo -->
+        <a href="<?= site_url() ?>" class="site-logo-link d-inline-flex align-items-center text-decoration-none me-lg-4" title="<?= $company3 ?>">
+          <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="<?= $company3 ?> Logo" class="site-logo-img" loading="lazy">
+        </a>
 
-          <!-- Desktop Nav Menu -->
-          <ul class="desktop-nav-menu d-none d-lg-flex align-items-center list-unstyled m-0 p-0">
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url() ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'home') ? 'active' : '' ?>">HOME</a>
-            </li>
+        <!-- Desktop Nav Menu -->
+        <ul class="desktop-nav-menu d-none d-lg-flex align-items-center list-unstyled m-0 p-0">
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url() ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'home') ? 'active' : '' ?>">HOME</a>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('our-services') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'services') ? 'active' : '' ?>">
-                SERVICES <i class="bi bi-chevron-down nav-arrow"></i>
-              </a>
-              <ul class="nav-dropdown position-absolute start-0 list-unstyled m-0 rounded-3 shadow-lg bg-white">
-                <li><a href="<?= site_url('house-shifting') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-house-door-fill"></i> House Shifting</a></li>
-                <li><a href="<?= site_url('office-relocation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-briefcase-fill"></i> Office Relocation</a></li>
-                <li><a href="<?= site_url('car-transportation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-car-front-fill"></i> Car Transportation</a></li>
-                <li><a href="<?= site_url('bike-transportation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-bicycle"></i> Bike Transportation</a></li>
-                <li><a href="<?= site_url('warehousing-and-storage') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-box-seam-fill"></i> Warehousing &amp; Storage</a></li>
-                <li><a href="<?= site_url('local-shifting') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-geo-alt-fill"></i> Local Shifting</a></li>
-                <li><a href="<?= site_url('intercity-moving') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-signpost-2-fill"></i> Intercity Moving</a></li>
-              </ul>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('our-services') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'services') ? 'active' : '' ?>">
+              SERVICES <i class="bi bi-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="nav-dropdown position-absolute start-0 list-unstyled m-0 rounded-3 shadow-lg bg-white">
+              <li><a href="<?= site_url('house-shifting') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-house-door-fill"></i> House Shifting</a></li>
+              <li><a href="<?= site_url('office-relocation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-briefcase-fill"></i> Office Relocation</a></li>
+              <li><a href="<?= site_url('car-transportation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-car-front-fill"></i> Car Transportation</a></li>
+              <li><a href="<?= site_url('bike-transportation') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-bicycle"></i> Bike Transportation</a></li>
+              <li><a href="<?= site_url('warehousing-and-storage') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-box-seam-fill"></i> Warehousing &amp; Storage</a></li>
+              <li><a href="<?= site_url('local-shifting') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-geo-alt-fill"></i> Local Shifting</a></li>
+              <li><a href="<?= site_url('intercity-moving') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-signpost-2-fill"></i> Intercity Moving</a></li>
+            </ul>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('pricing') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'pricing') ? 'active' : '' ?>">PRICING</a>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('pricing') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'pricing') ? 'active' : '' ?>">PRICING</a>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('about-us') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'about') ? 'active' : '' ?>">
-                ABOUT US <i class="bi bi-chevron-down nav-arrow"></i>
-              </a>
-              <ul class="nav-dropdown position-absolute start-0 list-unstyled m-0 rounded-3 shadow-lg bg-white">
-                <li><a href="<?= site_url('about-us') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-building"></i> About Company</a></li>
-                <li><a href="<?= site_url('why-choose-us') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-award-fill"></i> Why Choose Us</a></li>
-                <li><a href="<?= site_url('faqs') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
-                <li><a href="<?= site_url('testimonials') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-star-fill"></i> Testimonials</a></li>
-                <li><a href="<?= site_url('photo-gallery') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-images"></i> Photo Gallery</a></li>
-              </ul>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('about-us') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'about') ? 'active' : '' ?>">
+              ABOUT US <i class="bi bi-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="nav-dropdown position-absolute start-0 list-unstyled m-0 rounded-3 shadow-lg bg-white">
+              <li><a href="<?= site_url('about-us') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-building"></i> About Company</a></li>
+              <li><a href="<?= site_url('why-choose-us') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-award-fill"></i> Why Choose Us</a></li>
+              <li><a href="<?= site_url('faqs') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
+              <li><a href="<?= site_url('testimonials') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-star-fill"></i> Testimonials</a></li>
+              <li><a href="<?= site_url('photo-gallery') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-images"></i> Photo Gallery</a></li>
+            </ul>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('blog') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'blog') ? 'active' : '' ?>">BLOG</a>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('blog') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'blog') ? 'active' : '' ?>">BLOG</a>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('contact-us') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'contact') ? 'active' : '' ?>">CONTACT</a>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('contact-us') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'contact') ? 'active' : '' ?>">CONTACT</a>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('our-branches') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'branches') ? 'active' : '' ?>">
-                <i class="bi bi-buildings me-1"></i> BRANCHES
-              </a>
-            </li>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('our-branches') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'branches') ? 'active' : '' ?>">BRANCHES</a>
+          </li>
 
-            <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
-              <a href="<?= site_url('tracking') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'tracking') ? 'active' : '' ?>">TRACKING</a>
-            </li>
-          </ul>
+          <li class="desktop-nav-item position-relative d-inline-flex align-items-center">
+            <a href="<?= site_url('tracking') ?>" class="desktop-nav-link d-inline-flex align-items-center text-uppercase text-decoration-none rounded <?= ($active_tab === 'tracking') ? 'active' : '' ?>">TRACKING</a>
+          </li>
+        </ul>
 
-          <!-- Right CTA Button Matching Screenshot -->
-          <a href="<?= site_url('contact-us') ?>" class="btn-nav-quote d-none d-lg-inline-flex align-items-center rounded-pill text-white text-decoration-none fw-bold text-nowrap">
-            <i class="bi bi-file-earmark-text-fill"></i>
-            <span>Get a Free Quote</span>
-            <i class="bi bi-chevron-right btn-chevron"></i>
-          </a>
+        <!-- Right CTA Button (Triggers Quote Modal) -->
+        <button type="button" class="btn-nav-quote d-none d-lg-inline-flex align-items-center rounded-pill text-white fw-bold text-nowrap border-0" data-bs-toggle="modal" data-bs-target="#qteModal">
+          <i class="bi bi-file-earmark-text-fill"></i>
+          <span>Get a Free Quote</span>
+          <i class="bi bi-chevron-right btn-chevron"></i>
+        </button>
 
-          <!-- Mobile Hamburger Toggle -->
-          <div class="mobile-nav-actions d-lg-none d-flex align-items-center">
-            <button class="mobile-menu-toggle d-inline-flex flex-column justify-content-center align-items-center rounded border p-0" id="openMobileDrawer" aria-label="Toggle navigation menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+        <!-- Mobile Hamburger Toggle -->
+        <div class="mobile-nav-actions d-lg-none d-flex align-items-center">
+          <button class="mobile-menu-toggle d-inline-flex flex-column justify-content-center align-items-center rounded border p-0" id="openMobileDrawer" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Mobile Offcanvas Drawer & Backdrop Overlay -->
   <div class="mobile-drawer-overlay position-fixed top-0 start-0 w-100 h-100" id="mobileDrawerOverlay"></div>
   <aside class="mobile-drawer position-fixed top-0 end-0 h-100 bg-white d-flex flex-column shadow-lg" id="mobileDrawer" aria-label="Mobile Navigation">
     <div class="drawer-header d-flex align-items-center justify-content-between px-3 py-3 border-bottom bg-white">
       <a href="<?= site_url() ?>" class="site-logo-link d-inline-flex align-items-center text-decoration-none">
-        <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="Lakshya Packers and Movers" class="site-logo-img">
+        <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="<?= $company3 ?> Logo" class="site-logo-img" loading="lazy">
       </a>
       <button class="btn-drawer-close rounded-circle d-inline-flex align-items-center justify-content-center border p-0" id="closeMobileDrawer" aria-label="Close menu">&times;</button>
     </div>
@@ -258,18 +251,18 @@
     </div>
 
     <div class="drawer-footer p-3 border-top d-flex flex-column gap-3">
-      <a href="<?= site_url('contact-us') ?>" class="btn-nav-quote d-inline-flex align-items-center rounded-pill text-white text-decoration-none fw-bold text-nowrap w-100 justify-content-center">
+      <button type="button" class="btn-nav-quote d-inline-flex align-items-center rounded-pill text-white fw-bold text-nowrap w-100 justify-content-center border-0" data-bs-toggle="modal" data-bs-target="#qteModal" id="mobileDrawerQuoteBtn">
         <i class="bi bi-file-earmark-text-fill"></i>
         <span>Get a Free Quote</span>
         <i class="bi bi-chevron-right btn-chevron"></i>
-      </a>
+      </button>
 
       <div class="drawer-contact-grid d-grid gap-2">
-        <a href="tel:<?= $navPhoneClean ?>" class="drawer-contact-btn btn-call d-inline-flex align-items-center justify-content-center rounded fw-bold text-decoration-none border py-2 px-2">
+        <a <?= $phonehtml ?> class="drawer-contact-btn btn-call d-inline-flex align-items-center justify-content-center rounded fw-bold text-decoration-none border py-2 px-2">
           <i class="bi bi-telephone-fill"></i>
           <span>Call Now</span>
         </a>
-        <a href="<?= $megaWhatsappLink ?>" target="_blank" rel="noopener noreferrer" class="drawer-contact-btn btn-whatsapp d-inline-flex align-items-center justify-content-center rounded fw-bold text-decoration-none border py-2 px-2">
+        <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener noreferrer" class="drawer-contact-btn btn-whatsapp d-inline-flex align-items-center justify-content-center rounded fw-bold text-decoration-none border py-2 px-2">
           <i class="bi bi-whatsapp"></i>
           <span>WhatsApp</span>
         </a>
@@ -285,6 +278,7 @@
       const drawer = document.getElementById('mobileDrawer');
       const overlay = document.getElementById('mobileDrawerOverlay');
       const header = document.getElementById('siteHeader');
+      const drawerQuoteBtn = document.getElementById('mobileDrawerQuoteBtn');
 
       function openMenu() {
         drawer.classList.add('active');
@@ -301,6 +295,7 @@
       if (openBtn) openBtn.addEventListener('click', openMenu);
       if (closeBtn) closeBtn.addEventListener('click', closeMenu);
       if (overlay) overlay.addEventListener('click', closeMenu);
+      if (drawerQuoteBtn) drawerQuoteBtn.addEventListener('click', closeMenu);
 
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeMenu();
@@ -323,12 +318,13 @@
         });
       });
 
-      // Sticky Header Scroll Effect
+      // Sticky Navbar Scroll Elevation Effect
+      const mainNavbar = document.getElementById('mainNavbar');
       window.addEventListener('scroll', function() {
-        if (window.scrollY > 40) {
-          header.classList.add('sticky-header');
+        if (window.scrollY > 30) {
+          if (mainNavbar) mainNavbar.classList.add('is-scrolled');
         } else {
-          header.classList.remove('sticky-header');
+          if (mainNavbar) mainNavbar.classList.remove('is-scrolled');
         }
       }, { passive: true });
     })();

@@ -4,23 +4,30 @@ document.addEventListener("DOMContentLoaded", function () {
         const style = document.createElement("style");
         style.id = "validation-custom-styles";
         style.innerHTML = `
+            .quote-input-box.input-error-highlight,
             .input-error-highlight {
-                border: 2px solid #ff3333 !important;
-                box-shadow: 0 0 10px rgba(255, 51, 51, 0.5) !important;
-                transition: all 0.3s ease-in-out !important;
+                border-color: #ff4d4d !important;
+                box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.35) !important;
+                transition: all 0.25s ease-in-out !important;
+            }
+            .quote-input-box .quote-field-input.input-error-highlight,
+            .quote-input-box .quote-field-select.input-error-highlight {
+                border: none !important;
+                box-shadow: none !important;
             }
             .field-error-msg {
-                color: #ff3333 !important;
-                font-size: 0.75rem !important;
-                font-weight: bold !important;
-                margin-top: 5px !important;
-                margin-bottom: 5px !important;
+                color: #ff6b6b !important;
+                font-size: 0.72rem !important;
+                font-weight: 700 !important;
+                margin-top: 2px !important;
+                margin-bottom: 4px !important;
                 text-align: left !important;
-                padding-left: 10px !important;
+                padding-left: 6px !important;
                 display: flex !important;
                 align-items: center !important;
                 gap: 5px !important;
-                animation: fieldErrorFadeIn 0.3s ease-out !important;
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+                animation: fieldErrorFadeIn 0.25s ease-out !important;
             }
             .field-wrap .field-ico {
                 top: 14px !important;
@@ -29,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: 14px !important;
             }
             @keyframes fieldErrorFadeIn {
-                from { opacity: 0; transform: translateY(-5px); }
+                from { opacity: 0; transform: translateY(-4px); }
                 to { opacity: 1; transform: translateY(0); }
             }
         `;
@@ -38,6 +45,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Attach submit handler to ALL forms with class .ajax-form
     document.querySelectorAll(".ajax-form").forEach(form => {
+
+        // Auto clear error when user interacts with field
+        form.querySelectorAll("input, select, textarea").forEach(inputEl => {
+            const clearError = function () {
+                const boxContainer = this.closest(".quote-input-box") || this.closest(".field-wrap") || this.closest(".form-group") || this;
+                boxContainer.classList.remove("input-error-highlight");
+                this.classList.remove("input-error-highlight");
+                
+                const colWrapper = this.closest(".quote-input-col");
+                if (colWrapper) {
+                    colWrapper.querySelectorAll(".field-error-msg").forEach(el => el.remove());
+                } else {
+                    const nextEl = boxContainer.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains("field-error-msg")) {
+                        nextEl.remove();
+                    }
+                }
+            };
+            inputEl.addEventListener("input", clearError);
+            inputEl.addEventListener("change", clearError);
+        });
 
         form.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -56,33 +84,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let hasErrors = false;
 
-            // Helper to show field error
+            // Helper to show field error cleanly inside its own column
             function showError(inputEl, message) {
                 if (!inputEl) return;
-                inputEl.classList.add("input-error-highlight");
+                
+                const boxContainer = inputEl.closest(".quote-input-box") || inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl;
+                boxContainer.classList.add("input-error-highlight");
                 
                 const errorDiv = document.createElement("div");
                 errorDiv.className = "field-error-msg";
                 errorDiv.innerHTML = `<i class="bi bi-exclamation-circle-fill"></i> ${message}`;
                 
-                // Find the wrapper (either .field-wrap, .form-group, or parent)
-                const wrapper = inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.parentElement;
-                
-                // Force wrap if wrapper is a flex container
-                const computedStyle = window.getComputedStyle(wrapper);
-                if (computedStyle.display === "flex") {
-                    wrapper.style.flexWrap = "wrap";
+                // If wrapped in .quote-input-col, append directly under that specific column
+                const colWrapper = inputEl.closest(".quote-input-col");
+                if (colWrapper) {
+                    colWrapper.appendChild(errorDiv);
+                } else if (boxContainer.parentNode) {
+                    boxContainer.parentNode.insertBefore(errorDiv, boxContainer.nextSibling);
                 }
-                
-                // Append inside the wrapper
-                wrapper.appendChild(errorDiv);
             }
 
             // Validate Name
             if (nameInput) {
                 const val = nameInput.value.trim();
                 if (!val) {
-                    showError(nameInput, "The Name field is required.");
+                    showError(nameInput, "Please enter your name.");
                     hasErrors = true;
                 }
             }
@@ -91,13 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (phoneInput) {
                 const val = phoneInput.value.trim();
                 if (!val) {
-                    showError(phoneInput, "The Mobile field is required.");
+                    showError(phoneInput, "Please enter mobile number.");
                     hasErrors = true;
                 } else if (!/^\d+$/.test(val)) {
-                    showError(phoneInput, "The Mobile field must contain only numbers.");
+                    showError(phoneInput, "Must contain only digits.");
                     hasErrors = true;
                 } else if (val.length !== 10) {
-                    showError(phoneInput, "The Mobile field must be exactly 10 digits.");
+                    showError(phoneInput, "Must be exactly 10 digits.");
                     hasErrors = true;
                 }
             }

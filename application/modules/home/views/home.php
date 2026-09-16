@@ -9,6 +9,9 @@ $this->load->view('process_widget');
 // Load the About Us widget
 $this->load->view('about_widget');
 
+// Load the Pricing widget
+$this->load->view('price_widget');
+
 // Load the Badges / Trust widget
 $this->load->view('badge_widget');
 

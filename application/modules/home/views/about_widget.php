@@ -109,18 +109,13 @@ $comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($
                     <!-- Card 1: Trusted & Reliable -->
                     <div class="about-card-box">
                         <div class="about-card-img-wrap">
-                            <img src="<?= base_url('assets/img/packing_moving.jpg') ?>" alt="Trusted & Reliable Packers and Movers" class="about-card-img" loading="lazy">
+                            <img src="<?= base_url('assets/img/packing_moving.jpg') ?>" alt="Trusted &amp; Reliable Packers and Movers" class="about-card-img" loading="lazy">
                             <div class="about-card-badge about-badge-orange" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="about-badge-icon">
                                     <circle cx="12" cy="8" r="6"/>
                                     <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="about-card-body">
-                            <h4 class="about-card-title">Trusted &amp; Reliable</h4>
-                            <p class="about-card-desc">We are trusted by thousands of happy customers for safe and on-time deliveries.</p>
-                            <span class="about-corner-notch" aria-hidden="true"></span>
                         </div>
                     </div>
 
@@ -137,28 +132,18 @@ $comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($
                                 </svg>
                             </div>
                         </div>
-                        <div class="about-card-body">
-                            <h4 class="about-card-title">Experienced Team</h4>
-                            <p class="about-card-desc">Our trained professionals handle your belongings with care and complete every move efficiently.</p>
-                            <span class="about-corner-notch" aria-hidden="true"></span>
-                        </div>
                     </div>
 
                     <!-- Card 3: Safe & Secure Packing -->
                     <div class="about-card-box">
                         <div class="about-card-img-wrap">
-                            <img src="<?= base_url('assets/img/home_shifting.jpg') ?>" alt="Safe & Secure Packing Materials" class="about-card-img" loading="lazy">
+                            <img src="<?= base_url('assets/img/home_shifting.jpg') ?>" alt="Safe &amp; Secure Packing Materials" class="about-card-img" loading="lazy">
                             <div class="about-card-badge about-badge-navy" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="about-badge-icon">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                     <path d="M9 12l2 2 4-4"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="about-card-body">
-                            <h4 class="about-card-title">Safe &amp; Secure Packing</h4>
-                            <p class="about-card-desc">We use premium quality packing materials to ensure complete safety of your items.</p>
-                            <span class="about-corner-notch" aria-hidden="true"></span>
                         </div>
                     </div>
 
@@ -172,11 +157,6 @@ $comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($
                                     <polyline points="12 6 12 12 16 14"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="about-card-body">
-                            <h4 class="about-card-title">On-Time Delivery</h4>
-                            <p class="about-card-desc">We value your time and ensure timely pickup and delivery without any delays.</p>
-                            <span class="about-corner-notch" aria-hidden="true"></span>
                         </div>
                     </div>
                 </div>

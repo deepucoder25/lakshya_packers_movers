@@ -11,7 +11,7 @@
     $active_tab = 'home';
   } elseif ($segment1 === 'pricing' || $segment1 === 'price' || ($class === 'about' && $method === 'price')) {
     $active_tab = 'pricing';
-  } elseif ($class === 'about' || in_array($segment1, ['about-us', 'why-choose-us', 'faqs', 'testimonials'])) {
+  } elseif ($class === 'about' || in_array($segment1, ['about-us', 'why-choose-us', 'faqs', 'testimonials', 'privacy-policy', 'terms-and-conditions', 'privacy', 'terms'])) {
     $active_tab = 'about';
   } elseif ($class === 'services' || in_array($segment1, ['our-services', 'house-shifting', 'home-shifting', 'office-relocation', 'car-transportation', 'bike-transportation', 'warehousing-and-storage', 'warehouse-and-storage', 'local-shifting', 'intercity-moving', 'intercity-shifting'])) {
     $active_tab = 'services';
@@ -131,6 +131,8 @@
               <li><a href="<?= site_url('faqs') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
               <li><a href="<?= site_url('testimonials') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-star-fill"></i> Testimonials</a></li>
               <li><a href="<?= site_url('photo-gallery') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-images"></i> Photo Gallery</a></li>
+              <li><a href="<?= site_url('privacy-policy') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-shield-lock-fill"></i> Privacy Policy</a></li>
+              <li><a href="<?= site_url('terms-and-conditions') ?>" class="dropdown-item-link d-flex align-items-center text-decoration-none rounded px-3 py-2"><i class="bi bi-file-text-fill"></i> Terms &amp; Conditions</a></li>
             </ul>
           </li>
 
@@ -221,6 +223,8 @@
             <li><a href="<?= site_url('faqs') ?>" class="mobile-sub-link d-flex align-items-center text-decoration-none rounded px-2 py-2"><i class="bi bi-question-circle"></i> FAQs</a></li>
             <li><a href="<?= site_url('testimonials') ?>" class="mobile-sub-link d-flex align-items-center text-decoration-none rounded px-2 py-2"><i class="bi bi-star"></i> Testimonials</a></li>
             <li><a href="<?= site_url('photo-gallery') ?>" class="mobile-sub-link d-flex align-items-center text-decoration-none rounded px-2 py-2"><i class="bi bi-images"></i> Photo Gallery</a></li>
+            <li><a href="<?= site_url('privacy-policy') ?>" class="mobile-sub-link d-flex align-items-center text-decoration-none rounded px-2 py-2"><i class="bi bi-shield-lock"></i> Privacy Policy</a></li>
+            <li><a href="<?= site_url('terms-and-conditions') ?>" class="mobile-sub-link d-flex align-items-center text-decoration-none rounded px-2 py-2"><i class="bi bi-file-text"></i> Terms &amp; Conditions</a></li>
           </ul>
         </li>
 

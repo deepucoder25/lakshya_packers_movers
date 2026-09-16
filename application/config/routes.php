@@ -21,7 +21,10 @@ $route['pricing'] = 'about/price';
 $route['price'] = 'about/price';
 $route['shifting-charges'] = 'about/price';
 $route['privacy-policy'] = 'about/privacy';
+$route['privacy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
+$route['terms'] = 'about/terms';
+$route['terms-conditions'] = 'about/terms';
 
 
 // City Services Routes

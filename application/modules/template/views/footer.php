@@ -102,14 +102,26 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
         </ul>
       </div>
 
-      <!-- Column 4: Branches -->
-      <div class="col-lg-2 col-md-6 col-6 footer-col">
-        <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">BRANCHES</h5>
-        <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
-          <li><a href="<?= site_url('west-bengal') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> West Bengal</a></li>
-          <li><a href="<?= site_url('jharkhand') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Jharkhand</a></li>
-          <li><a href="<?= site_url('odisha') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Odisha</a></li>
-        </ul>
+      <!-- Column 4: Branches & Legal -->
+      <div class="col-lg-2 col-md-6 col-12 footer-col">
+        <div class="row">
+          <div class="col-lg-12 col-6">
+            <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">BRANCHES</h5>
+            <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+              <li><a href="<?= site_url('west-bengal') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> West Bengal</a></li>
+              <li><a href="<?= site_url('jharkhand') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Jharkhand</a></li>
+              <li><a href="<?= site_url('odisha') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Odisha</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-12 col-6 mt-lg-4">
+            <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">POLICIES</h5>
+            <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+              <li><a href="<?= site_url('privacy-policy') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
+              <li><a href="<?= site_url('terms-and-conditions') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- Column 5: Contact Us -->

@@ -5,29 +5,46 @@ document.addEventListener("DOMContentLoaded", function () {
         style.id = "validation-custom-styles";
         style.innerHTML = `
             .quote-input-box.input-error-highlight,
+            .form-floating.input-error-highlight,
+            .cnt-floating-wrap.input-error-highlight,
+            .qte-input-wrap.input-error-highlight,
             .input-error-highlight {
-                border-color: #ff4d4d !important;
-                box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.35) !important;
+                border-color: #ef4444 !important;
+                box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
                 transition: all 0.25s ease-in-out !important;
+            }
+            .qte-input-wrap.input-error-highlight .qte-input-field {
+                border-color: #ef4444 !important;
+                box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
             }
             .quote-input-box .quote-field-input.input-error-highlight,
             .quote-input-box .quote-field-select.input-error-highlight {
                 border: none !important;
                 box-shadow: none !important;
             }
+            .form-floating.input-error-highlight > .form-control {
+                border-color: #ef4444 !important;
+            }
             .field-error-msg {
-                color: #ff6b6b !important;
-                font-size: 0.72rem !important;
-                font-weight: 700 !important;
-                margin-top: 2px !important;
-                margin-bottom: 4px !important;
+                font-family: 'Outfit', sans-serif !important;
+                color: #dc2626 !important;
+                font-size: 0.82rem !important;
+                font-weight: 600 !important;
+                margin-top: 6px !important;
+                margin-bottom: 2px !important;
                 text-align: left !important;
-                padding-left: 6px !important;
+                padding-left: 14px !important;
                 display: flex !important;
                 align-items: center !important;
-                gap: 5px !important;
-                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
-                animation: fieldErrorFadeIn 0.25s ease-out !important;
+                gap: 6px !important;
+                text-shadow: none !important;
+                line-height: 1.3 !important;
+                animation: fieldErrorFadeIn 0.2s ease-out !important;
+            }
+            .field-error-msg i {
+                font-size: 0.88rem !important;
+                color: #dc2626 !important;
+                flex-shrink: 0 !important;
             }
             .field-wrap .field-ico {
                 top: 14px !important;
@@ -36,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: 14px !important;
             }
             @keyframes fieldErrorFadeIn {
-                from { opacity: 0; transform: translateY(-4px); }
+                from { opacity: 0; transform: translateY(-3px); }
                 to { opacity: 1; transform: translateY(0); }
             }
         `;
@@ -49,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Auto clear error when user interacts with field
         form.querySelectorAll("input, select, textarea").forEach(inputEl => {
             const clearError = function () {
-                const boxContainer = this.closest(".quote-input-box") || this.closest(".field-wrap") || this.closest(".form-group") || this;
+                const boxContainer = this.closest(".quote-input-box") || this.closest(".field-wrap") || this.closest(".form-group") || this.closest(".form-floating") || this.closest(".cnt-floating-wrap") || this.closest(".qte-input-wrap") || this;
                 boxContainer.classList.remove("input-error-highlight");
                 this.classList.remove("input-error-highlight");
                 
@@ -65,6 +82,17 @@ document.addEventListener("DOMContentLoaded", function () {
             };
             inputEl.addEventListener("input", clearError);
             inputEl.addEventListener("change", clearError);
+        });
+
+        // Handle form reset (Clear button) to clear validation highlights and result box
+        form.addEventListener("reset", function () {
+            form.querySelectorAll(".input-error-highlight").forEach(el => el.classList.remove("input-error-highlight"));
+            form.querySelectorAll(".field-error-msg").forEach(el => el.remove());
+            const resultBoxId = this.getAttribute("data-result");
+            if (resultBoxId) {
+                const resultBox = document.getElementById(resultBoxId);
+                if (resultBox) resultBox.innerHTML = "";
+            }
         });
 
         form.addEventListener("submit", function (e) {
@@ -88,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function showError(inputEl, message) {
                 if (!inputEl) return;
                 
-                const boxContainer = inputEl.closest(".quote-input-box") || inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl;
+                const boxContainer = inputEl.closest(".quote-input-box") || inputEl.closest(".field-wrap") || inputEl.closest(".form-group") || inputEl.closest(".form-floating") || inputEl.closest(".cnt-floating-wrap") || inputEl.closest(".qte-input-wrap") || inputEl;
                 boxContainer.classList.add("input-error-highlight");
                 
                 const errorDiv = document.createElement("div");

@@ -37,6 +37,16 @@ class Contacts extends MX_Controller
 
     function contact()
     {
+        if ($this->input->post('phone')) {
+            $cleaned_phone = preg_replace('/\D/', '', $this->input->post('phone'));
+            if (strlen($cleaned_phone) > 10 && substr($cleaned_phone, 0, 2) === '91') {
+                $cleaned_phone = substr($cleaned_phone, 2);
+            } elseif (strlen($cleaned_phone) > 10 && substr($cleaned_phone, 0, 1) === '0') {
+                $cleaned_phone = substr($cleaned_phone, 1);
+            }
+            $_POST['phone'] = $cleaned_phone;
+        }
+
         $this->load->library('form_validation');
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules('phone', 'Mobile', 'required|trim|numeric|exact_length[10]');

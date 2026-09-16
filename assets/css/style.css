@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600;1,700;1,800&display=swap');
+
 /* ==========================================================================
    Global Variables & Design Tokens (Derived from Brand Logo)
    ========================================================================== */
@@ -6878,6 +6880,891 @@ body.gallery-lightbox-open .site-main-navbar {
     margin: 4px 0;
   }
 }
+
+/* ==========================================================================
+   Modern Contact Page Styling (.cnt-modern-section)
+   ========================================================================== */
+.cnt-modern-section {
+  background: linear-gradient(180deg, #edf6fc 0%, #f6f9fc 42%, #fffcf8 78%, #ffffff 100%);
+  padding: 75px 0 95px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cnt-story-wrapper {
+  max-width: 530px;
+}
+
+.cnt-flow-heading {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.2vw, 3.8rem);
+  color: var(--primary-orange, #ff5f00);
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 10px rgba(255, 95, 0, 0.08);
+}
+
+.cnt-story-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.cnt-story-desc {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.75;
+  font-weight: 400;
+  margin-bottom: 2.3rem;
+}
+
+/* Contact Details Info List */
+.cnt-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cnt-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cnt-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fbe9da;
+  color: var(--primary-orange, #ff5f00);
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(255, 95, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.cnt-contact-item:hover .cnt-icon-badge {
+  background: var(--primary-orange, #ff5f00);
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(255, 95, 0, 0.28);
+}
+
+.cnt-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cnt-item-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+
+.cnt-item-val {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+a.cnt-item-val:hover {
+  color: var(--primary-orange, #ff5f00);
+}
+
+/* Form Card Container (Exact Reference Styling) */
+.cnt-card-container {
+  background: #faebd7;
+  border: 1.5px solid #ebd4c0;
+  border-radius: 42px;
+  padding: 46px 42px;
+  box-shadow: 0 24px 60px -15px rgba(255, 95, 0, 0.12), 0 10px 25px -5px rgba(15, 23, 42, 0.04);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.cnt-card-container:hover {
+  box-shadow: 0 30px 70px -15px rgba(255, 95, 0, 0.16), 0 12px 28px -5px rgba(15, 23, 42, 0.06);
+}
+
+.cnt-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 95, 0, 0.08);
+  color: var(--primary-orange, #ff5f00);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 14px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 95, 0, 0.2);
+}
+
+.cnt-card-title {
+  font-size: 1.42rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.cnt-card-desc {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+
+/* Category Radio Selector */
+.cnt-radio-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.cnt-radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+}
+
+.cnt-radio-input {
+  display: none;
+}
+
+.cnt-radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.cnt-radio-circle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary-orange, #ff5f00);
+  transform: scale(0);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cnt-radio-input:checked + .cnt-radio-circle {
+  border-color: var(--primary-orange, #ff5f00);
+}
+
+.cnt-radio-input:checked + .cnt-radio-circle::after {
+  transform: scale(1);
+}
+
+.cnt-radio-label-text {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #1e293b;
+  transition: color 0.2s ease;
+}
+
+.cnt-radio-option:hover .cnt-radio-label-text {
+  color: var(--primary-orange, #ff5f00);
+}
+
+/* Pill Input Stack */
+.cnt-input-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cnt-pill-control {
+  width: 100%;
+  height: 52px;
+  background: #ffffff;
+  border: 1.5px solid #ebd6c4;
+  border-radius: 50px;
+  padding: 0 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.cnt-pill-control::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.cnt-pill-control:focus {
+  background: #ffffff;
+  border-color: var(--primary-orange, #ff5f00);
+  box-shadow: 0 0 0 4px rgba(255, 95, 0, 0.15);
+}
+
+.cnt-pill-textarea {
+  height: auto;
+  min-height: 105px;
+  border-radius: 26px;
+  padding: 16px 24px;
+  resize: vertical;
+}
+
+/* Floating Labels for Pill Controls */
+.cnt-floating-wrap.form-floating {
+  position: relative;
+  border-radius: 50px;
+}
+
+.cnt-floating-wrap.form-floating:has(textarea) {
+  border-radius: 24px;
+}
+
+.cnt-floating-wrap.form-floating > .form-control.cnt-pill-control,
+.cnt-floating-wrap.form-floating > .form-control.cnt-pill-control:focus,
+.cnt-floating-wrap.form-floating > .form-control.cnt-pill-control:not(:placeholder-shown) {
+  height: 62px;
+  line-height: 1.35;
+  border-radius: 50px;
+  padding-top: 1.6rem;
+  padding-bottom: 0.45rem;
+  padding-left: 1.65rem;
+  padding-right: 1.65rem;
+  background: #ffffff;
+  border: 1.5px solid #ebd6c4;
+  font-size: 0.95rem;
+  color: #0f172a;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.cnt-floating-wrap.form-floating > .form-control.cnt-pill-control:focus {
+  background: #ffffff;
+  border-color: var(--primary-orange, #ff5f00);
+  box-shadow: 0 0 0 4px rgba(255, 95, 0, 0.15);
+}
+
+.cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea,
+.cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea:focus,
+.cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea:not(:placeholder-shown) {
+  min-height: 130px;
+  height: 130px;
+  border-radius: 24px;
+  padding-top: 2.1rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.65rem;
+  padding-right: 1.65rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.cnt-floating-wrap.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1.2rem 1.65rem;
+  color: #94a3b8;
+  font-weight: 500;
+  font-size: 0.92rem;
+  pointer-events: none;
+  background: transparent !important;
+  transform-origin: 0 0;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+}
+
+/* Remove Bootstrap's white background pseudo-element that clipped outside the corner */
+.cnt-floating-wrap.form-floating > label::after {
+  display: none !important;
+}
+
+.cnt-floating-wrap.form-floating > .form-control:focus ~ label,
+.cnt-floating-wrap.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--primary-orange, #ff5f00);
+  transform: scale(0.75) translateY(-0.35rem) translateX(0.55rem);
+  font-weight: 700;
+  opacity: 1;
+  background: transparent !important;
+}
+
+/* Submit & Clear Pill Buttons */
+.cnt-submit-wrap {
+  margin-top: 22px;
+}
+
+.cnt-pill-submit-btn {
+  background: linear-gradient(135deg, #ff5f00 0%, #e04800 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 44px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(255, 95, 0, 0.35);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt-pill-submit-btn:hover {
+  background: linear-gradient(135deg, #e04800 0%, #c43800 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255, 95, 0, 0.45);
+}
+
+.cnt-pill-submit-btn:active {
+  transform: translateY(0);
+}
+
+.cnt-pill-clear-btn {
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1.5px solid #ebd4c0;
+  border-radius: 50px;
+  padding: 13px 38px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt-pill-clear-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.cnt-pill-clear-btn:active {
+  transform: translateY(0);
+}
+
+/* Response alert box */
+#contactformresults .alert {
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .cnt-modern-section {
+    padding: 60px 0 80px;
+  }
+
+  .cnt-story-wrapper {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cnt-card-container {
+    padding: 36px 28px;
+    border-radius: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cnt-modern-section {
+    padding: 45px 0 65px;
+  }
+
+  .cnt-card-container {
+    padding: 26px 18px;
+    border-radius: 26px;
+  }
+
+  .cnt-flow-heading {
+    font-size: 2.25rem;
+  }
+
+  .cnt-card-title {
+    font-size: 1.22rem;
+  }
+
+  .cnt-radio-group {
+    gap: 16px;
+  }
+
+  .cnt-floating-wrap.form-floating > .form-control.cnt-pill-control,
+  .cnt-floating-wrap.form-floating > .form-control.cnt-pill-control:focus,
+  .cnt-floating-wrap.form-floating > .form-control.cnt-pill-control:not(:placeholder-shown) {
+    height: 60px;
+    padding-top: 1.55rem;
+    padding-bottom: 0.45rem;
+    padding-left: 1.45rem;
+    padding-right: 1.45rem;
+    font-size: 0.92rem;
+  }
+
+  .cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea,
+  .cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea:focus,
+  .cnt-floating-wrap.form-floating > textarea.cnt-pill-textarea:not(:placeholder-shown) {
+    min-height: 125px;
+    height: 125px;
+    padding-top: 2.1rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.45rem;
+    padding-right: 1.45rem;
+    font-size: 0.92rem;
+  }
+
+  .cnt-floating-wrap.form-floating > label {
+    padding: 1.15rem 1.45rem;
+    font-size: 0.9rem;
+  }
+
+  .cnt-floating-wrap.form-floating > .form-control:focus ~ label,
+  .cnt-floating-wrap.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.75) translateY(-0.35rem) translateX(0.5rem);
+  }
+
+  .cnt-submit-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    width: 100%;
+  }
+
+  .cnt-pill-submit-btn,
+  .cnt-pill-clear-btn {
+    flex: 1 1 0;
+    width: 50%;
+    min-width: 0;
+    padding: 13px 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Modern Field Error Typography & Styling
+   ========================================================================== */
+.field-error-msg {
+  font-family: 'Outfit', sans-serif !important;
+  color: #dc2626 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  margin-top: 6px !important;
+  margin-bottom: 2px !important;
+  text-align: left !important;
+  padding-left: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  text-shadow: none !important;
+  line-height: 1.3 !important;
+}
+
+.field-error-msg i {
+  font-size: 0.88rem !important;
+  color: #dc2626 !important;
+  flex-shrink: 0 !important;
+}
+
+.cnt-floating-wrap.input-error-highlight,
+.form-floating.input-error-highlight {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* ==========================================================================
+   Modern Quote Modal (Get Free Quote Popup)
+   ========================================================================== */
+.qte-custom-modal .modal-dialog {
+  max-width: 580px;
+  margin: 1.75rem auto;
+}
+
+.qte-modal-box {
+  background: #ffffff;
+  border-radius: 28px;
+  border: 1.5px solid #fed7aa;
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(255, 95, 0, 0.04);
+  padding: 32px 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Modal Header */
+.qte-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding-bottom: 0;
+  border-bottom: none;
+  position: relative;
+}
+
+.qte-header-content {
+  flex: 1;
+  padding-right: 15px;
+}
+
+.qte-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 95, 0, 0.08);
+  color: var(--primary-orange, #ff5f00);
+  border: 1px solid rgba(255, 95, 0, 0.2);
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.qte-modal-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.qte-modal-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.qte-modal-close {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  color: #64748b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.qte-modal-close:hover {
+  background: rgba(255, 95, 0, 0.1);
+  border-color: var(--primary-orange, #ff5f00);
+  color: var(--primary-orange, #ff5f00);
+  transform: rotate(90deg);
+}
+
+/* Floating Labels with Inset Icons for Quote Modal */
+.qte-floating-wrap.form-floating {
+  position: relative;
+  border-radius: 16px;
+}
+
+.qte-floating-wrap .qte-input-ico {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff5f00;
+  font-size: 1.1rem;
+  pointer-events: none;
+  z-index: 5;
+  transition: all 0.2s ease;
+}
+
+.qte-floating-wrap.qte-textarea-wrap .qte-input-ico {
+  top: 20px;
+  transform: none;
+}
+
+.qte-floating-wrap.form-floating > .form-control.qte-input-field {
+  height: 58px;
+  line-height: 1.35;
+  border-radius: 16px;
+  padding-top: 1.45rem;
+  padding-bottom: 0.35rem;
+  padding-left: 44px;
+  padding-right: 16px;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #0f172a;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+}
+
+.qte-floating-wrap.form-floating > .form-control.qte-input-field:focus {
+  background: #ffffff;
+  border-color: var(--primary-orange, #ff5f00);
+  box-shadow: 0 0 0 4px rgba(255, 95, 0, 0.15);
+  color: #0f172a;
+}
+
+.qte-floating-wrap.form-floating > textarea.qte-textarea-field {
+  min-height: 105px;
+  height: 105px;
+  border-radius: 16px;
+  padding-top: 1.85rem;
+  padding-bottom: 0.6rem;
+  padding-left: 44px;
+  padding-right: 16px;
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.qte-floating-wrap.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1.15rem 16px 1.15rem 44px;
+  color: #94a3b8;
+  font-weight: 500;
+  font-size: 0.9rem;
+  pointer-events: none;
+  background: transparent !important;
+  transform-origin: 44px 1.15rem;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+  z-index: 4;
+}
+
+.qte-floating-wrap.form-floating > label::after {
+  display: none !important;
+}
+
+.qte-floating-wrap.form-floating > .form-control:focus ~ label,
+.qte-floating-wrap.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--primary-orange, #ff5f00);
+  transform: translateY(-0.42rem) scale(0.75);
+  font-weight: 700;
+  opacity: 1;
+  background: transparent !important;
+}
+
+.qte-floating-wrap.form-floating:focus-within .qte-input-ico {
+  color: var(--primary-orange, #ff5f00);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.qte-floating-wrap.qte-textarea-wrap:focus-within .qte-input-ico {
+  transform: scale(1.08);
+}
+
+/* Button Row */
+.qte-btn-wrap {
+  margin-top: 20px;
+}
+
+.qte-btn-submit {
+  flex: 1 1 0;
+  background: linear-gradient(135deg, #ff5f00 0%, #e04800 100%);
+  color: #ffffff;
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(255, 95, 0, 0.35);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.qte-btn-submit:hover {
+  background: linear-gradient(135deg, #e04800 0%, #c43800 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255, 95, 0, 0.45);
+  color: #ffffff;
+}
+
+.qte-btn-submit:active {
+  transform: translateY(0);
+}
+
+.qte-btn-clear {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 13px 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qte-btn-clear:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.qte-btn-clear:active {
+  transform: translateY(0);
+}
+
+/* Micro Trust Footer */
+.qte-modal-trust {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 14px;
+}
+
+.qte-modal-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Error Highlight */
+.qte-input-wrap.input-error-highlight .qte-input-field {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Response Alert Box inside Quote Modal */
+#resultquotemodal .alert {
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .qte-custom-modal .modal-dialog {
+    margin: 12px;
+  }
+
+  .qte-modal-box {
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
+  .qte-modal-title {
+    font-size: 1.25rem;
+  }
+
+  .qte-modal-desc {
+    font-size: 0.82rem;
+  }
+
+  .qte-floating-wrap.form-floating > .form-control.qte-input-field {
+    height: 56px;
+    padding-top: 1.4rem;
+    padding-bottom: 0.35rem;
+    padding-left: 42px;
+    font-size: 0.9rem;
+  }
+
+  .qte-floating-wrap.form-floating > textarea.qte-textarea-field {
+    min-height: 100px;
+    height: 100px;
+    padding-top: 1.8rem;
+    padding-left: 42px;
+    font-size: 0.9rem;
+  }
+
+  .qte-floating-wrap.form-floating > label {
+    padding: 1.1rem 14px 1.1rem 42px;
+    font-size: 0.88rem;
+    transform-origin: 42px 1.1rem;
+  }
+
+  .qte-floating-wrap.form-floating > .form-control:focus ~ label,
+  .qte-floating-wrap.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: translateY(-0.42rem) scale(0.75);
+  }
+
+  .qte-floating-wrap .qte-input-ico {
+    left: 14px;
+    font-size: 1rem;
+  }
+
+  .qte-btn-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+
+  .qte-btn-submit,
+  .qte-btn-clear {
+    flex: 1 1 0;
+    width: 50%;
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
 
 
 

@@ -15,6 +15,7 @@ if (!empty($lat) && !empty($lon)) { ?>
         class="pm-city-map-iframe"
         loading="lazy"
         allowfullscreen
+        title="<?= htmlspecialchars($city ?? 'City') ?> Service Area Map - <?= htmlspecialchars($comp_name ?? 'Lakshya Packers and Movers') ?>"
         src="https://www.google.com/maps?q=<?php echo $lat; ?>,<?php echo $lon; ?>&hl=en&z=12&output=embed">
     </iframe>
 <?php } ?>

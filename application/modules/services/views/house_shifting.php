@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Zero Damage Guarantee</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Zero Damage Guarantee</h3>
                     </div>
                     <p class="small text-muted m-0">Specialized 4-ply corrugated boxes, bubble cushion wrap, and corner protectors ensure your furniture remains spotless.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-tools"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Dismantling &amp; Setup</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Dismantling &amp; Setup</h3>
                     </div>
                     <p class="small text-muted m-0">Skilled carpenters safely dismantle beds, wardrobes, and TV wall mounts, reassembling them neatly in your new home.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-file-earmark-lock-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Transit Insurance Cover</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Transit Insurance Cover</h3>
                     </div>
                     <p class="small text-muted m-0">Comprehensive household goods transit insurance covering declared asset value against fire, transit hazards, or accidental shocks.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-clock-history"></i></div>
-                        <h5 class="fw-bold text-navy m-0">On-Time Handover</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">On-Time Handover</h3>
                     </div>
                     <p class="small text-muted m-0">Strict adherence to promised time commitments with dedicated supervisors coordinating the entire shifting process.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Free Pre-Move Survey</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Free Pre-Move Survey</h3>
                         </div>
                         <p class="small text-muted m-0">Our relocation consultant reviews your household inventory via digital video call or in-person visit to calculate an all-inclusive fixed quote.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Multi-Layer Packing</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Multi-Layer Packing</h3>
                         </div>
                         <p class="small text-muted m-0">Kitchenware and glass wrapped in bubble sheets; furniture padded with corrugated rolls; electronics crated; boxes color-coded room-wise.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Safe Carrier Loading</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Safe Carrier Loading</h3>
                         </div>
                         <p class="small text-muted m-0">Items are lifted with moving dollies and harnesses, loaded systematically inside closed container trucks, and secured with load ropes.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Unpacking &amp; Room Setup</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Unpacking &amp; Room Setup</h3>
                         </div>
                         <p class="small text-muted m-0">Boxes unloaded directly into designated rooms, big furniture reassembled, and packing debris cleared away cleanly.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-box-seam-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Fragile Crockery &amp; Glassware Cushioning</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Fragile Crockery &amp; Glassware Cushioning</h4>
                                 </div>
                                 <p class="small text-muted m-0">Individual foam sheet wrapping, air-bubble pouches, and heavy partitioned cartons preventing direct collision or shattering.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-tv-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Electronics &amp; Smart LED TV Wooden Crating</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Electronics &amp; Smart LED TV Wooden Crating</h4>
                                 </div>
                                 <p class="small text-muted m-0">Screens are shielded with thermocol padding, double bubble-wrap, and placed inside custom reinforced hard-board crates.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-layers-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Sofa &amp; Mattress Moisture-Proof Stretch Wrap</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Sofa &amp; Mattress Moisture-Proof Stretch Wrap</h4>
                                 </div>
                                 <p class="small text-muted m-0">Soft furnishings are completely sealed with industrial thick stretch film, keeping out dust, rain, and transit smudges.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-gem"></i></div>
-                                        <h6 class="doc-title m-0">Carry Valuables Personally</h6>
+                                        <h4 class="doc-title h6 m-0">Carry Valuables Personally</h4>
                                     </div>
                                     <p class="doc-desc m-0">Keep cash, gold, legal deeds, and passport credentials in your personal hand luggage.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-snow"></i></div>
-                                        <h6 class="doc-title m-0">Defrost Refrigerator</h6>
+                                        <h4 class="doc-title h6 m-0">Defrost Refrigerator</h4>
                                     </div>
                                     <p class="doc-desc m-0">Unplug and defrost your fridge at least 12-24 hours prior to avoid water leakages in transit.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-building-check"></i></div>
-                                        <h6 class="doc-title m-0">Society Gate Permission</h6>
+                                        <h4 class="doc-title h6 m-0">Society Gate Permission</h4>
                                     </div>
                                     <p class="doc-desc m-0">Obtain gate pass and elevator booking from both origin and destination resident welfare associations.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-tags-fill"></i></div>
-                                        <h6 class="doc-title m-0">Separate Daily Essentials</h6>
+                                        <h4 class="doc-title h6 m-0">Separate Daily Essentials</h4>
                                     </div>
                                     <p class="doc-desc m-0">Pack an overnight bag containing medicines, baby food, charger, and immediate toiletries.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Need urgent household shifting?</h6>
+                            <p class="fw-bold text-white m-0 h6">Need urgent household shifting?</p>
                             <span class="small text-white-50">Our shifting coordinators are available 24x7</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How early should I book my house shifting service?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     We recommend booking at least 3 to 7 days in advance for local shifting, and 7 to 14 days ahead for long-distance or month-end interstate moves to ensure your preferred moving slot and truck allocation.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Do you provide dismantling and reassembly of large furniture?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, our shifting crew includes trained carpenters who safely dismantle standard double beds, modular wardrobes, dining tables, and TV units, and reassemble them at your new home as part of our comprehensive shifting service.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How do you protect fragile items like crockeries and LED TVs?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     All fragile items are individually wrapped in air-bubble cushioning, foam wraps, and placed in partitioned cartons with 'Fragile' indicators. Smart TVs and glass tops are shielded with heavy thermocol corner guards and wooden or reinforced crates.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Is transit insurance mandatory for household items?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     While not mandatory for short local shifts, transit insurance is highly recommended for interstate moves. It covers declared goods value against highway accidents, fire hazards, or unexpected natural calamities with quick claim processing.

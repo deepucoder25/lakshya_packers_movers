@@ -1,7 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-$comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($company3) ? $company3 : 'Lakshya Packers and Movers');
-$comp_phone = isset($phone) ? $phone : (isset($this->comp['phone']) ? $this->comp['phone'] : '+91 82602 07030');
-$comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
 
 $city_faqs = [
     [
@@ -14,7 +11,7 @@ $city_faqs = [
     ],
     [
         'q' => 'Is transit insurance provided for moves from ' . htmlspecialchars($city) . '?',
-        'a' => 'Absolutely. ' . htmlspecialchars($comp_name) . ' provides comprehensive transit insurance coverage for all household, commercial, and vehicle shipments originating in ' . htmlspecialchars($city) . '. This guarantees complete financial protection against any unforeseen accidental events during transit.'
+        'a' => 'Absolutely. ' . htmlspecialchars($company3) . ' provides comprehensive transit insurance coverage for all household, commercial, and vehicle shipments originating in ' . htmlspecialchars($city) . '. This guarantees complete financial protection against any unforeseen accidental events during transit.'
     ],
     [
         'q' => 'How many days in advance should I book my move in ' . htmlspecialchars($city) . '?',
@@ -60,14 +57,14 @@ $city_faqs = [
                             <span class="cabout-pulse-dot"></span>
                             <span class="cfaq-help-badge-text">24/7 Shifting Consultation</span>
                         </div>
-                        <h4 class="cfaq-help-title mb-2">Need Direct Answers?</h4>
+                        <h3 class="cfaq-help-title mb-2">Need Direct Answers?</h3>
                         <p class="cfaq-help-desc mb-4">
                             Speak directly with our <?= htmlspecialchars($city) ?> relocation manager for instant pricing or to schedule a free pre-move survey.
                         </p>
                         <div class="d-flex flex-column gap-2">
-                            <a href="tel:<?= $comp_phone_clean ?>" class="crev-phone-btn w-100 justify-content-center">
+                            <a <?= $phonehtml ?> class="crev-phone-btn w-100 justify-content-center">
                                 <i class="bi bi-telephone-fill"></i>
-                                <span>Call <?= htmlspecialchars($comp_phone) ?></span>
+                                <span>Call <?= htmlspecialchars($phone) ?></span>
                             </a>
                             <button type="button" class="crev-cta-btn w-100 justify-content-center" data-bs-toggle="modal" data-bs-target="#qteModal">
                                 <span>Get Instant City Quote</span>

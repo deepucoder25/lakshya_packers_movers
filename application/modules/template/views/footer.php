@@ -38,7 +38,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
 
       <!-- Column 2: Quick Links (From Navbar) -->
       <div class="col-lg-2 col-md-6 col-6 footer-col">
-        <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">QUICK LINKS</h5>
+        <h3 class="footer-heading text-uppercase fw-bold text-white mb-3">QUICK LINKS</h3>
         <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
           <li><a href="<?= site_url() ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
           <li><a href="<?= site_url('about-us') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
@@ -55,7 +55,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
 
       <!-- Column 3: Our Services (From Navbar) -->
       <div class="col-lg-2 col-md-6 col-6 footer-col">
-        <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">OUR SERVICES</h5>
+        <h3 class="footer-heading text-uppercase fw-bold text-white mb-3">OUR SERVICES</h3>
         <ul class="footer-services-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
           <li>
             <a href="<?= site_url('house-shifting') ?>" class="d-flex align-items-center gap-2 text-decoration-none">
@@ -106,7 +106,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
       <div class="col-lg-2 col-md-6 col-12 footer-col">
         <div class="row">
           <div class="col-lg-12 col-6">
-            <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">BRANCHES</h5>
+            <h3 class="footer-heading text-uppercase fw-bold text-white mb-3">BRANCHES</h3>
             <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
               <li><a href="<?= site_url('west-bengal') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> West Bengal</a></li>
               <li><a href="<?= site_url('jharkhand') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Jharkhand</a></li>
@@ -115,7 +115,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
           </div>
 
           <div class="col-lg-12 col-6 mt-lg-4">
-            <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">POLICIES</h5>
+            <h3 class="footer-heading text-uppercase fw-bold text-white mb-3">POLICIES</h3>
             <ul class="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
               <li><a href="<?= site_url('privacy-policy') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Privacy Policy</a></li>
               <li><a href="<?= site_url('terms-and-conditions') ?>" class="text-decoration-none d-inline-flex align-items-center"><i class="bi bi-chevron-right me-1"></i> Terms &amp; Conditions</a></li>
@@ -126,7 +126,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
 
       <!-- Column 5: Contact Us -->
       <div class="col-lg-3 col-md-6 col-12 footer-col">
-        <h5 class="footer-heading text-uppercase fw-bold text-white mb-3">CONTACT US</h5>
+        <h3 class="footer-heading text-uppercase fw-bold text-white mb-3">CONTACT US</h3>
         <div class="d-flex flex-column gap-3 mb-4">
           <div class="d-flex align-items-start gap-3">
             <span class="footer-contact-icon rounded-circle flex-shrink-0 d-inline-flex align-items-center justify-content-center"><i class="bi bi-geo-alt-fill"></i></span>
@@ -329,6 +329,9 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
 
 <!-- Quote Modal Component -->
 <?php $this->load->view('contacts/quotemodal'); ?>
+
+<!-- Floating Action Buttons Widget (Call, Get Quote, WhatsApp) -->
+<?php $this->load->view('template/floating_button_widget'); ?>
 
 <!-- Bootstrap Bundle JS & Form Submission Handler -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

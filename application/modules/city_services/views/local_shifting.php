@@ -101,22 +101,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Morning Arrival &amp; Packing</h4>
+                            <h3>Morning Arrival &amp; Packing</h3>
                             <p>Our team arrives at your doorstep with carton boxes, bubble wrap, and adhesive tape to pack all items systematically.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Furniture Dismantling</h4>
+                            <h3>Furniture Dismantling</h3>
                             <p>Large double beds, dining tables, and wardrobes are dismantled by skilled carpenters to ensure easy passage through doorways.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Fast City Transit</h4>
+                            <h3>Fast City Transit</h3>
                             <p>Goods are loaded into dedicated closed container trucks and transported swiftly across <?= $city ?> via optimal traffic routes.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Unloading &amp; Reassembly</h4>
+                            <h3>Unloading &amp; Reassembly</h3>
                             <p>We unload every box, place furniture into respective rooms, reassemble beds, and remove discarded packing debris.</p>
                         </div>
                     </div>
@@ -127,28 +127,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Guaranteed Same-Day Move</h5>
+                                <h3>Guaranteed Same-Day Move</h3>
                                 <p>We start in the morning and have you fully settled into your new <?= $city ?> home by evening.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-box-seam"></i></div>
                             <div class="choose-content">
-                                <h5>Quality Packaging Materials</h5>
+                                <h3>Quality Packaging Materials</h3>
                                 <p>Heavy-duty cardboard cartons, bubble wrap, and moving blankets to keep electronics and mirrors safe.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-people-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Polite &amp; Trained Crew</h5>
+                                <h3>Polite &amp; Trained Crew</h3>
                                 <p>Background-verified, punctual local movers who treat your personal goods with utmost care.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-currency-rupee"></i></div>
                             <div class="choose-content">
-                                <h5>Transparent Flat Quotation</h5>
+                                <h3>Transparent Flat Quotation</h3>
                                 <p>Upfront pricing covering labor, fuel, and stairs handling with zero surprise charges on moving day.</p>
                             </div>
                         </div>
@@ -169,7 +169,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="review-user">
                             <div class="user-avatar">V</div>
                             <div class="user-name">
-                                <h6>Vikram Joshi</h6>
+                                <div class="fw-bold text-dark fs-6">Vikram Joshi</div>
                                 <span>Resident in <?= $city ?></span>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Planning a Quick Local Move in <?= $city ?>?</h4>
+                            <h3>Planning a Quick Local Move in <?= $city ?>?</h3>
                             <p>Call our local dispatch team for an instant quote and same-day slot availability.</p>
                         </div>
                         <div class="cta-action-btns">

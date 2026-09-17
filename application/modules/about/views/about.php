@@ -198,7 +198,7 @@
                     <div class="about-bento-card">
                         <div class="about-bento-header">
                             <div class="bento-icon-badge"><i class="bi bi-truck-front-fill"></i></div>
-                            <h4 class="bento-title">Covered All-Weather Container Trucks</h4>
+                            <h3 class="bento-title">Covered All-Weather Container Trucks</h3>
                         </div>
                         <p class="bento-desc">
                             Unlike open flatbed trucks commonly used by aggregators, our entire vehicle fleet consists of fully containerized closed trucks equipped with GPS tracking, hydraulic loading ramps, and soft-cushioned internal cargo anchors.
@@ -210,7 +210,7 @@
                     <div class="about-bento-card">
                         <div class="about-bento-header">
                             <div class="bento-icon-badge"><i class="bi bi-person-check-fill"></i></div>
-                            <h4 class="bento-title">Zero Third-Party Outsourcing</h4>
+                            <h3 class="bento-title">Zero Third-Party Outsourcing</h3>
                         </div>
                         <p class="bento-desc">
                             Every packers, handler, carpenter, and highway driver is a verified, full-time employee trained in our proprietary packing techniques. We never subcontract your precious memories to unvetted third parties.
@@ -222,7 +222,7 @@
                     <div class="about-bento-card">
                         <div class="about-bento-header">
                             <div class="bento-icon-badge"><i class="bi bi-building-lock"></i></div>
-                            <h4 class="bento-title">CCTV-Monitored Warehousing Hubs</h4>
+                            <h3 class="bento-title">CCTV-Monitored Warehousing Hubs</h3>
                         </div>
                         <p class="bento-desc">
                             Strategically located across major transit hubs in India, our storage facilities offer raised pallet staging, active moisture protection, routine pest treatments, and 24x7 security personnel.
@@ -234,7 +234,7 @@
                     <div class="about-bento-card">
                         <div class="about-bento-header">
                             <div class="bento-icon-badge"><i class="bi bi-file-earmark-lock2-fill"></i></div>
-                            <h4 class="bento-title">Legally Certified &amp; Full Insurance</h4>
+                            <h3 class="bento-title">Legally Certified &amp; Full Insurance</h3>
                         </div>
                         <p class="bento-desc">
                             We operate as an officially recognized IBA-approved transport operator complying with all regional transport authority (RTO) norms, GST E-Way bill regulations, and all-risk transit insurance underwriting.
@@ -268,7 +268,7 @@
                             <div class="compare-tag-other">
                                 <i class="bi bi-exclamation-triangle-fill me-1"></i> Other / Local Movers
                             </div>
-                            <h4 class="compare-title">Unorganized Transporters</h4>
+                            <h3 class="compare-title">Unorganized Transporters</h3>
                             <p class="compare-subtitle">Common risks customers face with unregistered operators</p>
                         </div>
                         <ul class="about-compare-list list-unstyled mb-0">
@@ -319,7 +319,7 @@
                             <div class="compare-tag-us">
                                 <i class="bi bi-patch-check-fill me-1"></i> Certified &amp; Recommended
                             </div>
-                            <h4 class="compare-title"><?= htmlspecialchars($company3) ?></h4>
+                            <h3 class="compare-title"><?= htmlspecialchars($company3) ?></h3>
                             <p class="compare-subtitle">Peace-of-mind moving with our strict corporate quality standards</p>
                         </div>
                         <ul class="about-compare-list list-unstyled mb-0">

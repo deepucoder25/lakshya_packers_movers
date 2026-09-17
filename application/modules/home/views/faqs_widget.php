@@ -108,7 +108,7 @@
 
         <!-- Support Assistance Box -->
         <div class="faqs-support-box mt-4 mt-lg-5 p-4 text-center rounded-4 max-w-850 mx-auto">
-            <h5 class="fw-bold mb-1">Still have questions or need a customized shifting quote?</h5>
+            <h3 class="h5 fw-bold mb-1">Still have questions or need a customized shifting quote?</h3>
             <p class="text-muted mb-3 small">Our customer care experts are available 24/7 to assist you with every step of your move.</p>
             <a href="tel:<?= preg_replace('/[^0-9+]/', '', isset($this->comp['phone']) ? $this->comp['phone'] : '+918260207030') ?>" class="about-pill-btn d-inline-flex align-items-center text-decoration-none">
                 <i class="fa fa-phone me-2"></i> Call Us: <?= isset($this->comp['phone']) ? $this->comp['phone'] : '+91 82602 07030' ?>

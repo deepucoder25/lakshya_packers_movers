@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-clock-history"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Zero Downtime</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Zero Downtime</h3>
                     </div>
                     <p class="small text-muted m-0">Weekend, Friday night, and holiday schedules ensuring your team starts working seamlessly by Monday morning.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-cpu-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">IT &amp; Server Care</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">IT &amp; Server Care</h3>
                     </div>
                     <p class="small text-muted m-0">Anti-static bubble wrap and foam-cushioned crates for servers, networking equipment, monitors, and CPUs.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-grid-3x3-gap-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Modular Furniture Setup</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Modular Furniture Setup</h3>
                     </div>
                     <p class="small text-muted m-0">Expert dismantling and precision reassembly of workstations, conference tables, executive cabins, and partitions.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-lock-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Confidential Security</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Confidential Security</h3>
                     </div>
                     <p class="small text-muted m-0">Color-coded, numbered security crates for sensitive corporate files, financial archives, and legal documentation.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Floorplan Mapping</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Floorplan Mapping</h3>
                         </div>
                         <p class="small text-muted m-0">Onsite audit of origin and destination layout, department color-coding, and creation of a master relocation schedule.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Tagged Packing</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Tagged Packing</h3>
                         </div>
                         <p class="small text-muted m-0">Each employee's desk belongings, IT hardware, and cables are packed into individually labeled and numbered bins.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Dedicated Fleet Haul</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Dedicated Fleet Haul</h3>
                         </div>
                         <p class="small text-muted m-0">Loaded into GPS-tracked closed container trucks using hydraulic tail-lifts and secured with internal cargo lock-bars.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Reassembly &amp; Setup</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Reassembly &amp; Setup</h3>
                         </div>
                         <p class="small text-muted m-0">Workstations reassembled at exact mapped floor coordinates and IT hardware placed ready for your system admins.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Anti-Static Bubble Wraps for IT Hardware</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Anti-Static Bubble Wraps for IT Hardware</h4>
                                 </div>
                                 <p class="small text-muted m-0">Specialized ESD-safe wrapping for server motherboards, hard disk arrays, desktop monitors, and networking switches.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-tags-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Color-Coded Department Tagging</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Color-Coded Department Tagging</h4>
                                 </div>
                                 <p class="small text-muted m-0">Every department (HR, Tech, Accounts, Legal) is color-coded with numbered box stickers to guarantee 100% item trace-ability.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-grid-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Modular Workstation Carpentry Care</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Modular Workstation Carpentry Care</h4>
                                 </div>
                                 <p class="small text-muted m-0">Fasteners, screws, and brackets are bagged and taped to respective desk frames for fast, error-free reassembly.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-file-earmark-lock"></i></div>
-                                        <h6 class="doc-title m-0">IT Data Backups</h6>
+                                        <h4 class="doc-title h6 m-0">IT Data Backups</h4>
                                     </div>
                                     <p class="doc-desc m-0">Ensure full cloud and offsite backups of servers and critical databases prior to shutdown.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-building-gear"></i></div>
-                                        <h6 class="doc-title m-0">Building Permits</h6>
+                                        <h4 class="doc-title h6 m-0">Building Permits</h4>
                                     </div>
                                     <p class="doc-desc m-0">Secure loading dock gate passes and freight elevator approvals from commercial tech park management.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-people-fill"></i></div>
-                                        <h6 class="doc-title m-0">Staff Briefing</h6>
+                                        <h4 class="doc-title h6 m-0">Staff Briefing</h4>
                                     </div>
                                     <p class="doc-desc m-0">Advise employees to pack personal desk items into distributed individual crates before Friday evening.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-map-fill"></i></div>
-                                        <h6 class="doc-title m-0">New Seating Plan</h6>
+                                        <h4 class="doc-title h6 m-0">New Seating Plan</h4>
                                     </div>
                                     <p class="doc-desc m-0">Provide our crew with a numbered floor plan for exact placement of desks and IT assets.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Need a corporate relocation proposal?</h6>
+                            <p class="fw-bold text-white m-0 h6">Need a corporate relocation proposal?</p>
                             <span class="small text-white-50">Speak to our dedicated enterprise account manager</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How do you ensure zero interruption to our daily business operations?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     We schedule commercial office moves after business hours on Friday evening and across Saturday and Sunday. Our teams work round-the-clock so that all workstations, conference rooms, and basic IT connections are set up and operational for your staff by 9 AM on Monday.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Can your team dismantle and reassemble modular cubicles?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, our staff includes trained corporate carpenters experienced with all major modular furniture brands (Godrej, Featherlite, Herman Miller, etc.). We dismantle cubicles, race-way power channels, and executive desks and reconstruct them accurately in your new space.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How are servers and delicate electronic equipment relocated?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Servers and networking hardware are packed with specialized electro-static discharge (ESD) bubble film, padded foam blankets, and transported inside custom foam-lined flight cases or shock-absorbing crates.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Do you provide an itemized inventory list for corporate audit?
                                 </button>
-                            </h2>
+                            </h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, we provide digital itemized manifests detailing box numbers, asset tags, originating department, and destination floor location. This allows seamless cross-auditing by your facilities and IT teams before signing the final handover.

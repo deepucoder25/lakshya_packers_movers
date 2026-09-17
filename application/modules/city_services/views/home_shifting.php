@@ -103,22 +103,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Dismantling &amp; Packing</h4>
+                            <h3>Dismantling &amp; Packing</h3>
                             <p>We disassemble double beds, wardrobes, and modular units, wrapping each item in premium bubble wrap and corrugated sheets.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Secure Loading</h4>
+                            <h3>Secure Loading</h3>
                             <p>Using hydraulic dollies and safety belts, heavy furniture is loaded at base levels and fragile boxes are cushioned on top.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Safe Transit</h4>
+                            <h3>Safe Transit</h3>
                             <p>Goods travel in sealed, weather-proof container vehicles with active GPS tracking for punctual delivery across <?= $city ?>.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Unloading &amp; Setup</h4>
+                            <h3>Unloading &amp; Setup</h3>
                             <p>Our staff unloads, unpacks, and reassembles beds and dining tables in designated rooms at your new address.</p>
                         </div>
                     </div>
@@ -129,28 +129,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-box-seam-fill"></i></div>
                             <div class="choose-content">
-                                <h5>5-Layer Protective Packing</h5>
+                                <h3>5-Layer Protective Packing</h3>
                                 <p>Heavy-duty cardboard cartons, bubble wrap, foam, waterproof sheets, and corner protectors.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-tools"></i></div>
                             <div class="choose-content">
-                                <h5>Free Furniture Reassembly</h5>
+                                <h3>Free Furniture Reassembly</h3>
                                 <p>Skilled carpenters for quick dismantling and setup of beds, tables, and cabinets.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-person-check-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Verified Background-Checked Crew</h5>
+                                <h3>Verified Background-Checked Crew</h3>
                                 <p>Polite, uniformed, and experienced relocation specialists who treat your items like their own.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-cash-stack"></i></div>
                             <div class="choose-content">
-                                <h5>Transparent All-Inclusive Pricing</h5>
+                                <h3>Transparent All-Inclusive Pricing</h3>
                                 <p>Clear upfront quotations with zero hidden surprises or surprise surcharge fees.</p>
                             </div>
                         </div>
@@ -166,12 +166,12 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "Relocating our 3 BHK home in <?= $city ?> was completely stress-free with <?= $company3 ?>. The team arrived on time with ample bubble rolls, neatly packed all fragile chinaware, and assembled our beds at our new house before dusk. Highly recommended!"
+                            "We shifted our entire 3 BHK from <?= $city ?>. From the beginning, <?= $company3 ?> was prompt and meticulous. The boys carefully dismantled our hydraulic king bed, wrapped each delicate item in bubble film, and delivered everything without a single scratch. Five stars!"
                         </p>
                         <div class="review-user">
                             <div class="user-avatar">R</div>
                             <div class="user-name">
-                                <h6>Rohit Sharma</h6>
+                                <div class="fw-bold text-dark fs-6">Rohit Sharma</div>
                                 <span>Homeowner in <?= $city ?></span>
                             </div>
                         </div>
@@ -223,7 +223,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Planning Your Home Move in <?= $city ?>?</h4>
+                            <h3>Planning Your Home Move in <?= $city ?>?</h3>
                             <p>Book with <?= $company3 ?> today and get up to 20% discount on advance bookings.</p>
                         </div>
                         <div class="cta-action-btns">

@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Enclosed Car Carriers</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Enclosed Car Carriers</h3>
                     </div>
                     <p class="small text-muted m-0">Covered containerized auto-carrier trucks that completely shield your vehicle from highway weather, dust, and gravel.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-truck"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Wheel Choc Anchoring</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Wheel Choc Anchoring</h3>
                     </div>
                     <p class="small text-muted m-0">Heavy-duty wheel locking clamps and high-strength nylon ratchet straps prevent vehicle movement or suspension strain.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-file-earmark-lock-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Transit Insurance Cover</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Transit Insurance Cover</h3>
                     </div>
                     <p class="small text-muted m-0">Comprehensive vehicle transit insurance against road perils, accidents, or force majeure events during highway transit.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Door-to-Door Delivery</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Door-to-Door Delivery</h3>
                     </div>
                     <p class="small text-muted m-0">Punctual doorstep pickup from your current residence and direct, scratch-free handover at your destination address.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Pre-Shipment Inspection</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Pre-Shipment Inspection</h3>
                         </div>
                         <p class="small text-muted m-0">Joint exterior inspection, odometer recording, fuel level check, and signing of the official vehicle condition worksheet.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Protective Preparation</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Protective Preparation</h3>
                         </div>
                         <p class="small text-muted m-0">Side mirrors folded and cushioned, antennas retracted, bumper corners protected, and interior seat covers installed.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Hydraulic Ramp Loading</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Hydraulic Ramp Loading</h3>
                         </div>
                         <p class="small text-muted m-0">Driven smoothly onto covered carriers with low-incline ramps, locked in heavy steel chocs, and tethered by nylon straps.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Destination Handover</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Destination Handover</h3>
                         </div>
                         <p class="small text-muted m-0">Unloaded right at your doorstep, verified against the initial condition report, and handed over with keys and documentation.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Step 1: Scratch-Guard Bumper &amp; Mirror Wrapping</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Step 1: Scratch-Guard Bumper &amp; Mirror Wrapping</h4>
                                 </div>
                                 <p class="small text-muted m-0">External mirrors are folded and bubble wrapped. Exposed bumper edges, door handles, and lights receive protective scratch-guard film.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-disc-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Step 2: Wheel Choc Lock &amp; Safety Harnessing</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Step 2: Wheel Choc Lock &amp; Safety Harnessing</h4>
                                 </div>
                                 <p class="small text-muted m-0">All 4 wheels are clamped with contour-fitting steel chocs and fastened to the truck floor using industrial nylon ratchet straps.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-truck-front-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Step 3: Enclosed Weatherproof Carrier Enclosure</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Step 3: Enclosed Weatherproof Carrier Enclosure</h4>
                                 </div>
                                 <p class="small text-muted m-0">Housed inside fully enclosed multi-car or single-car container carriers, shielding your vehicle from dust, road debris, and heavy rains.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-card-text"></i></div>
-                                        <h6 class="doc-title m-0">Vehicle RC Copy</h6>
+                                        <h4 class="doc-title h6 m-0">Vehicle RC Copy</h4>
                                     </div>
                                     <p class="doc-desc m-0">Clear photocopy or DigiLocker verified copy of the Car Registration Certificate.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-shield-check"></i></div>
-                                        <h6 class="doc-title m-0">Valid Car Insurance</h6>
+                                        <h4 class="doc-title h6 m-0">Valid Car Insurance</h4>
                                     </div>
                                     <p class="doc-desc m-0">Copy of comprehensive car insurance policy to certify roadworthiness.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-person-vcard"></i></div>
-                                        <h6 class="doc-title m-0">Owner ID Proof</h6>
+                                        <h4 class="doc-title h6 m-0">Owner ID Proof</h4>
                                     </div>
                                     <p class="doc-desc m-0">Aadhaar Card, Passport, or PAN card copy of the vehicle owner or sender.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-fuel-pump"></i></div>
-                                        <h6 class="doc-title m-0">10-15 Liters Fuel</h6>
+                                        <h4 class="doc-title h6 m-0">10-15 Liters Fuel</h4>
                                     </div>
                                     <p class="doc-desc m-0">Keep approximately 10-15 Liters of fuel for ramp loading and destination delivery driving.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Need express car transport support?</h6>
+                            <p class="fw-bold text-white m-0 h6">Need express car transport support?</p>
                             <span class="small text-white-50">Our auto logistics team is available 24x7</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -303,14 +303,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Verified Car Move
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Flawless interstate transport for my Hyundai Creta!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Flawless interstate transport for my Hyundai Creta!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Transported my Hyundai Creta from Kolkata to Delhi. I was anxious about potential dents, but <?= htmlspecialchars($company3) ?> sent a closed carrier. The car arrived right on the 4th day spotless with the exact odometer reading. Outstanding service!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle">VK</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Vikramaditya Kashyap</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Vikramaditya Kashyap</strong>
                                     <span class="small text-muted">IT Director &bull; Moved to Delhi NCR</span>
                                 </div>
                             </div>
@@ -341,14 +341,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Sedan Relocation
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Zero hassles, complete door-to-door car shifting!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Zero hassles, complete door-to-door car shifting!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Shipped my Honda City from Bhubaneswar to Mumbai. From the initial inspection report to destination delivery, everything was transparent. The driver loaded the car using gentle hydraulic ramps. Highly recommend their car moving services!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-orange">PM</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Priyabrata Mishra</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Priyabrata Mishra</strong>
                                     <span class="small text-muted">Corporate Manager &bull; Moved to Mumbai</span>
                                 </div>
                             </div>
@@ -379,14 +379,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> SUV Shipping
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Handled my Mahindra Thar with immense care!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Handled my Mahindra Thar with immense care!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "The team was punctual, verified all documentation, strapped down the wheels securely inside the container, and shared live location milestones. Received delivery right at my society gate without a speck of highway dirt."
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-blue">RS</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Rohan Sharma</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Rohan Sharma</strong>
                                     <span class="small text-muted">Consultant &bull; Moved to Pune</span>
                                 </div>
                             </div>
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How is my car transported to another city?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     We transport vehicles inside specially designed, covered car carrier container trucks. Your car is safely driven onto the carrier via low-gradient hydraulic ramps, locked in place with wheel chocs, and lashed with heavy-duty safety belts to ensure complete stability throughout transit.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How much fuel should I leave in the car tank?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     We recommend keeping around 10 to 15 Liters of fuel (about 1/4th tank). This is adequate for loading onto ramps, offloading at destination, and driving to the nearest fueling station upon arrival, while complying with highway fire safety regulations.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Can I leave personal items or luggage inside the car?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Small personal items or locked luggage in the boot trunk are permitted; however, valuables such as jewelry, cash, electronics, or hazardous chemicals are strictly prohibited as transit insurance covers only the automobile itself.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Is transit insurance included for car shifting?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, comprehensive all-risk transit insurance is provided based on the car's current Insured Declared Value (IDV). This covers unforeseen road accidents, natural calamities, or transit damages with swift claim assistance.

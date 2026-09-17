@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Zero-Scratch Guarantee</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Zero-Scratch Guarantee</h3>
                     </div>
                     <p class="small text-muted m-0">Triple-layered bubble sheet, soft foam wrap, and stretch film covering headlights, mirrors, and fuel tanks.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-truck"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Covered Hydraulic Carriers</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Covered Hydraulic Carriers</h3>
                     </div>
                     <p class="small text-muted m-0">Enclosed all-weather carrier trucks with wheel chocs and heavy-duty nylon ratchet harness tie-downs.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-file-earmark-lock-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Transit Insurance</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Transit Insurance</h3>
                     </div>
                     <p class="small text-muted m-0">Comprehensive vehicle transit insurance covering declared value against accidents, fire, or transit risks.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Door-to-Door Delivery</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Door-to-Door Delivery</h3>
                     </div>
                     <p class="small text-muted m-0">Prompt pickup from your current home doorstep and direct drop-off right at your destination location.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Pre-Transit Inspection</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Pre-Transit Inspection</h3>
                         </div>
                         <p class="small text-muted m-0">We check the odometer reading, verify RC &amp; Insurance, note fuel level, and prepare an official pre-shipment condition report.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Triple-Layer Packing</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Triple-Layer Packing</h3>
                         </div>
                         <p class="small text-muted m-0">Bubble wrapping on speedometer, mirrors, and lamps. High-density foam padding and corrugated wrap on fuel tank and body.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Ramp Loading &amp; Anchoring</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Ramp Loading &amp; Anchoring</h3>
                         </div>
                         <p class="small text-muted m-0">Loaded into covered carriers via hydraulic ramps, locked in wheel-chocs, and firmly belted using heavy industrial safety straps.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Doorstep Safe Handover</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Doorstep Safe Handover</h3>
                         </div>
                         <p class="small text-muted m-0">Delivered directly to your new home. Materials cleanly unwrapped in your presence for cross-checking before final signoff.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-layers-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Layer 1: High-Grade Air-Bubble Cushioning</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Layer 1: High-Grade Air-Bubble Cushioning</h4>
                                 </div>
                                 <p class="small text-muted m-0">Delicate components including rear-view mirrors, headlamps, digital dashboards, and indicators are bubble-wrapped to absorb bumps and road vibration.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-box-seam-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Layer 2: Corrugated Sheet &amp; EPE Foam Guard</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Layer 2: Corrugated Sheet &amp; EPE Foam Guard</h4>
                                 </div>
                                 <p class="small text-muted m-0">The fuel tank, exhaust silencer, engine fins, and front/rear mudguards are padded with dense foam sheets preventing contact and friction marks.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-film"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Layer 3: Waterproof Stretch Film Sealing</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Layer 3: Waterproof Stretch Film Sealing</h4>
                                 </div>
                                 <p class="small text-muted m-0">The entire motorcycle is enveloped in heavy stretch film and taped firmly to protect against highway rain, moisture, and road dust.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-card-text"></i></div>
-                                        <h6 class="doc-title m-0">Vehicle RC Copy</h6>
+                                        <h4 class="doc-title h6 m-0">Vehicle RC Copy</h4>
                                     </div>
                                     <p class="doc-desc m-0">Clear photocopy or verified digital DigiLocker copy of the Registration Certificate.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-shield-check"></i></div>
-                                        <h6 class="doc-title m-0">Valid Insurance</h6>
+                                        <h4 class="doc-title h6 m-0">Valid Insurance</h4>
                                     </div>
                                     <p class="doc-desc m-0">Copy of active motor vehicle insurance policy to certify road legality.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-person-vcard"></i></div>
-                                        <h6 class="doc-title m-0">Owner ID Proof</h6>
+                                        <h4 class="doc-title h6 m-0">Owner ID Proof</h4>
                                     </div>
                                     <p class="doc-desc m-0">Aadhaar Card, Driving License, or Passport photocopy of the sender.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-fuel-pump"></i></div>
-                                        <h6 class="doc-title m-0">Empty Petrol Tank</h6>
+                                        <h4 class="doc-title h6 m-0">Empty Petrol Tank</h4>
                                     </div>
                                     <p class="doc-desc m-0">Fuel kept under 1 Liter as mandated by highway carrier fire safety laws.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Need immediate pickup assistance?</h6>
+                            <p class="fw-bold text-white m-0 h6">Need immediate pickup assistance?</p>
                             <span class="small text-white-50">Our moving supervisors are available 24x7</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -303,14 +303,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Verified Relocation
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Delivered in 100% spotless condition without a single scratch!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Delivered in 100% spotless condition without a single scratch!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "I had to shift my Royal Enfield Classic 350 to Bangalore. I was worried about scratches on the chrome tank and mirrors. <?= htmlspecialchars($company3) ?> wrapped the bike with 3 layers of foam and bubble sheet in front of me. Delivered in 4 days right at my doorstep. Superb team and transparent pricing!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle">AS</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Animesh Sengupta</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Animesh Sengupta</strong>
                                     <span class="small text-muted">Software Engineer &bull; Moved to Bangalore</span>
                                 </div>
                             </div>
@@ -341,14 +341,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Superbike Move
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Safe transit for my KTM Duke 390 with covered hydraulic carrier!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Safe transit for my KTM Duke 390 with covered hydraulic carrier!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Transporting a performance sports bike is always risky, but their team handled it with extreme professionalism. They secured the wheels in hydraulic wheel chocs with nylon safety straps. Received on-time delivery with zero damages. Best vehicle moving experience!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-orange">RK</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Rahul Karmakar</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Rahul Karmakar</strong>
                                     <span class="small text-muted">Marketing Lead &bull; Moved to Pune</span>
                                 </div>
                             </div>
@@ -379,14 +379,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Verified Relocation
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Smooth door-to-door Activa shifting with timely tracking updates!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Smooth door-to-door Activa shifting with timely tracking updates!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Shifted our Honda Activa scooter from Kolkata to Hyderabad. The pickup executive arrived right on scheduled time and prepared the vehicle inspection checklist. Received regular WhatsApp tracking updates. Really transparent and affordable rates!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-blue">SM</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Soma Mukherjee</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Soma Mukherjee</strong>
                                     <span class="small text-muted">Bank Executive &bull; Moved to Hyderabad</span>
                                 </div>
                             </div>
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How much does it cost to transport a bike to another city?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     The cost generally ranges between ₹2,000 to ₹7,500 depending on the distance, vehicle weight/CC, and packing level. All rates include pickup, premium 3-layer packaging, transit, and home doorstep delivery.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Why must I empty the petrol tank before vehicle shipping?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Under national carrier transport regulations, inflammable liquids are prohibited inside transport containers. We advise keeping under 1 Liter of fuel—just sufficient to drive to the nearest fuel station upon delivery.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How do you guarantee zero scratches during transit?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     We use heavy bubble wrap for glass, mirrors, and dials, followed by thick foam sheets around painted surfaces and the fuel tank. Inside the truck, wheels are anchored in steel chocs and secured with high-tensile safety belts.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Is transit insurance available for my two-wheeler?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes. We provide comprehensive vehicle transit insurance at nominal rates (approx. 1.5% of the vehicle's declared IDV value) to safeguard your vehicle against unforeseen highway hazards or accidental damages.

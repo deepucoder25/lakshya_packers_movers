@@ -5,7 +5,7 @@
         <div class="quote-header-title-box d-flex align-items-center gap-2">
           <span class="quote-bolt-badge"><i class="bi bi-lightning-charge-fill"></i></span>
           <div>
-            <h3 class="hero-quote-title m-0" itemprop="name">Get Instant Moving Estimate</h3>
+            <h2 class="hero-quote-title m-0" itemprop="name">Get Instant Moving Estimate</h2>
             <p class="hero-quote-subtitle m-0" itemprop="description">Fast &amp; transparent relocation quote</p>
           </div>
         </div>

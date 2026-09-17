@@ -1,8 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-$comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($company3) ? $company3 : 'Lakshya Packers and Movers');
-$comp_phone = isset($phone) ? $phone : (isset($this->comp['phone']) ? $this->comp['phone'] : '+91 82602 07030');
-$comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
-$city_slug = isset($ctlink) && !empty($ctlink) ? $ctlink : strtolower(str_replace(' ', '-', trim($city)));
 
 $city_services = [
     [
@@ -182,9 +178,9 @@ $city_services = [
                 </div>
                 <div class="col-lg-5 col-xl-4 text-lg-end">
                     <div class="d-flex align-items-center gap-2 justify-content-lg-end flex-wrap">
-                        <a href="tel:<?= $comp_phone_clean ?>" class="crev-phone-btn">
+                        <a <?= $phonehtml ?> class="crev-phone-btn">
                             <i class="bi bi-telephone-fill"></i>
-                            <span><?= htmlspecialchars($comp_phone) ?></span>
+                            <span><?= htmlspecialchars($phone) ?></span>
                         </a>
                         <button type="button" class="crev-cta-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
                             <span>Get Free Quote</span>

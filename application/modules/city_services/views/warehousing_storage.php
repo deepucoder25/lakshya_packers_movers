@@ -97,22 +97,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Doorstep Pickup &amp; Packing</h4>
+                            <h3>Doorstep Pickup &amp; Packing</h3>
                             <p>Our staff packs your furniture and goods with heavy-duty stretch wrap and moisture-proof coverings at your doorstep.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Barcoding &amp; Inventorying</h4>
+                            <h3>Barcoding &amp; Inventorying</h3>
                             <p>Each box and item is catalogued on an itemized storage receipt with duplicate copies provided to you for complete verification.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Raised Pallet Staging</h4>
+                            <h3>Raised Pallet Staging</h3>
                             <p>Goods are stacked on treated wooden pallets inside pest-controlled bays, 6 inches above floor level to avoid moisture absorption.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Safe Return &amp; Re-Delivery</h4>
+                            <h3>Safe Return &amp; Re-Delivery</h3>
                             <p>When you need your goods back, inform us 48 hours in advance, and our crew will deliver and arrange everything at your new home.</p>
                         </div>
                     </div>
@@ -123,28 +123,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-camera-video-fill"></i></div>
                             <div class="choose-content">
-                                <h5>24/7 CCTV &amp; Security Guards</h5>
+                                <h3>24/7 CCTV &amp; Security Guards</h3>
                                 <p>Round-the-clock camera monitoring and guarded premises with biometric access control.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
                             <div class="choose-content">
-                                <h5>Termite &amp; Moisture Protection</h5>
+                                <h3>Termite &amp; Moisture Protection</h3>
                                 <p>Periodic chemical fumigation and humidity management ensure items stay completely clean and mold-free.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-fire"></i></div>
                             <div class="choose-content">
-                                <h5>Automated Fire Safety</h5>
+                                <h3>Automated Fire Safety</h3>
                                 <p>Industrial smoke detectors, overhead water sprinklers, and portable fire extinguishers on every aisle.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-file-earmark-lock-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Insurance Coverage</h5>
+                                <h3>Insurance Coverage</h3>
                                 <p>Full warehouse risk protection safeguarding your valuables against accidental hazards.</p>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="review-user">
                             <div class="user-avatar">M</div>
                             <div class="user-name">
-                                <h6>Manoj Kulkarni</h6>
+                                <div class="fw-bold text-dark fs-6">Manoj Kulkarni</div>
                                 <span>Homeowner in <?= $city ?></span>
                             </div>
                         </div>
@@ -217,7 +217,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Need Secure Storage Space in <?= $city ?>?</h4>
+                            <h3>Need Secure Storage Space in <?= $city ?>?</h3>
                             <p>Book your storage unit now with free doorstep pickup options.</p>
                         </div>
                         <div class="cta-action-btns">

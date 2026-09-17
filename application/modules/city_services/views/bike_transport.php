@@ -102,22 +102,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Inspection &amp; Verification</h4>
+                            <h3>Inspection &amp; Verification</h3>
                             <p>Our team records the bike's physical condition, checks fuel level, and validates RC and insurance photocopies.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>4-Layer Protective Packing</h4>
+                            <h3>4-Layer Protective Packing</h3>
                             <p>Headlamps, mirrors, tank, and indicators are wrapped with thick bubble film, foam lining, and corrugated cardboard.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Upright Belt Anchoring</h4>
+                            <h3>Upright Belt Anchoring</h3>
                             <p>The bike is wheeled into the container and fastened with 4-point industrial ratchet belts so it cannot tilt or slide.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Doorstep Delivery &amp; Unpacking</h4>
+                            <h3>Doorstep Delivery &amp; Unpacking</h3>
                             <p>We deliver the two-wheeler directly to your destination home, remove outer packing materials, and assist with initial start-up.</p>
                         </div>
                     </div>
@@ -128,28 +128,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
                             <div class="choose-content">
-                                <h5>Multi-Layer Cushioning</h5>
+                                <h3>Multi-Layer Cushioning</h3>
                                 <p>Heavy-duty bubble film and foam sheets ensure zero scratches on tank, mirrors, and paintwork.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-truck"></i></div>
                             <div class="choose-content">
-                                <h5>Enclosed Vehicle Trucks</h5>
+                                <h3>Enclosed Vehicle Trucks</h3>
                                 <p>Weatherproof sealed containers protect your bike against heavy rains, mud, and highway grit.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-clock-history"></i></div>
                             <div class="choose-content">
-                                <h5>Guaranteed Punctual Delivery</h5>
+                                <h3>Guaranteed Punctual Delivery</h3>
                                 <p>Committed delivery timeframes backed by regular GPS location updates during transit.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-lock-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Transit Risk Cover</h5>
+                                <h3>Transit Risk Cover</h3>
                                 <p>Full transit insurance option safeguarding you against any unforeseen road mishap.</p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="review-user">
                             <div class="user-avatar">A</div>
                             <div class="user-name">
-                                <h6>Anand Sharma</h6>
+                                <div class="fw-bold text-dark fs-6">Anand Sharma</div>
                                 <span>Royal Enfield Owner in <?= $city ?></span>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Transport Your Bike Safely from <?= $city ?>!</h4>
+                            <h3>Transport Your Bike Safely from <?= $city ?>!</h3>
                             <p>Get a fast and transparent estimate with zero hidden extras.</p>
                         </div>
                         <div class="cta-action-btns">

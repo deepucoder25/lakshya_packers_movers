@@ -27,7 +27,7 @@ $services_list = [
     [
         'id' => '02',
         'theme' => 'orange',
-        'color' => '#ff5f00',
+        'color' => '#c2410c',
         'title' => 'Office Relocation',
         'url' => site_url('office-relocation'),
         'desc' => 'Efficient office relocation services to minimize downtime and ensure smooth shifting.',
@@ -35,7 +35,7 @@ $services_list = [
         'alt' => 'Fast and Efficient Corporate Office Relocation',
         // Hexagon Office Building & Workstation Icon SVG with Big White Border
         'svg_icon' => '<svg viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svc-svg-hex">
-            <path d="M36 5.5C38.3 5.5 40.5 6.8 41.7 8.8L64.8 22.2C67 23.5 68.3 25.9 68.3 28.5V55.5C68.3 58.1 67 60.5 64.8 61.8L41.7 75.2C40.5 77.2 38.3 78.5 36 78.5C33.7 78.5 31.5 77.2 30.3 75.2L7.2 61.8C5 60.5 3.7 58.1 3.7 55.5V28.5C3.7 25.9 5 23.5 7.2 22.2L30.3 8.8C31.5 6.8 33.7 5.5 36 5.5Z" fill="#FF5F00" stroke="#FFFFFF" stroke-width="6.5" stroke-linejoin="round"/>
+            <path d="M36 5.5C38.3 5.5 40.5 6.8 41.7 8.8L64.8 22.2C67 23.5 68.3 25.9 68.3 28.5V55.5C68.3 58.1 67 60.5 64.8 61.8L41.7 75.2C40.5 77.2 38.3 78.5 36 78.5C33.7 78.5 31.5 77.2 30.3 75.2L7.2 61.8C5 60.5 3.7 58.1 3.7 55.5V28.5C3.7 25.9 5 23.5 7.2 22.2L30.3 8.8C31.5 6.8 33.7 5.5 36 5.5Z" fill="#c2410c" stroke="#FFFFFF" stroke-width="6.5" stroke-linejoin="round"/>
             <g transform="translate(19, 24)" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
                 <!-- Building on left with rounded top -->
                 <path d="M4 28V6.5C4 4.5 5.5 3 7.5 3H10.5C12.5 3 14 4.5 14 6.5V28"/>
@@ -105,7 +105,7 @@ $services_list = [
     [
         'id' => '05',
         'theme' => 'teal',
-        'color' => '#0e8388',
+        'color' => '#0f766e',
         'title' => 'Local Shifting',
         'url' => site_url('local-shifting'),
         'desc' => 'Fast, safe, and stress-free same-day local home and office shifting within your city.',
@@ -113,7 +113,7 @@ $services_list = [
         'alt' => 'Fast and Safe Local Shifting and Relocation Services',
         // Hexagon Local Shifting Map Pin & House Icon SVG with Big White Border
         'svg_icon' => '<svg viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="svc-svg-hex">
-            <path d="M36 5.5C38.3 5.5 40.5 6.8 41.7 8.8L64.8 22.2C67 23.5 68.3 25.9 68.3 28.5V55.5C68.3 58.1 67 60.5 64.8 61.8L41.7 75.2C40.5 77.2 38.3 78.5 36 78.5C33.7 78.5 31.5 77.2 30.3 75.2L7.2 61.8C5 60.5 3.7 58.1 3.7 55.5V28.5C3.7 25.9 5 23.5 7.2 22.2L30.3 8.8C31.5 6.8 33.7 5.5 36 5.5Z" fill="#0E8388" stroke="#FFFFFF" stroke-width="6.5" stroke-linejoin="round"/>
+            <path d="M36 5.5C38.3 5.5 40.5 6.8 41.7 8.8L64.8 22.2C67 23.5 68.3 25.9 68.3 28.5V55.5C68.3 58.1 67 60.5 64.8 61.8L41.7 75.2C40.5 77.2 38.3 78.5 36 78.5C33.7 78.5 31.5 77.2 30.3 75.2L7.2 61.8C5 60.5 3.7 58.1 3.7 55.5V28.5C3.7 25.9 5 23.5 7.2 22.2L30.3 8.8C31.5 6.8 33.7 5.5 36 5.5Z" fill="#0f766e" stroke="#FFFFFF" stroke-width="6.5" stroke-linejoin="round"/>
             <g transform="translate(20, 23)" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
                 <!-- Location Pin Outline -->
                 <path d="M16 29C16 29 27 19.5 27 12C27 5.9 22.1 1 16 1C9.9 1 5 5.9 5 12C5 19.5 16 29 16 29Z" stroke-width="2.4"/>

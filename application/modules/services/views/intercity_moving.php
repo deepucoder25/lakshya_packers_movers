@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-box-seam"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Dedicated Containers</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Dedicated Containers</h3>
                     </div>
                     <p class="small text-muted m-0">Choose between dedicated full containers or budget-friendly shared part-load containers with tamper-proof seals.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">GPS Fleet Tracking</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">GPS Fleet Tracking</h3>
                     </div>
                     <p class="small text-muted m-0">24x7 satellite tracking and regular transit milestone updates from origin departure to destination arrival.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                        <h5 class="fw-bold text-navy m-0">All-Risk Insurance</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">All-Risk Insurance</h3>
                     </div>
                     <p class="small text-muted m-0">Comprehensive policy underwritten by leading national insurers covering transit damage or road emergencies.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-calendar-check-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Committed Delivery</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Committed Delivery</h3>
                     </div>
                     <p class="small text-muted m-0">Pre-agreed delivery timeline with zero unnecessary delays or repeated container transshipments.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Pre-Move Survey &amp; Plan</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Pre-Move Survey &amp; Plan</h3>
                         </div>
                         <p class="small text-muted m-0">Item assessment, volume calculation, interstate permit checklist, and tailored container allocation.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Long-Haul Fortified Packing</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Long-Haul Fortified Packing</h3>
                         </div>
                         <p class="small text-muted m-0">Extra foam edge-guards, heavy-duty 7-ply corrugated sheets, and bubble wrap built for long highway journeys.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Sealed Container Transit</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Sealed Container Transit</h3>
                         </div>
                         <p class="small text-muted m-0">Loaded into closed all-weather trucks, secured with one-time tamper seals, and dispatched with E-Way bills.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Doorstep Unloading &amp; Setup</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Doorstep Unloading &amp; Setup</h3>
                         </div>
                         <p class="small text-muted m-0">Unsealed in your presence, inventoried against the checklist, unloaded into respective rooms, and reassembled.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-layers-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Heavy 7-Ply Corrugated Cartons</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Heavy 7-Ply Corrugated Cartons</h4>
                                 </div>
                                 <p class="small text-muted m-0">Thick industrial cardboard boxes capable of enduring multiple days of interstate transit stacking without sagging or compressing.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Shock-Absorptive Air Bubble Cushioning</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Shock-Absorptive Air Bubble Cushioning</h4>
                                 </div>
                                 <p class="small text-muted m-0">Generous wrapping around delicate glassware, porcelain, monitors, mirrors, and electronic circuit boards absorbing bumps.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-lock-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Tamper-Proof Numbered Container Seals</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Tamper-Proof Numbered Container Seals</h4>
                                 </div>
                                 <p class="small text-muted m-0">Containers are sealed with unique numbered tags at the loading point and unlocked only at your new destination home.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-card-checklist"></i></div>
-                                        <h6 class="doc-title m-0">Itemized Packing List</h6>
+                                        <h4 class="doc-title h6 m-0">Itemized Packing List</h4>
                                     </div>
                                     <p class="doc-desc m-0">Numbered box list indicating package contents and approximate declared values.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-receipt"></i></div>
-                                        <h6 class="doc-title m-0">GST &amp; E-Way Bill</h6>
+                                        <h4 class="doc-title h6 m-0">GST &amp; E-Way Bill</h4>
                                     </div>
                                     <p class="doc-desc m-0">Generated by our team for statutory compliance across state borders and toll plazas.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-person-vcard"></i></div>
-                                        <h6 class="doc-title m-0">Sender &amp; Receiver ID</h6>
+                                        <h4 class="doc-title h6 m-0">Sender &amp; Receiver ID</h4>
                                     </div>
                                     <p class="doc-desc m-0">Copy of government photo ID (Aadhaar or PAN) for highway verification records.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-shield-check"></i></div>
-                                        <h6 class="doc-title m-0">Transit Insurance Policy</h6>
+                                        <h4 class="doc-title h6 m-0">Transit Insurance Policy</h4>
                                     </div>
                                     <p class="doc-desc m-0">Official policy copy issued prior to truck departure for complete financial safety.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Planning an interstate relocation?</h6>
+                            <p class="fw-bold text-white m-0 h6">Planning an interstate relocation?</p>
                             <span class="small text-white-50">Speak to our highway transit desk 24x7</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -303,14 +303,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Kolkata to Bangalore
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Moved 1,800 Km without a single scratch or broken cup!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Moved 1,800 Km without a single scratch or broken cup!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Shifting from Kolkata to Bangalore felt intimidating, but <?= htmlspecialchars($company3) ?> managed everything smoothly. The container was sealed right before my eyes and reached within the promised 5-day window. Superb communication!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle">NR</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Naveen Ray</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Naveen Ray</strong>
                                     <span class="small text-muted">Senior Consultant &bull; Moved to Bangalore</span>
                                 </div>
                             </div>
@@ -341,14 +341,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Delhi to Mumbai
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Regular GPS updates kept our whole family at ease!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Regular GPS updates kept our whole family at ease!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "The moving supervisor provided daily checkpoint updates. Even during highway rain, the container was completely watertight and our wooden furniture arrived perfectly dry and undamaged. Very trustworthy company!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-orange">SK</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Shalini Kapoor</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Shalini Kapoor</strong>
                                     <span class="small text-muted">Marketing VP &bull; Moved to Mumbai</span>
                                 </div>
                             </div>
@@ -379,14 +379,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Pune to Hyderabad
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Exceptional packing standard for long distance!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Exceptional packing standard for long distance!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "The team packed all my kitchen electronics and 65-inch television with dedicated heavy wooden crating. Everything was delivered on schedule and unpacked carefully. Will definitely recommend them for intercity moving."
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-blue">RD</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Ritesh Deshmukh</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Ritesh Deshmukh</strong>
                                     <span class="small text-muted">Banker &bull; Moved to Hyderabad</span>
                                 </div>
                             </div>
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> What is the difference between dedicated and shared truck options?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     A dedicated truck is exclusively assigned to your shipment for direct, non-stop transit with customizable departure times. A shared (part-load) container combines multiple shipments moving along the same highway route, offering significant savings for smaller home loads.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How many days does interstate delivery take?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Transit duration depends on the total distance: 300-600 km usually takes 2-3 days; 600-1200 km takes 3-5 days; and 1500+ km journeys take 5-7 days. We provide an exact scheduled delivery window upon booking.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Are toll taxes and interstate octroi included in the quote?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     All standard highway toll charges and national highway permit fees are factored into our comprehensive quote. Any municipality-specific green taxes or local entry cess will be clearly outlined before booking with zero hidden charges.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Can I transport my vehicle along with household items in one go?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes! We operate combo container trucks that feature a dedicated partitioned compartment for your car or bike alongside your household furniture, saving you substantial transport costs and ensuring simultaneous arrival.

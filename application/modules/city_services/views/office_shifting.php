@@ -102,22 +102,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Pre-Move Survey &amp; Layout Plan</h4>
+                            <h3>Pre-Move Survey &amp; Layout Plan</h3>
                             <p>Our team visits your current office in <?= $city ?> to catalogue IT assets, inspect freight elevators, and map new floor seating plans.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Colour-Coded Tagging &amp; Packing</h4>
+                            <h3>Colour-Coded Tagging &amp; Packing</h3>
                             <p>Desktops, peripherals, cables, and document files are individually tagged by employee name and department code.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Secure Heavy Freight Transit</h4>
+                            <h3>Secure Heavy Freight Transit</h3>
                             <p>Using pneumatic-suspension container trucks, modular partitions and servers travel with shock-absorbing foam padding.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Destination Setup &amp; Placement</h4>
+                            <h3>Destination Setup &amp; Placement</h3>
                             <p>Workstations and conference desks are reassembled in position, allowing your business to resume operations immediately.</p>
                         </div>
                     </div>
@@ -128,28 +128,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-building-gear"></i></div>
                             <div class="choose-content">
-                                <h5>Weekend &amp; After-Hours Relocation</h5>
+                                <h3>Weekend &amp; After-Hours Relocation</h3>
                                 <p>We execute relocations overnight and across weekends so your office never misses a billable business hour.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-pc-display-horizontal"></i></div>
                             <div class="choose-content">
-                                <h5>Certified IT &amp; Server Handling</h5>
+                                <h3>Certified IT &amp; Server Handling</h3>
                                 <p>Anti-static bubble wrap, screen protectors, and dedicated cable trays for fragile electronic assets.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-journal-check"></i></div>
                             <div class="choose-content">
-                                <h5>Meticulous Inventory Checklist</h5>
+                                <h3>Meticulous Inventory Checklist</h3>
                                 <p>Full digital manifest signed off before dispatch and counter-verified post delivery in <?= $city ?>.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-check"></i></div>
                             <div class="choose-content">
-                                <h5>Comprehensive Insurance &amp; GST</h5>
+                                <h3>Comprehensive Insurance &amp; GST</h3>
                                 <p>100% transit risk protection with formal tax invoices suitable for corporate reimbursement.</p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="review-user">
                             <div class="user-avatar">R</div>
                             <div class="user-name">
-                                <h6>Rajesh Agarwal</h6>
+                                <div class="fw-bold text-dark fs-6">Rajesh Agarwal</div>
                                 <span>Operations Director, Tech Firm in <?= $city ?></span>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Planning an Office Move in <?= $city ?>?</h4>
+                            <h3>Planning an Office Move in <?= $city ?>?</h3>
                             <p>Speak to our corporate move coordinator for a complimentary on-site audit &amp; quote.</p>
                         </div>
                         <div class="cta-action-btns">

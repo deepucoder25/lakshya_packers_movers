@@ -1,7 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-$comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($company3) ? $company3 : 'Lakshya Packers and Movers');
-$comp_phone = isset($phone) ? $phone : (isset($this->comp['phone']) ? $this->comp['phone'] : '+91 82602 07030');
-$comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
 ?>
 
 <!-- =========================================================================
@@ -23,7 +20,7 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                     Your Trusted Moving Partner Across <span class="cproc-highlight"><?= htmlspecialchars($city) ?></span>
                 </h2>
                 <p class="cabout-lead mb-0">
-                    At <strong><?= htmlspecialchars($comp_name) ?></strong>, we take the stress, heavy lifting, and guesswork out of shifting. Whether moving a studio apartment, a large family villa, an office, or your vehicle, our certified <?= htmlspecialchars($city) ?> team delivers punctuality, careful handling, and transparent pricing.
+                    At <strong><?= htmlspecialchars($company3) ?></strong>, we take the stress, heavy lifting, and guesswork out of shifting. Whether moving a studio apartment, a large family villa, an office, or your vehicle, our certified <?= htmlspecialchars($city) ?> team delivers punctuality, careful handling, and transparent pricing.
                 </p>
             </div>
             <div class="col-lg-5 col-xl-4 text-lg-end mt-3 mt-lg-0">
@@ -50,7 +47,7 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                         <div class="cabout-feat-icon-box flex-shrink-0">
                             <i class="bi bi-pin-map-fill"></i>
                         </div>
-                        <h4 class="cabout-feat-title mb-0">Local Route Mastery</h4>
+                        <h3 class="cabout-feat-title mb-0">Local Route Mastery</h3>
                     </div>
                     <p class="cabout-feat-desc mb-0">
                         Familiar with all residential societies, narrow streets, and commercial parks in <?= htmlspecialchars($city) ?> for smooth loading without delays.
@@ -65,7 +62,7 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                         <div class="cabout-feat-icon-box flex-shrink-0">
                             <i class="bi bi-box-seam-fill"></i>
                         </div>
-                        <h4 class="cabout-feat-title mb-0">3-Layer Bubble Packing</h4>
+                        <h3 class="cabout-feat-title mb-0">3-Layer Bubble Packing</h3>
                     </div>
                     <p class="cabout-feat-desc mb-0">
                         Multi-tier cushioning for glassware, LED TVs, furniture, and kitchenware using heavy-duty corrugated cartons and stretch wrap.
@@ -80,7 +77,7 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                         <div class="cabout-feat-icon-box flex-shrink-0">
                             <i class="bi bi-truck-front-fill"></i>
                         </div>
-                        <h4 class="cabout-feat-title mb-0">GPS Closed Fleet</h4>
+                        <h3 class="cabout-feat-title mb-0">GPS Closed Fleet</h3>
                     </div>
                     <p class="cabout-feat-desc mb-0">
                         All-weather weatherproof closed container vehicles with live fleet tracking. Your goods stay safe, sealed, and protected from dust &amp; rain.
@@ -95,7 +92,7 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                         <div class="cabout-feat-icon-box flex-shrink-0">
                             <i class="bi bi-shield-check"></i>
                         </div>
-                        <h4 class="cabout-feat-title mb-0">Transparent &amp; Insured</h4>
+                        <h3 class="cabout-feat-title mb-0">Transparent &amp; Insured</h3>
                     </div>
                     <p class="cabout-feat-desc mb-0">
                         Upfront written quotation with zero hidden loading or staircase charges. Full transit insurance coverage for complete peace of mind.
@@ -135,9 +132,9 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
 
                         <!-- Action Buttons -->
                         <div class="d-flex align-items-center gap-3 flex-wrap">
-                            <a href="tel:<?= $comp_phone_clean ?>" class="crev-phone-btn">
+                            <a <?= $phonehtml ?> class="crev-phone-btn">
                                 <i class="bi bi-telephone-fill"></i>
-                                <span>Call <?= htmlspecialchars($comp_phone) ?></span>
+                                <span>Call <?= htmlspecialchars($phone) ?></span>
                             </a>
                             <button type="button" class="crev-cta-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
                                 <span>Get Instant City Quote</span>
@@ -194,9 +191,9 @@ $comp_phone_clean = preg_replace('/[^0-9+]/', '', $comp_phone);
                             </div>
                         </div>
                         <div class="d-flex align-items-center gap-3 flex-wrap">
-                            <a href="tel:<?= $comp_phone_clean ?>" class="crev-phone-btn">
+                            <a <?= $phonehtml ?> class="crev-phone-btn">
                                 <i class="bi bi-telephone-fill"></i>
-                                <span>Call <?= htmlspecialchars($comp_phone) ?></span>
+                                <span>Call <?= htmlspecialchars($phone) ?></span>
                             </a>
                             <button type="button" class="crev-cta-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
                                 <span>Check Route Pricing</span>

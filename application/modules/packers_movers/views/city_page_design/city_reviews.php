@@ -1,8 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
-$ratingValue = isset($ratingValue) ? $ratingValue : '4.95';
-$comp_name = isset($this->comp['company3']) ? $this->comp['company3'] : (isset($company3) ? $company3 : 'Lakshya Packers and Movers');
-$phone_num = isset($phone) ? $phone : '+91 82602 07030';
-$clean_phone = preg_replace('/[^0-9+]/', '', $phone_num);
 
 $city_reviews = [
     [
@@ -14,7 +10,7 @@ $city_reviews = [
         'location'  => 'Shifted within ' . htmlspecialchars($city),
         'stars'     => 5,
         'date'      => '2 weeks ago',
-        'quote'     => 'I shifted my entire 3BHK flat within ' . htmlspecialchars($city) . ' with ' . htmlspecialchars($comp_name) . '. The crew arrived punctually at 8 AM, packed our delicate crockery, refrigerator, and double beds with 3 layers of bubble wrap. Not a single scratch on any item. Highly recommended for anyone in ' . htmlspecialchars($city) . '!'
+        'quote'     => 'I shifted my entire 3BHK flat within ' . htmlspecialchars($city) . ' with ' . htmlspecialchars($company3) . '. The crew arrived punctually at 8 AM, packed our delicate crockery, refrigerator, and double beds with 3 layers of bubble wrap. Not a single scratch on any item. Highly recommended for anyone in ' . htmlspecialchars($city) . '!'
     ],
     [
         'name'      => 'Ananya Banerjee',
@@ -36,7 +32,7 @@ $city_reviews = [
         'location'  => 'IT Office Shift in ' . htmlspecialchars($city),
         'stars'     => 5,
         'date'      => '3 weeks ago',
-        'quote'     => 'We hired ' . htmlspecialchars($comp_name) . ' for our 25-seater IT office relocation in ' . htmlspecialchars($city) . '. They completed the move over the weekend so our work resumed on Monday without any downtime. Their server and desktop packing was top-notch. Truly five-star service!'
+        'quote'     => 'We hired ' . htmlspecialchars($company3) . ' for our 25-seater IT office relocation in ' . htmlspecialchars($city) . '. They completed the move over the weekend so our work resumed on Monday without any downtime. Their server and desktop packing was top-notch. Truly five-star service!'
     ],
     [
         'name'      => 'Priyanka Das',
@@ -108,7 +104,7 @@ $city_reviews = [
 
             <!-- Subtitle -->
             <p class="cproc-subheading text-muted mx-auto mb-3">
-                Real relocation stories from families, business owners, and vehicle owners who experienced hassle-free moving with <?= htmlspecialchars($comp_name) ?>.
+                Real relocation stories from families, business owners, and vehicle owners who experienced hassle-free moving with <?= htmlspecialchars($company3) ?>.
             </p>
 
         </div>
@@ -156,7 +152,7 @@ $city_reviews = [
                                     <?= $rev['initials'] ?>
                                 </div>
                                 <div>
-                                    <h5 class="crev-author-name mb-0"><?= htmlspecialchars($rev['name']) ?></h5>
+                                    <div class="crev-author-name mb-0"><?= htmlspecialchars($rev['name']) ?></div>
                                     <div class="crev-author-location">
                                         <i class="bi bi-geo-alt-fill text-danger me-1"></i><?= htmlspecialchars($rev['location']) ?>
                                     </div>
@@ -211,9 +207,9 @@ $city_reviews = [
 
             <!-- Call to Action Buttons -->
             <div class="crev-actions-wrap">
-                <a href="tel:<?= $clean_phone ?>" class="crev-phone-btn">
+                <a <?= $phonehtml ?> class="crev-phone-btn">
                     <i class="bi bi-telephone-fill"></i>
-                    <span><?= htmlspecialchars($phone_num) ?></span>
+                    <span>Call <?= htmlspecialchars($phone) ?></span>
                 </a>
                 <button type="button" class="crev-cta-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
                     <span>Get Free Quote</span>

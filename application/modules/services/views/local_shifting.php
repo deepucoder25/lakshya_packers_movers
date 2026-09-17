@@ -59,7 +59,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-lightning-charge-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Same-Day Completion</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Same-Day Completion</h3>
                     </div>
                     <p class="small text-muted m-0">Entire shifting cycle completed within 4 to 8 hours without disrupting your busy work schedule.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-truck"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Right-Sized City Trucks</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Right-Sized City Trucks</h3>
                     </div>
                     <p class="small text-muted m-0">Dedicated fleet of Tata Ace, Bolero Maxi, and 14ft container trucks permitted for city daytime navigation.</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Zero Scratch Assurance</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Zero Scratch Assurance</h3>
                     </div>
                     <p class="small text-muted m-0">Protective moving blankets and multi-layer bubble wrap guard furniture corners against tight hallways and lifts.</p>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="bike-full-feat-card h-100 p-4 bg-white rounded-4 border shadow-sm">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <div class="full-feat-icon flex-shrink-0"><i class="bi bi-tag-fill"></i></div>
-                        <h5 class="fw-bold text-navy m-0">Transparent Pricing</h5>
+                        <h3 class="h5 fw-bold text-navy m-0">Transparent Pricing</h3>
                     </div>
                     <p class="small text-muted m-0">Fixed all-inclusive quotes with no surprise floor climbing or weekend surcharges at the end of the move.</p>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">01</div>
-                            <h5 class="fw-bold text-navy m-0">Slot Booking</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Slot Booking</h3>
                         </div>
                         <p class="small text-muted m-0">Book your preferred moving day and morning slot. We confirm the ideal vehicle size and crew strength instantly.</p>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">02</div>
-                            <h5 class="fw-bold text-navy m-0">Rapid Safe Packing</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Rapid Safe Packing</h3>
                         </div>
                         <p class="small text-muted m-0">Our crew packs your electronics, fragile decor, kitchenware, and furniture with specialized blankets and bubble wraps.</p>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">03</div>
-                            <h5 class="fw-bold text-navy m-0">Smooth City Transit</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Smooth City Transit</h3>
                         </div>
                         <p class="small text-muted m-0">Loaded into closed vehicles and navigated directly to your new home, avoiding traffic choke-points.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="bike-step-grid-item h-100 p-4 rounded-4">
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="step-num-bubble flex-shrink-0">04</div>
-                            <h5 class="fw-bold text-navy m-0">Unloading &amp; Placement</h5>
+                            <h3 class="h5 fw-bold text-navy m-0">Unloading &amp; Placement</h3>
                         </div>
                         <p class="small text-muted m-0">Items are unloaded into your designated rooms, big furniture reassembled, and packing materials cleared.</p>
                     </div>
@@ -168,7 +168,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-layers-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Moving Blankets for Furniture</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Moving Blankets for Furniture</h4>
                                 </div>
                                 <p class="small text-muted m-0">Quilted heavy fabric blankets wrapped around polished wooden surfaces, dining tables, and refrigerators preventing doorway friction.</p>
                             </div>
@@ -176,7 +176,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-film"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Mattress &amp; Fabric Stretch Wrap</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Mattress &amp; Fabric Stretch Wrap</h4>
                                 </div>
                                 <p class="small text-muted m-0">Clean transparent stretch film wrapped over mattresses, upholstered sofa sets, and curtains to keep them spotless during transit.</p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="p-3 rounded-3 bg-light border">
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <div class="doc-icon flex-shrink-0"><i class="bi bi-box-seam-fill"></i></div>
-                                    <h6 class="fw-bold text-navy m-0">Sturdy Cartons for Breakables</h6>
+                                    <h4 class="h6 fw-bold text-navy m-0">Sturdy Cartons for Breakables</h4>
                                 </div>
                                 <p class="small text-muted m-0">Double-walled carton boxes with bubble wrap for kitchen plates, mugs, picture frames, and small countertop appliances.</p>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-building"></i></div>
-                                        <h6 class="doc-title m-0">Reserve Service Lift</h6>
+                                        <h4 class="doc-title h6 m-0">Reserve Service Lift</h4>
                                     </div>
                                     <p class="doc-desc m-0">Inform society security in advance to block the service elevator for faster loading.</p>
                                 </div>
@@ -225,7 +225,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-p-square-fill"></i></div>
-                                        <h6 class="doc-title m-0">Clear Parking Spot</h6>
+                                        <h4 class="doc-title h6 m-0">Clear Parking Spot</h4>
                                     </div>
                                     <p class="doc-desc m-0">Ensure adequate parking near the building entrance for our moving truck.</p>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-cash-stack"></i></div>
-                                        <h6 class="doc-title m-0">Keep Valuables Safe</h6>
+                                        <h4 class="doc-title h6 m-0">Keep Valuables Safe</h4>
                                     </div>
                                     <p class="doc-desc m-0">Carry cash, jewelry, and laptop bags personally in your personal vehicle.</p>
                                 </div>
@@ -243,7 +243,7 @@
                                 <div class="doc-card p-3 rounded-3 h-100">
                                     <div class="d-flex align-items-center gap-2 mb-2">
                                         <div class="doc-icon"><i class="bi bi-power"></i></div>
-                                        <h6 class="doc-title m-0">Unplug Electronics</h6>
+                                        <h4 class="doc-title h6 m-0">Unplug Electronics</h4>
                                     </div>
                                     <p class="doc-desc m-0">Disconnect Wi-Fi router, TV cables, and defrost refrigerator ahead of time.</p>
                                 </div>
@@ -254,7 +254,7 @@
                     <!-- Direct Contact Banner -->
                     <div class="bike-cta-inline p-3 p-md-4 rounded-4 mt-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                         <div>
-                            <h6 class="fw-bold text-white m-0">Planning a quick local shift today?</h6>
+                            <p class="fw-bold text-white m-0 h6">Planning a quick local shift today?</p>
                             <span class="small text-white-50">Instant quotes &amp; same-day slots available</span>
                         </div>
                         <div class="d-flex gap-2">
@@ -303,14 +303,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> Same-Day 2 BHK Move
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Shifted our 2BHK in just 5 hours without breaking a sweat!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Shifted our 2BHK in just 5 hours without breaking a sweat!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "The packers arrived at 9 AM sharp with all boxes, tape, and blankets. By 2 PM, everything was unloaded and set up in our new apartment. Super fast, friendly staff, and strictly adhered to the quoted price."
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle">AD</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Ananya Das</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Ananya Das</strong>
                                     <span class="small text-muted">Content Lead &bull; City Relocation</span>
                                 </div>
                             </div>
@@ -341,14 +341,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> 1 BHK Local Move
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Very polite crew and took immense care of our washing machine!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Very polite crew and took immense care of our washing machine!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Moved 12 km across town. The crew had moving blankets and wrapped the washing machine and refrigerator properly so no scratches occurred. Very smooth coordination by <?= htmlspecialchars($company3) ?>."
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-orange">TN</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Tanmay Nayak</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Tanmay Nayak</strong>
                                     <span class="small text-muted">Civil Engineer &bull; Intra-City Shifting</span>
                                 </div>
                             </div>
@@ -379,14 +379,14 @@
                                     <i class="bi bi-patch-check-fill text-success"></i> 3 BHK Apartment
                                 </span>
                             </div>
-                            <h5 class="fw-bold text-navy mb-3">"Flawless dismantling and reassembly of all beds!"</h5>
+                            <p class="fw-bold text-navy mb-3 fs-5">"Flawless dismantling and reassembly of all beds!"</p>
                             <p class="testimonial-quote-text fst-italic mb-3">
                                 "Their carpenter dismantled our hydraulic storage bed and wall-mounted TV smoothly. At the new home, everything was fitted back exactly as it was. Great teamwork and highly recommended for local shifting!"
                             </p>
                             <div class="d-flex align-items-center gap-3 pt-3 border-top mt-3">
                                 <div class="user-avatar-circle avatar-blue">SP</div>
                                 <div>
-                                    <h6 class="m-0 fw-bold text-navy">Sanjay Patel</h6>
+                                    <strong class="m-0 fw-bold text-navy d-block">Sanjay Patel</strong>
                                     <span class="small text-muted">Executive &bull; Local Shifting</span>
                                 </div>
                             </div>
@@ -426,11 +426,11 @@
 
                     <div class="accordion bike-accordion" id="bikeFaqAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
+                            <h4 class="accordion-header" id="faqHeadOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqColOne" aria-expanded="true" aria-controls="faqColOne">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> How long does a typical local shifting process take?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadOne" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     For a standard 1 BHK or 2 BHK apartment, the entire move takes roughly 4 to 6 hours from arrival to final placement. For larger 3-4 BHK homes or villas, it typically takes 6 to 9 hours, always completed within the same day.
@@ -439,11 +439,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
+                            <h4 class="accordion-header" id="faqHeadTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColTwo" aria-expanded="false" aria-controls="faqColTwo">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Can you shift on weekends or public holidays?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadTwo" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, we operate 7 days a week, including weekends and public holidays. Since weekends are popular for moving, we recommend booking your slot 3-4 days in advance to reserve your preferred morning timing.
@@ -452,11 +452,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
+                            <h4 class="accordion-header" id="faqHeadThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColThree" aria-expanded="false" aria-controls="faqColThree">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> Are packing boxes included in the local shifting price?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColThree" class="accordion-collapse collapse" aria-labelledby="faqHeadThree" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Yes, all necessary packing supplies including heavy-duty cartons, bubble wrap, tapes, stretch film, and moving blankets are covered in our comprehensive quotation.
@@ -465,11 +465,11 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqHeadFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
+                            <h4 class="accordion-header" id="faqHeadFour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqColFour" aria-expanded="false" aria-controls="faqColFour">
                                     <i class="bi bi-question-diamond-fill text-orange me-2"></i> What if my society building does not have an elevator?
                                 </button>
-                            </h2>
+</h4>
                             <div id="faqColFour" class="accordion-collapse collapse" aria-labelledby="faqHeadFour" data-bs-parent="#bikeFaqAccordion">
                                 <div class="accordion-body">
                                     Our team is trained in manual stair carry. Please notify us during the quotation stage about the floor level and absence of a service elevator so we can deploy extra helpers for effortless, safe carrying.

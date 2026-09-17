@@ -102,22 +102,22 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Doorstep Inspection &amp; Audit</h4>
+                            <h3>Doorstep Inspection &amp; Audit</h3>
                             <p>We document tire condition, fuel levels, and existing exterior marks on a digital car condition audit sheet with photos.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Parts Cushioning &amp; Prep</h4>
+                            <h3>Parts Cushioning &amp; Prep</h3>
                             <p>Side-view mirrors, antenna, spoilers, and delicate trims are wrapped with thick protective foam layers to avoid rub-scratches.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Hydraulic Deck Loading</h4>
+                            <h3>Hydraulic Deck Loading</h3>
                             <p>The car is driven onto the trailer ramp and clamped securely with heavy-duty wheel chocks and ratchet tie-down straps.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Doorstep Delivery &amp; Signoff</h4>
+                            <h3>Doorstep Delivery &amp; Signoff</h3>
                             <p>We unload and hand over your car at your destination doorstep. You cross-check all parameters with the initial audit report.</p>
                         </div>
                     </div>
@@ -128,28 +128,28 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
                             <div class="choose-content">
-                                <h5>Hydraulic Ramp &amp; Wheel Chocks</h5>
+                                <h3>Hydraulic Ramp &amp; Wheel Chocks</h3>
                                 <p>Specialized wheel anchors prevent any forward or sideways vehicle movement inside the carrier.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-truck-flatbed"></i></div>
                             <div class="choose-content">
-                                <h5>Modern Covered Car Carriers</h5>
+                                <h3>Modern Covered Car Carriers</h3>
                                 <p>Weatherproof, enclosed trailer containers protecting vehicles from sun, rain, and highway dust.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-geo-alt-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Real-Time GPS Route Tracking</h5>
+                                <h3>Real-Time GPS Route Tracking</h3>
                                 <p>Track your vehicle's interstate journey 24/7 with dedicated customer support updates.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-file-earmark-lock-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Transit Insurance Assurance</h5>
+                                <h3>Transit Insurance Assurance</h3>
                                 <p>Comprehensive cargo transit insurance guaranteeing total financial protection against any road incident.</p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="review-user">
                             <div class="user-avatar">P</div>
                             <div class="user-name">
-                                <h6>Priya Mehta</h6>
+                                <div class="fw-bold text-dark fs-6">Priya Mehta</div>
                                 <span>Car Owner in <?= $city ?></span>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Need Safe Car Transportation in <?= $city ?>?</h4>
+                            <h3>Need Safe Car Transportation in <?= $city ?>?</h3>
                             <p>Get a guaranteed quote with free doorstep vehicle pickup today.</p>
                         </div>
                         <div class="cta-action-btns">

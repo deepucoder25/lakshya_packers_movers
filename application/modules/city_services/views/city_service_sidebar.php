@@ -41,7 +41,7 @@
             <p class="cta-desc">Get an immediate free survey &amp; best quote from our <?= $city ?> moving team.</p>
             
             <div class="cta-buttons d-flex flex-column gap-3">
-                <a href="<?= $phonehtml ?>" class="btn-sidebar-cta btn-sidebar-call">
+                <a <?= $phonehtml ?> class="btn-sidebar-cta btn-sidebar-call">
                     <i class="bi bi-telephone-fill me-2"></i> Call: <?= $phone ?>
                 </a>
                 

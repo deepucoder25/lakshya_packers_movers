@@ -127,9 +127,9 @@ $city_process_steps = [
                         </div>
 
                         <!-- Step Title -->
-                        <h4 class="cproc-title">
+                        <h3 class="cproc-title">
                             <?= htmlspecialchars($step['title']) ?>
-                        </h4>
+                        </h3>
 
                         <!-- Step Description -->
                         <p class="cproc-desc mb-0">

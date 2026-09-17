@@ -107,7 +107,7 @@ include 'city_content.php';
             <div class="row align-items-center g-4">
                 <div class="col-lg-5">
                     <div class="cabout-img-frame rounded-4 overflow-hidden position-relative">
-                        <img src="<?= base_url('assets/img/home_shifting.jpg') ?>" alt="Moving in <?= htmlspecialchars($city) ?>" class="cabout-img img-fluid w-100 object-fit-cover">
+                        <img src="<?= base_url('assets/img/home_shifting.jpg') ?>" loading="lazy" alt="Moving in <?= htmlspecialchars($city) ?>" class="cabout-img img-fluid w-100 object-fit-cover">
                         <div class="cabout-img-badge position-absolute bottom-0 start-0 m-3 p-2 px-3 rounded-pill bg-white text-dark shadow-sm small fw-bold d-flex align-items-center gap-2">
                             <span class="cabout-pulse-dot"></span>
                             <span>Verified Shifting Crew in <?= htmlspecialchars($city) ?></span>

@@ -84,7 +84,7 @@ $city_process_steps = [
 
     <!-- Decorative Stacked Moving Boxes (Top Right) -->
     <div class="cproc-decor-boxes" aria-hidden="true">
-        <img src="<?= base_url('assets/img/moving_boxes_stack.jpg') ?>" alt="Lakshya Packers and Movers Packing" class="cproc-boxes-img">
+        <img src="<?= base_url('assets/img/moving_boxes_stack.jpg') ?>" loading="lazy" alt="Lakshya Packers and Movers Packing" class="cproc-boxes-img">
     </div>
 
     <div class="container position-relative z-2">

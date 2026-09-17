@@ -229,7 +229,7 @@
 
                     <?php if (!empty($testi['img'])): ?>
                     <div class="testi-user-img-box mb-3">
-                        <img src="<?= (strpos($testi['img'], '/') !== false) ? base_url($testi['img']) : base_url('assets/uploads/reviewimg/' . $testi['img']) ?>" alt="Review photo by <?= htmlspecialchars($testi['name']) ?>" class="rounded border shadow-sm" style="max-height: 120px; max-width: 100%; object-fit: cover;">
+                        <img src="<?= (strpos($testi['img'], '/') !== false) ? base_url($testi['img']) : base_url('assets/uploads/reviewimg/' . $testi['img']) ?>" loading="lazy" alt="Review photo by <?= htmlspecialchars($testi['name']) ?>" class="rounded border shadow-sm" style="max-height: 120px; max-width: 100%; object-fit: cover;">
                     </div>
                     <?php endif; ?>
 

@@ -33,7 +33,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         }
                         if (!empty($main_img)): ?>
                             <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
-                                <img src="<?= $main_img ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
+                                <img src="<?= $main_img ?>" loading="lazy" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
                             </div>
                         <?php endif; ?>
                         

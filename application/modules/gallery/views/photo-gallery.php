@@ -150,7 +150,7 @@
 
     <div class="gallery-lightbox-dialog">
         <div class="gallery-lightbox-img-box">
-            <img id="lightboxImg" src="" alt="Gallery Preview">
+            <img id="lightboxImg" src="" loading="lazy" alt="Gallery Preview">
         </div>
     </div>
 </div>

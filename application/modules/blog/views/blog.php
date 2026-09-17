@@ -79,7 +79,7 @@
                                 <?php if (!empty($img)): ?>
                                     <div class="position-relative">
                                         <a href="<?= $link ?>">
-                                            <img src="<?= $img ?>" class="card-img-top blog-card-img"
+                                            <img src="<?= $img ?>" loading="lazy" class="card-img-top blog-card-img"
                                                 alt="<?= htmlspecialchars($b->title) ?>">
                                         </a>
                                         <div

@@ -16,7 +16,7 @@ $footerWeb = !empty($website) ? $website : 'www.lakshyapackersmovers.com';
         <div class="footer-brand mb-3">
           <a href="<?= site_url() ?>" class="d-inline-block text-decoration-none">
             <div class="footer-logo-wrapper bg-white p-2 rounded-3 shadow-sm d-inline-flex align-items-center">
-              <img src="<?= base_url('assets/img/logo/logo.png') ?>" alt="<?= htmlspecialchars($company3) ?>" class="footer-logo img-fluid">
+              <img src="<?= base_url('assets/img/logo/logo.png') ?>" loading="lazy" alt="<?= htmlspecialchars($company3) ?>" class="footer-logo img-fluid">
             </div>
           </a>
         </div>

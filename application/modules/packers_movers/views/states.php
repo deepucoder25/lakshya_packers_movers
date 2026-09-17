@@ -50,7 +50,7 @@ $state = [
 
                         <!-- Image Container with Hover Zoom & Badge -->
                         <div class="st-img-box">
-                            <img src="<?= base_url('assets/img/state/' . $item['image']) ?>" alt="<?= htmlspecialchars($item['category']) ?>" class="st-img">
+                            <img src="<?= base_url('assets/img/state/' . $item['image']) ?>" loading="lazy" alt="<?= htmlspecialchars($item['category']) ?>" class="st-img">
                             <div class="st-img-overlay"></div>
                             <span class="st-hub-badge">
                                 <i class="bi bi-geo-alt-fill text-orange"></i> <?= htmlspecialchars($item['category']) ?>

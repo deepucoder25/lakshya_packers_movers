@@ -108,7 +108,7 @@ $city_services = [
                     <div class="cservice-card position-relative w-100 d-flex flex-column">
                         <!-- Compact Top Photo -->
                         <div class="cservice-img-wrap position-relative">
-                            <img src="<?= $svc['image'] ?>" alt="<?= htmlspecialchars($svc['title']) ?> in <?= htmlspecialchars($city) ?>" class="cservice-img w-100 h-100 object-fit-cover">
+                            <img src="<?= $svc['image'] ?>" loading="lazy" alt="<?= htmlspecialchars($svc['title']) ?> in <?= htmlspecialchars($city) ?>" class="cservice-img w-100 h-100 object-fit-cover">
                             <div class="cservice-img-overlay"></div>
                             
                             <!-- Badges on Image -->

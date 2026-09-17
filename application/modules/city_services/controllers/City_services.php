@@ -59,4 +59,28 @@ class City_services extends MX_Controller
         $data['view_file'] = "bike_transport";
         echo Modules::run('template/layout2', $data);
     }
+
+    function local_shifting($city_slug)
+    {
+        $city = $this->format_city($city_slug);
+        $data['city'] = $city;
+        $data['ctlink'] = $city_slug;
+        $data['title'] = "Fast Local Shifting Services in $city | " . $this->comp['company3'];
+        $data['description'] = "Reliable, same-day local shifting and household moving in $city by " . $this->comp['company3'] . ". Professional packing, careful handling, and doorstep delivery.";
+        $data['module'] = "city_services";
+        $data['view_file'] = "local_shifting";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    function warehousing_storage($city_slug)
+    {
+        $city = $this->format_city($city_slug);
+        $data['city'] = $city;
+        $data['ctlink'] = $city_slug;
+        $data['title'] = "Safe Warehousing & Storage Services in $city | " . $this->comp['company3'];
+        $data['description'] = "Secure, CCTV-monitored goods storage and warehousing solutions in $city by " . $this->comp['company3'] . ". Short and long-term storage at affordable prices.";
+        $data['module'] = "city_services";
+        $data['view_file'] = "warehousing_storage";
+        echo Modules::run('template/layout2', $data);
+    }
 }

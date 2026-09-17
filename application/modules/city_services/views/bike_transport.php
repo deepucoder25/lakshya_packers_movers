@@ -3,134 +3,122 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
+    'bc_current' => "Bike Transportation in $city",
     'bc_title_white' => 'Bike Transportation in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_title_orange' => $city,
+    'bc_desc' => "Safe, scratch-proof two-wheeler parcel and bike transportation services in $city with dedicated carrier trucks."
 ]); 
 ?>
 
 <!-- Main Page Content Section -->
-<section class="service-details-section mb-5 pb-5">
+<section class="service-details-section">
     <div class="container">
         <div class="row">
             <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Expert Bike Transportation Services in <?= $city ?></h2>
+                    <!-- Service Highlights Badges -->
+                    <div class="service-highlights-bar">
+                        <span class="service-highlight-pill"><i class="bi bi-shield-check"></i> Scratch-Proof Packing</span>
+                        <span class="service-highlight-pill"><i class="bi bi-bicycle"></i> All Two-Wheeler Models</span>
+                        <span class="service-highlight-pill"><i class="bi bi-truck"></i> Enclosed Bike Carriers</span>
+                        <span class="service-highlight-pill"><i class="bi bi-geo-alt"></i> Doorstep Pickup &amp; Drop</span>
+                        <span class="service-highlight-pill"><i class="bi bi-file-earmark-check"></i> Transit Insurance</span>
+                    </div>
+
+                    <h2 class="service-section-title">Reliable Bike &amp; Two-Wheeler Transportation in <?= $city ?></h2>
                     <div class="about-service-text">
                         <p>
-                            Do you need safe and surety bike shifting services in <?= $city ?>? <strong><?= $company3 ?></strong> provide bike transportation services for sure delivery of your two-wheeler at the right destination within the time frame decided by you in <?= $city ?>. Whether within a city or between different cities, we have expert skills and facilities to perform safe and reliable bike transporting in <?= $city ?>.
+                            Need safe and guaranteed bike shifting services in <?= $city ?>? <strong><?= $company3 ?></strong> provides specialized two-wheeler parcel and transportation solutions ensuring prompt, scratch-free delivery of your motorcycle or scooter across India. Whether relocating an executive commuter bike, a sports motorcycle, or a heavy cruiser like a Royal Enfield, our experienced team treats every ride with utmost precision in <?= $city ?>.
                         </p>
                         <p>
-                            We use top class packing material to avoid any damage at transshipment, and advanced techniques ensure utmost care at the time of transit. Our bike shifters provide door-to-door pickup and delivery facilities in <?= $city ?>. Peace of mind is given from picking up from one location in <?= $city ?> to any other for a stress-free two-wheeler move. It doesn't matter what kind of bike, scooter, and high end motorcycles we transfer; they all receive attention in <?= $city ?>.
-                        </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/bike.jpg') ?>" alt="bike shifting in <?= $city ?>" class="img-fluid rounded my-3 w-100">
-                        <p>
-                            <strong><?= $company3 ?></strong> will ensure your bike is in good hands in <?= $city ?>. Our transparent pricing and commitment to timely delivery make us one of the most trusted bike relocation companies in <?= $city ?>.
+                            We utilize 4-layer specialized packaging—comprising high-density bubble wrap, corrugated sheets, foam pads, and waterproof stretch wrap—protecting all delicate painted panels, rearview mirrors, headlamps, and silencers from vibrations and road friction.
                         </p>
 
-                        <h3 class="mt-4">Check Our Affordable Bike Transportation Prices Below:</h3>
-                        <div class="table-responsive mt-3">
-                            <table class="table table-bordered table-striped table-hover text-center align-middle">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th>Bike Type</th>
-                                        <th>Up to 400 Km</th>
-                                        <th>400 - 800 Km</th>
-                                        <th>800 - 1300 Km</th>
-                                        <th>1300 - 1900 Km</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="fw-bold">100cc - 150cc Bike</td>
-                                        <td>Rs. 2,000 - 3,500</td>
-                                        <td>Rs. 3,000 - 4,000</td>
-                                        <td>Rs. 3,500 - 4,500</td>
-                                        <td>Rs. 4,000 - 5,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">150cc - 200cc Bike</td>
-                                        <td>Rs. 2,400 - 3,600</td>
-                                        <td>Rs. 3,400 - 4,100</td>
-                                        <td>Rs. 3,900 - 4,600</td>
-                                        <td>Rs. 4,400 - 4,900</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">200cc - 250cc Bike</td>
-                                        <td>Rs. 2,700 - 3,900</td>
-                                        <td>Rs. 3,700 - 4,400</td>
-                                        <td>Rs. 4,200 - 4,900</td>
-                                        <td>Rs. 4,700 - 5,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">250cc - 350cc Bike</td>
-                                        <td>Rs. 2,800 - 3,800</td>
-                                        <td>Rs. 3,800 - 4,300</td>
-                                        <td>Rs. 4,300 - 4,800</td>
-                                        <td>Rs. 4,800 - 5,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">350cc - 500cc Bike</td>
-                                        <td>Rs. 2,800 - 3,800</td>
-                                        <td>Rs. 3,800 - 4,300</td>
-                                        <td>Rs. 4,300 - 4,800</td>
-                                        <td>Rs. 4,800 - 5,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Sports Bike</td>
-                                        <td>Rs. 4,500 - 7,000</td>
-                                        <td>Rs. 6,000 - 9,000</td>
-                                        <td>Rs. 8,000 - 12,000</td>
-                                        <td>Rs. 11,000 - 15,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Cruiser Sports Bike</td>
-                                        <td>Rs. 5,000 - 8,500</td>
-                                        <td>Rs. 7,000 - 10,500</td>
-                                        <td>Rs. 9,000 - 13,500</td>
-                                        <td>Rs. 12,000 - 16,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Off Road Sports Bike</td>
-                                        <td>Rs. 6,000 - 9,000</td>
-                                        <td>Rs. 7,500 - 11,500</td>
-                                        <td>Rs. 10,000 - 14,500</td>
-                                        <td>Rs. 13,000 - 17,500</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <h3>Why Choose <?= $company3 ?> for Bike Relocation in <?= $city ?>?</h3>
+                        <p>
+                            Riding a motorcycle across long national highways exposes you and your vehicle to high accident hazards, heavy rains, mechanical breakdowns, and severe fatigue. Our dedicated bike transport carriers are engineered with specialized wheel stands and heavy-duty nylon ratchet harness belts that lock your two-wheeler upright and immobile throughout the highway journey.
+                        </p>
+                        <p>
+                            We provide doorstep pickup from any locality in <?= $city ?>, create an upfront pre-transport vehicle condition sheet, and deliver directly to your new address with zero unnecessary mileage added to your speedometer.
+                        </p>
+
+                        <!-- SEO Pricing Table -->
+                        <div class="service-pricing-card">
+                            <div class="service-pricing-header">
+                                <h4><i class="bi bi-bicycle text-warning"></i> Estimated Bike Shifting Charges in <?= $city ?></h4>
+                                <span class="pricing-badge">Two-Wheeler Rates</span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table service-pricing-table table-hover text-center align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Two-Wheeler Type</th>
+                                            <th>Up to 400 KM</th>
+                                            <th>400 - 800 KM</th>
+                                            <th>800 - 1400 KM</th>
+                                            <th>1400 - 2000 KM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Scooter / Scooty (Activa, Jupiter)</td>
+                                            <td>Rs. 2,000 - 3,200</td>
+                                            <td>Rs. 2,800 - 3,800</td>
+                                            <td>Rs. 3,400 - 4,500</td>
+                                            <td class="rate-highlight">Rs. 4,000 - 5,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Standard Commuter Bike (100cc - 150cc)</td>
+                                            <td>Rs. 2,200 - 3,500</td>
+                                            <td>Rs. 3,000 - 4,000</td>
+                                            <td>Rs. 3,600 - 4,600</td>
+                                            <td class="rate-highlight">Rs. 4,200 - 5,400</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Premium Sports Bike (150cc - 250cc)</td>
+                                            <td>Rs. 2,800 - 4,200</td>
+                                            <td>Rs. 3,600 - 4,800</td>
+                                            <td>Rs. 4,200 - 5,500</td>
+                                            <td class="rate-highlight">Rs. 4,800 - 6,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Cruiser / Royal Enfield (350cc - 650cc)</td>
+                                            <td>Rs. 3,500 - 5,000</td>
+                                            <td>Rs. 4,200 - 5,800</td>
+                                            <td>Rs. 5,000 - 6,800</td>
+                                            <td class="rate-highlight">Rs. 5,800 - 7,800</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="pricing-note"><i class="bi bi-info-circle me-1"></i> Charges include complete 4-layer packing, loading, highway toll taxes, and doorstep delivery in <?= $city ?>.</p>
                         </div>
                     </div>
-                    
-                    <!-- How We Process Section -->
+
+                    <!-- Step-by-Step Moving Process -->
                     <h2 class="service-section-title mt-5">Our Bike Relocation Process in <?= $city ?></h2>
-                    <p class="text-muted">We follow a structured 4-step process to ensure damage-free bike delivery:</p>
+                    <p class="text-muted">A proven 4-stage packaging and shipping method for guaranteed vehicle security:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Inspection &amp; Paperwork</h4>
-                            <p>We document your bike's condition, note existing scratches, verify documents (RC, Insurance), and prepare a vehicle inspection report.</p>
+                            <h4>Inspection &amp; Verification</h4>
+                            <p>Our team records the bike's physical condition, checks fuel level, and validates RC and insurance photocopies.</p>
                         </div>
-                        <!-- Step 2 -->
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Multi-Layer Packing</h4>
-                            <p>We wrap sensitive parts (headlights, mirrors, speedometer) with bubble wrap, cover the body with foam sheets, and lock them in place with stretch wrap.</p>
+                            <h4>4-Layer Protective Packing</h4>
+                            <p>Headlamps, mirrors, tank, and indicators are wrapped with thick bubble film, foam lining, and corrugated cardboard.</p>
                         </div>
-                        <!-- Step 3 -->
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Safe Loading &amp; Transit</h4>
-                            <p>Your bike is loaded using ramps into a specialized enclosed vehicle carrier. It is anchored securely with heavy-duty safety belts to prevent movement.</p>
+                            <h4>Upright Belt Anchoring</h4>
+                            <p>The bike is wheeled into the container and fastened with 4-point industrial ratchet belts so it cannot tilt or slide.</p>
                         </div>
-                        <!-- Step 4 -->
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Doorstep Delivery &amp; Inspection</h4>
-                            <p>We deliver the bike straight to your home in the destination city. You inspect the vehicle and sign off the delivery receipt.</p>
+                            <h4>Doorstep Delivery &amp; Unpacking</h4>
+                            <p>We deliver the two-wheeler directly to your destination home, remove outer packing materials, and assist with initial start-up.</p>
                         </div>
                     </div>
 
@@ -140,29 +128,29 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
                             <div class="choose-content">
-                                <h5>Scratch-Free Guarantee</h5>
-                                <p>Multi-layered bubble and foam wrapping for maximum safety.</p>
+                                <h5>Multi-Layer Cushioning</h5>
+                                <p>Heavy-duty bubble film and foam sheets ensure zero scratches on tank, mirrors, and paintwork.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-truck"></i></div>
                             <div class="choose-content">
-                                <h5>Specialized Carriers</h5>
-                                <p>Enclosed truck carriers equipped with secure anchoring straps.</p>
+                                <h5>Enclosed Vehicle Trucks</h5>
+                                <p>Weatherproof sealed containers protect your bike against heavy rains, mud, and highway grit.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-clock-fill"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-clock-history"></i></div>
                             <div class="choose-content">
-                                <h5>On-Time Delivery</h5>
-                                <p>Efficient tracking and committed delivery timelines.</p>
+                                <h5>Guaranteed Punctual Delivery</h5>
+                                <p>Committed delivery timeframes backed by regular GPS location updates during transit.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-journal-check"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-shield-lock-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Full Insurance Options</h5>
-                                <p>Transit insurance covers any accidental damages or theft.</p>
+                                <h5>Transit Risk Cover</h5>
+                                <p>Full transit insurance option safeguarding you against any unforeseen road mishap.</p>
                             </div>
                         </div>
                     </div>
@@ -177,13 +165,13 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "Excellent bike transportation service! My Royal Enfield bullet was delivered safely from <?= $city ?> to Bangalore. Not a single scratch, and the team kept me updated throughout. Very professional team."
+                            "I shipped my Royal Enfield Classic 350 from <?= $city ?> to Bengaluru. The packing done at my doorstep was top-notch—they used double bubble sheets and thick carton wrapping around the fuel tank. The bike arrived in mint condition without a single blemish!"
                         </p>
                         <div class="review-user">
-                            <div class="user-avatar">R</div>
+                            <div class="user-avatar">A</div>
                             <div class="user-name">
-                                <h6>Rohit Sharma</h6>
-                                <span><?= $city ?>, India</span>
+                                <h6>Anand Sharma</h6>
+                                <span>Royal Enfield Owner in <?= $city ?></span>
                             </div>
                         </div>
                     </div>
@@ -191,44 +179,59 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">What documents are required for shipping my bike from <?= $city ?>?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-bt-1" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">What documents do I need to provide for bike shifting from <?= $city ?>?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-1" class="collapse">
+                            <div id="faq-bt-1" class="collapse">
                                 <div class="faq-card-body">
-                                    You need to submit copies of the Registration Certificate (RC), a valid Insurance copy, and a government ID proof (Aadhar Card or Driving License).
+                                    You need to provide clear photocopies of: 1) Vehicle Registration Certificate (RC), 2) Active Two-Wheeler Insurance Policy, 3) Valid PUC Certificate, and 4) Owner Government ID (Aadhaar or Driving License).
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
+
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Do I need to empty the petrol tank?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-bt-2" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">Does the petrol tank need to be drained before transport?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-2" class="collapse">
+                            <div id="faq-bt-2" class="collapse">
                                 <div class="faq-card-body">
-                                    Yes, for safety regulations during transport, the petrol tank must be almost empty. Keeping less than 1 liter of petrol is recommended to prevent any hazardous leakages in the cargo.
+                                    Yes, as per cargo safety regulations, the petrol tank should be nearly empty (around 0.5 to 1 liter of fuel is sufficient). This prevents flammable gas buildup and fuel spillages inside the truck carrier.
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
+
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Is transit insurance included for bike shipping?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-bt-3" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">Do you provide doorstep pickup and delivery in <?= $city ?>?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-3" class="collapse">
+                            <div id="faq-bt-3" class="collapse">
                                 <div class="faq-card-body">
-                                    We offer comprehensive transit insurance options at a small percentage of your bike's declared value. This safeguards you from financial losses in case of unforeseen road accidents.
+                                    Yes. Our logistics executives will come directly to your residence in <?= $city ?>, pack the bike in front of you, load it onto our carrier, and deliver it straight to your new doorstep at the destination address.
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Quick Booking CTA Banner -->
+                    <div class="service-quick-cta-banner">
+                        <div>
+                            <h4>Transport Your Bike Safely from <?= $city ?>!</h4>
+                            <p>Get a fast and transparent estimate with zero hidden extras.</p>
+                        </div>
+                        <div class="cta-action-btns">
+                            <a href="<?= $phonehtml ?>" class="btn-banner-call">
+                                <i class="bi bi-telephone-fill"></i> Call <?= $phone ?>
+                            </a>
+                            <button type="button" class="btn-banner-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+                                <i class="bi bi-calculator"></i> Bike Shifting Quote
+                            </button>
                         </div>
                     </div>
 

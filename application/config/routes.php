@@ -32,6 +32,9 @@ $route["home-shifting-in-(:any)"] = "city_services/home_shifting/$1";
 $route["office-shifting-in-(:any)"] = "city_services/office_shifting/$1";
 $route["car-transport-in-(:any)"] = "city_services/car_transport/$1";
 $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
+$route["local-shifting-in-(:any)"] = "city_services/local_shifting/$1";
+$route["warehousing-and-storage-in-(:any)"] = "city_services/warehousing_storage/$1";
+$route["warehousing-storage-in-(:any)"] = "city_services/warehousing_storage/$1";
 
 // Services Routes
 $route["our-services"] = "services/index";

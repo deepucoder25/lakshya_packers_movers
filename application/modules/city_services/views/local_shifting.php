@@ -3,10 +3,10 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => "Home Shifting in $city",
-    'bc_title_white' => 'Home Shifting in',
+    'bc_current' => "Local Shifting in $city",
+    'bc_title_white' => 'Local Shifting in',
     'bc_title_orange' => $city,
-    'bc_desc' => "Verified, IBA-approved, and affordable household relocation services in $city with 100% transit safety."
+    'bc_desc' => "Fast, affordable same-day local home and office shifting services in $city with trained neighborhood movers."
 ]); 
 ?>
 
@@ -19,34 +19,32 @@ $this->load->view('about/dynamic_breadcrumbs', [
                 <div class="service-main-content">
                     <!-- Service Highlights Badges -->
                     <div class="service-highlights-bar">
-                        <span class="service-highlight-pill"><i class="bi bi-shield-check"></i> 100% Safe Transit</span>
-                        <span class="service-highlight-pill"><i class="bi bi-box-seam"></i> Multi-Layer Packing</span>
-                        <span class="service-highlight-pill"><i class="bi bi-truck"></i> Dedicated Container</span>
-                        <span class="service-highlight-pill"><i class="bi bi-clock-history"></i> On-Time Delivery</span>
-                        <span class="service-highlight-pill"><i class="bi bi-award"></i> IBA Approved</span>
+                        <span class="service-highlight-pill"><i class="bi bi-clock"></i> Same-Day Relocation</span>
+                        <span class="service-highlight-pill"><i class="bi bi-truck"></i> Dedicated City Mini-Trucks</span>
+                        <span class="service-highlight-pill"><i class="bi bi-shield-check"></i> Damage-Free Guarantee</span>
+                        <span class="service-highlight-pill"><i class="bi bi-tools"></i> Free Furniture Dismantling</span>
+                        <span class="service-highlight-pill"><i class="bi bi-cash-coin"></i> Zero Hidden Costs</span>
                     </div>
 
-                    <h2 class="service-section-title">Hassle-Free Home Shifting in <?= $city ?> for a Smooth Move</h2>
+                    <h2 class="service-section-title">Swift &amp; Reliable Same-Day Local Shifting in <?= $city ?></h2>
                     <div class="about-service-text">
                         <p>
-                            Looking for reputed and trusted packers and movers to fulfill your house shifting requirement in <?= $city ?>? Look no further! <strong><?= $company3 ?></strong> is a leading provider of professional home relocation services in <?= $city ?>. As one of the most trusted brands in the logistics sector, we handle every house move with utmost accuracy, care, and punctuality in <?= $city ?>.
+                            Moving within <?= $city ?> to a new apartment, housing society, or commercial office? <strong><?= $company3 ?></strong> delivers fast, dependable, and budget-friendly same-day local shifting solutions across <?= $city ?> and neighboring localities.
                         </p>
                         <p>
-                            Our certified moving crew is dedicated to safeguarding your precious household belongings at every touchpoint. Each stage of your home relocation in <?= $city ?> is systematically planned—from pre-move survey and high-grade packing to careful loading, GPS-tracked transportation, and doorstep reassembly. We optimize manpower, packing materials, and route planning to deliver top-tier residential shifting at the most affordable price in <?= $city ?>.
+                            Even for short distances within the same city, relocating heavy double beds, wardrobes, refrigerators, washing machines, and fragile crockery requires professional equipment and trained handlers. Our dedicated <?= $city ?> relocation crew takes complete care of every step—from morning packing and loading to quick transit and complete evening room arrangement at your new destination.
                         </p>
 
-                        <h3>Comprehensive Household Relocation Solutions in <?= $city ?></h3>
+                        <h3>Why Choose <?= $company3 ?> for Local Relocation in <?= $city ?>?</h3>
                         <p>
-                            Today, <strong><?= $company3 ?></strong> is an ISO 9001:2015 certified logistics leader with over <?= $yearsExperience ?> years of industry excellence. We have relocated thousands of happy families across <?= $city ?> and pan-India. Our full-spectrum house shifting covers everything: fragile kitchen glassware, heavy electronic appliances (LED TVs, refrigerators, washing machines), bulky furniture dismantling, and delicate wardrobe items.
+                            With dedicated closed-body mini trucks (Tata Ace, Mahindra Bolero Maxi Truck, 14ft containers), experienced neighborhood packing staff, and complete transit care, <strong><?= $company3 ?></strong> guarantees an effortless moving experience across <?= $city ?>.
                         </p>
                         <p>
-                            We employ only heavy-duty corrugated cartons, bubble wrap, foam rolls, edge guards, and stretch film. Moreover, our optional transit insurance gives you complete peace of mind against unforeseen road risks, backed by quick claims settlement and round-the-clock tracking assistance in <?= $city ?>.
-                        </p>
-
-                        <!-- SEO Pricing Table -->
+                            We provide clear, all-inclusive quotations covering packing materials, labor, loading, stairs/lift transit, and vehicle fuel with 100% pricing transparency.
+                        </p>                        <!-- SEO Pricing Table -->
                         <div class="service-pricing-card">
                             <div class="service-pricing-header">
-                                <h4><i class="bi bi-tag-fill text-warning"></i> Estimated House Shifting Rates in <?= $city ?></h4>
+                                <h4><i class="bi bi-tag-fill text-warning"></i> Estimated Local Shifting Rates in <?= $city ?></h4>
                                 <span class="pricing-badge">Updated Pricing</span>
                             </div>
                             <div class="table-responsive">
@@ -95,31 +93,31 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             </div>
                             <p class="pricing-note"><i class="bi bi-info-circle me-1"></i> Exact quotation may vary based on exact floor, lift availability, packing layers, and distance.</p>
                         </div>
-                    </div>
+                    </div>      </div>
 
                     <!-- Step-by-Step Moving Process -->
-                    <h2 class="service-section-title mt-5">Our Home Shifting Process in <?= $city ?></h2>
-                    <p class="text-muted">Our trained moving specialists follow a proven 4-stage protocol for maximum efficiency:</p>
+                    <h2 class="service-section-title mt-5">Our Local Shifting Process in <?= $city ?></h2>
+                    <p class="text-muted">A streamlined same-day 4-step moving timeline designed for your ease:</p>
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Dismantling &amp; Packing</h4>
-                            <p>We disassemble double beds, wardrobes, and modular units, wrapping each item in premium bubble wrap and corrugated sheets.</p>
+                            <h4>Morning Arrival &amp; Packing</h4>
+                            <p>Our team arrives at your doorstep with carton boxes, bubble wrap, and adhesive tape to pack all items systematically.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Secure Loading</h4>
-                            <p>Using hydraulic dollies and safety belts, heavy furniture is loaded at base levels and fragile boxes are cushioned on top.</p>
+                            <h4>Furniture Dismantling</h4>
+                            <p>Large double beds, dining tables, and wardrobes are dismantled by skilled carpenters to ensure easy passage through doorways.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Safe Transit</h4>
-                            <p>Goods travel in sealed, weather-proof container vehicles with active GPS tracking for punctual delivery across <?= $city ?>.</p>
+                            <h4>Fast City Transit</h4>
+                            <p>Goods are loaded into dedicated closed container trucks and transported swiftly across <?= $city ?> via optimal traffic routes.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Unloading &amp; Setup</h4>
-                            <p>Our staff unloads, unpacks, and reassembles beds and dining tables in designated rooms at your new address.</p>
+                            <h4>Unloading &amp; Reassembly</h4>
+                            <p>We unload every box, place furniture into respective rooms, reassemble beds, and remove discarded packing debris.</p>
                         </div>
                     </div>
 
@@ -127,31 +125,31 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <h2 class="service-section-title mt-5">Why Choose Us in <?= $city ?></h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-box-seam-fill"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
                             <div class="choose-content">
-                                <h5>5-Layer Protective Packing</h5>
-                                <p>Heavy-duty cardboard cartons, bubble wrap, foam, waterproof sheets, and corner protectors.</p>
+                                <h5>Guaranteed Same-Day Move</h5>
+                                <p>We start in the morning and have you fully settled into your new <?= $city ?> home by evening.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-tools"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-box-seam"></i></div>
                             <div class="choose-content">
-                                <h5>Free Furniture Reassembly</h5>
-                                <p>Skilled carpenters for quick dismantling and setup of beds, tables, and cabinets.</p>
+                                <h5>Quality Packaging Materials</h5>
+                                <p>Heavy-duty cardboard cartons, bubble wrap, and moving blankets to keep electronics and mirrors safe.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-person-check-fill"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-people-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Verified Background-Checked Crew</h5>
-                                <p>Polite, uniformed, and experienced relocation specialists who treat your items like their own.</p>
+                                <h5>Polite &amp; Trained Crew</h5>
+                                <p>Background-verified, punctual local movers who treat your personal goods with utmost care.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-cash-stack"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-currency-rupee"></i></div>
                             <div class="choose-content">
-                                <h5>Transparent All-Inclusive Pricing</h5>
-                                <p>Clear upfront quotations with zero hidden surprises or surprise surcharge fees.</p>
+                                <h5>Transparent Flat Quotation</h5>
+                                <p>Upfront pricing covering labor, fuel, and stairs handling with zero surprise charges on moving day.</p>
                             </div>
                         </div>
                     </div>
@@ -166,13 +164,13 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "Relocating our 3 BHK home in <?= $city ?> was completely stress-free with <?= $company3 ?>. The team arrived on time with ample bubble rolls, neatly packed all fragile chinaware, and assembled our beds at our new house before dusk. Highly recommended!"
+                            "I shifted my 2 BHK apartment within <?= $city ?>. The <?= $company3 ?> team was super fast and efficient. They arrived at 9:00 AM, packed everything neatly in sturdy boxes, and had all our furniture assembled in the new flat by 3:00 PM. Highly recommend their local moving service!"
                         </p>
                         <div class="review-user">
-                            <div class="user-avatar">R</div>
+                            <div class="user-avatar">V</div>
                             <div class="user-name">
-                                <h6>Rohit Sharma</h6>
-                                <span>Homeowner in <?= $city ?></span>
+                                <h6>Vikram Joshi</h6>
+                                <span>Resident in <?= $city ?></span>
                             </div>
                         </div>
                     </div>
@@ -181,40 +179,40 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-hs-1" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ls-1" aria-expanded="false" role="button">
                                 <i class="bi bi-question-circle-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Do you dismantle and reassemble double beds and wardrobes in <?= $city ?>?</span>
+                                <span class="flex-grow-1">How many days in advance should I book local shifting in <?= $city ?>?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-hs-1" class="collapse">
+                            <div id="faq-ls-1" class="collapse">
                                 <div class="faq-card-body">
-                                    Yes, absolutely. Our packing crew comes equipped with all necessary tools (screwdrivers, allen keys, wrenches) to safely disassemble beds, modular wardrobes, and dining tables, and reassembles them at your destination home in <?= $city ?>.
+                                    We recommend booking 2 to 3 days in advance to secure your preferred morning time slot. However, we also provide urgent same-day booking options depending on daily fleet availability in <?= $city ?>.
                                 </div>
                             </div>
                         </div>
 
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-hs-2" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ls-2" aria-expanded="false" role="button">
                                 <i class="bi bi-question-circle-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">What items are restricted and cannot be transported?</span>
+                                <span class="flex-grow-1">Are loading, labor, and stairs handling charges included?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-hs-2" class="collapse">
+                            <div id="faq-ls-2" class="collapse">
                                 <div class="faq-card-body">
-                                    For safety and regulatory compliance, we do not transport flammable chemicals, petrol/kerosene, gas cylinders, fireworks, perishable food, loose cash, gold jewelry, or legal property deeds. We recommend carrying jewelry and personal deeds personally.
+                                    Yes, our written quotation is 100% comprehensive and includes all loading, packing materials, labor, stairs/lift transit, and unloading charges with zero hidden surprises.
                                 </div>
                             </div>
                         </div>
 
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-hs-3" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ls-3" aria-expanded="false" role="button">
                                 <i class="bi bi-question-circle-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">How many days in advance should I book home shifting in <?= $city ?>?</span>
+                                <span class="flex-grow-1">Do you assist with dismantling and assembling furniture?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-hs-3" class="collapse">
+                            <div id="faq-ls-3" class="collapse">
                                 <div class="faq-card-body">
-                                    We advise booking at least 2 to 4 days ahead for local shifting in <?= $city ?> and 4 to 7 days in advance for domestic long-distance moves to reserve optimal time slots, packing materials, and container vehicles. Same-day emergency moves are also accommodated subject to fleet availability.
+                                    Yes! Our crew comes equipped with screwdrivers, wrenches, and allen keys to dismantle double beds, wardrobes, and modular dining tables, and reassembles them at your new house.
                                 </div>
                             </div>
                         </div>
@@ -223,15 +221,15 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- Bottom Quick Booking CTA Banner -->
                     <div class="service-quick-cta-banner">
                         <div>
-                            <h4>Planning Your Home Move in <?= $city ?>?</h4>
-                            <p>Book with <?= $company3 ?> today and get up to 20% discount on advance bookings.</p>
+                            <h4>Planning a Quick Local Move in <?= $city ?>?</h4>
+                            <p>Call our local dispatch team for an instant quote and same-day slot availability.</p>
                         </div>
                         <div class="cta-action-btns">
                             <a href="<?= $phonehtml ?>" class="btn-banner-call">
                                 <i class="bi bi-telephone-fill"></i> Call <?= $phone ?>
                             </a>
                             <button type="button" class="btn-banner-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
-                                <i class="bi bi-calculator"></i> Get Free Quote
+                                <i class="bi bi-calculator"></i> Local Move Quote
                             </button>
                         </div>
                     </div>
@@ -241,7 +239,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
 
             <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
-                <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'home-shifting-in-'.$ctlink]); ?>
+                <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'local-shifting-in-'.$ctlink]); ?>
             </div>
         </div>
     </div>

@@ -3,125 +3,122 @@
 <!-- Breadcrumbs Section -->
 <?php 
 $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
+    'bc_current' => "Car Transportation in $city",
     'bc_title_white' => 'Car Transportation in',
-    'bc_title_orange' => '',
-    'bc_desc' => ''
+    'bc_title_orange' => $city,
+    'bc_desc' => "Safest, enclosed carrier car transportation services in $city with door-to-door delivery and live GPS tracking."
 ]); 
 ?>
 
 <!-- Main Page Content Section -->
-<section class="service-details-section mb-5 pb-5">
+<section class="service-details-section">
     <div class="container">
         <div class="row">
             <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Precision in Car Transportation Excellence in <?= $city ?></h2>
+                    <!-- Service Highlights Badges -->
+                    <div class="service-highlights-bar">
+                        <span class="service-highlight-pill"><i class="bi bi-shield-check"></i> Zero-Scratch Guarantee</span>
+                        <span class="service-highlight-pill"><i class="bi bi-truck-front"></i> Enclosed Car Carrier</span>
+                        <span class="service-highlight-pill"><i class="bi bi-geo-alt"></i> Real-Time GPS Tracking</span>
+                        <span class="service-highlight-pill"><i class="bi bi-door-open"></i> Doorstep Pickup &amp; Drop</span>
+                        <span class="service-highlight-pill"><i class="bi bi-file-earmark-medical"></i> 100% Transit Insurance</span>
+                    </div>
+
+                    <h2 class="service-section-title">Reliable Car Transportation &amp; Relocation in <?= $city ?></h2>
                     <div class="about-service-text">
                         <p>
-                            Are you looking for reliable car relocation services in <?= $city ?>? <strong><?= $company3 ?></strong> offers the safest and most reliable car transportation solutions for you. We transport your car to anywhere within the city or all over India with full security and efficiency in <?= $city ?>.
+                            Are you looking for reliable and damage-free car transportation services in <?= $city ?>? <strong><?= $company3 ?></strong> offers the safest, IBA-approved vehicle relocation solutions for sedans, hatchbacks, luxury SUVs, and vintage cars in <?= $city ?> and across India.
                         </p>
                         <p>
-                            We know how much care you take of your vehicle and therefore take extra care as we relocate your vehicle in <?= $city ?>. With our specialized carriers, your vehicle is protected from any chance of damage during transit, be it a luxury or family car in <?= $city ?>.
-                        </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/car.jpg') ?>" alt="car shifting in <?= $city ?>" class="img-fluid rounded my-3 w-100">
-                        <p>
-                            We will be ensuring that your door-to-door service, and as per request, the track is online in real-time to deliver promptly in <?= $city ?>. Our pleasure is delivering personalized, value-for-money car-moving solutions that do not inconvenience either your time or pocket in any which way in <?= $city ?>.
+                            We treat your car as a valuable asset. Whether you are moving across town or shifting interstate to Delhi, Mumbai, Bengaluru, Hyderabad, or Kolkata, our specialized open and closed double-deck car carriers ensure zero wear-and-tear, stone chip damage, or unnecessary odometer mileage during transit in <?= $city ?>.
                         </p>
 
-                        <h3 class="mt-4">Check Our Affordable Car Transportation Prices Below:</h3>
-                        <div class="table-responsive mt-3">
-                            <table class="table table-bordered table-striped table-hover text-center align-middle">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th>Move type</th>
-                                        <th>100 - 350 km</th>
-                                        <th>350 - 750 km</th>
-                                        <th>750 - 1200 km</th>
-                                        <th>1200 - 1700 km</th>
-                                        <th>1700 - 2300 km</th>
-                                        <th>2300 - 3000 km</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="fw-bold">Hatchback Car</td>
-                                        <td>Rs. 5,500 - 11,000</td>
-                                        <td>Rs. 7,500 - 14,000</td>
-                                        <td>Rs. 9,000 - 17,000</td>
-                                        <td>Rs. 11,000 - 13,000</td>
-                                        <td>Rs. 13,000 - 23,000</td>
-                                        <td>Rs. 15,000 - 26,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Sedan Car</td>
-                                        <td>Rs. 7,000 - 10,000</td>
-                                        <td>Rs. 10,000 - 15,000</td>
-                                        <td>Rs. 13,000 - 18,000</td>
-                                        <td>Rs. 15,000 - 20,000</td>
-                                        <td>Rs. 18,000 - 24,000</td>
-                                        <td>Rs. 21,000 - 27,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">SUV Car</td>
-                                        <td>Rs. 13,000 - 15,000</td>
-                                        <td>Rs. 15,000 - 19,000</td>
-                                        <td>Rs. 18,000 - 22,000</td>
-                                        <td>Rs. 21,000 - 24,000</td>
-                                        <td>Rs. 23,000 - 27,000</td>
-                                        <td>Rs. 25,000 - 30,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Luxury Car</td>
-                                        <td>Rs. 17,000 - 21,000</td>
-                                        <td>Rs. 20,000 - 25,000</td>
-                                        <td>Rs. 23,000 - 27,000</td>
-                                        <td>Rs. 26,000 - 31,000</td>
-                                        <td>Rs. 29,000 - 35,000</td>
-                                        <td>Rs. 31,000 - 40,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fw-bold">Sports Car</td>
-                                        <td>Rs. 20,000 - 24,000</td>
-                                        <td>Rs. 24,000 - 28,000</td>
-                                        <td>Rs. 27,000 - 31,000</td>
-                                        <td>Rs. 30,000 - 35,000</td>
-                                        <td>Rs. 33,000 - 40,000</td>
-                                        <td>Rs. 35,000 - 45,000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <h3>Why Ship Your Car with <?= $company3 ?> in <?= $city ?>?</h3>
+                        <p>
+                            Driving thousands of kilometers on highways exposes your personal vehicle to extreme road fatigue, tire punctures, speeding hazards, and high toll taxes. With <strong><?= $company3 ?></strong>, your vehicle is secured onto a dedicated automotive carrier fitted with hydraulic ramps and four-point wheel tie-down safety locks.
+                        </p>
+                        <p>
+                            Before loading, our certified technician conducts a thorough pre-move car inspection report, detailing existing body conditions, odometer readings, and battery status. You receive live SMS/WhatsApp location alerts until the car is handed back to you in pristine condition.
+                        </p>
+
+                        <!-- SEO Pricing Table -->
+                        <div class="service-pricing-card">
+                            <div class="service-pricing-header">
+                                <h4><i class="bi bi-car-front text-warning"></i> Estimated Car Transportation Charges in <?= $city ?></h4>
+                                <span class="pricing-badge">Vehicle Rates</span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table service-pricing-table table-hover text-center align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Car Category</th>
+                                            <th>100 - 350 KM</th>
+                                            <th>350 - 750 KM</th>
+                                            <th>750 - 1200 KM</th>
+                                            <th>1200 - 2000 KM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Hatchback (Swift, i10, Tiago)</td>
+                                            <td>Rs. 5,500 - 10,000</td>
+                                            <td>Rs. 7,500 - 13,500</td>
+                                            <td>Rs. 9,500 - 16,000</td>
+                                            <td class="rate-highlight">Rs. 11,500 - 19,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Sedan (Dzire, City, Verna)</td>
+                                            <td>Rs. 7,000 - 11,500</td>
+                                            <td>Rs. 9,500 - 15,000</td>
+                                            <td>Rs. 12,000 - 18,000</td>
+                                            <td class="rate-highlight">Rs. 14,000 - 22,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Compact SUV / Crossover (Creta, Brezza)</td>
+                                            <td>Rs. 8,500 - 13,000</td>
+                                            <td>Rs. 11,500 - 17,000</td>
+                                            <td>Rs. 14,000 - 20,500</td>
+                                            <td class="rate-highlight">Rs. 16,500 - 24,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold text-start ps-3">Large SUV / Luxury (Fortuner, BMW, Merc)</td>
+                                            <td>Rs. 12,000 - 18,000</td>
+                                            <td>Rs. 15,500 - 23,000</td>
+                                            <td>Rs. 19,000 - 27,000</td>
+                                            <td class="rate-highlight">Rs. 22,500 - 32,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="pricing-note"><i class="bi bi-info-circle me-1"></i> Car carrier rates depend on car dimensions, carrier choice (open vs closed container), and doorstep handover distance.</p>
                         </div>
                     </div>
-                    
-                    <!-- How We Process Section -->
-                    <h2 class="service-section-title mt-5">Our Car Relocation Process in <?= $city ?></h2>
-                    <p class="text-muted">We execute a rigorous loading and transit process for vehicle safety:</p>
+
+                    <!-- Step-by-Step Moving Process -->
+                    <h2 class="service-section-title mt-5">Our Car Transportation Process in <?= $city ?></h2>
+                    <p class="text-muted">A disciplined 4-stage vehicle transit protocol guaranteeing zero transit damage:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Detailed Pre-Move Audit</h4>
-                            <p>We check the tires, engine oil, fuel levels, and note down all pre-existing scratches or dents on a standard car condition report.</p>
+                            <h4>Doorstep Inspection &amp; Audit</h4>
+                            <p>We document tire condition, fuel levels, and existing exterior marks on a digital car condition audit sheet with photos.</p>
                         </div>
-                        <!-- Step 2 -->
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Parts Wrapping &amp; Preparation</h4>
-                            <p>We wrap key exterior components like side-view mirrors, antenna, and body spoilers with thick foam padding to prevent scratching.</p>
+                            <h4>Parts Cushioning &amp; Prep</h4>
+                            <p>Side-view mirrors, antenna, spoilers, and delicate trims are wrapped with thick protective foam layers to avoid rub-scratches.</p>
                         </div>
-                        <!-- Step 3 -->
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Hydraulic Loading &amp; Anchoring</h4>
-                            <p>The car is carefully driven onto our double-deck car carrier trailer. The wheels are locked with chocks and tied securely to the truck deck.</p>
+                            <h4>Hydraulic Deck Loading</h4>
+                            <p>The car is driven onto the trailer ramp and clamped securely with heavy-duty wheel chocks and ratchet tie-down straps.</p>
                         </div>
-                        <!-- Step 4 -->
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Safe Destination Drop-Off</h4>
-                            <p>Upon arriving in the destination city, we safely unload and deliver the car to your doorstep. You verify its condition against the audit report.</p>
+                            <h4>Doorstep Delivery &amp; Signoff</h4>
+                            <p>We unload and hand over your car at your destination doorstep. You cross-check all parameters with the initial audit report.</p>
                         </div>
                     </div>
 
@@ -131,29 +128,29 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
                             <div class="choose-content">
-                                <h5>Safety-First Loading</h5>
-                                <p>Heavy-duty tire locks and safety harnesses prevent vehicle movement.</p>
+                                <h5>Hydraulic Ramp &amp; Wheel Chocks</h5>
+                                <p>Specialized wheel anchors prevent any forward or sideways vehicle movement inside the carrier.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-truck-flatbed"></i></div>
                             <div class="choose-content">
-                                <h5>Modern Car Trailers</h5>
-                                <p>Well-maintained open and enclosed double-deck car carriers.</p>
+                                <h5>Modern Covered Car Carriers</h5>
+                                <p>Weatherproof, enclosed trailer containers protecting vehicles from sun, rain, and highway dust.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
                             <div class="choose-icon-wrap"><i class="bi bi-geo-alt-fill"></i></div>
                             <div class="choose-content">
-                                <h5>GPS Real-Time Tracking</h5>
-                                <p>Know where your vehicle is throughout its highway transit.</p>
+                                <h5>Real-Time GPS Route Tracking</h5>
+                                <p>Track your vehicle's interstate journey 24/7 with dedicated customer support updates.</p>
                             </div>
                         </div>
                         <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-person-fill-check"></i></div>
+                            <div class="choose-icon-wrap"><i class="bi bi-file-earmark-lock-fill"></i></div>
                             <div class="choose-content">
-                                <h5>Licensed Operators</h5>
-                                <p>Highly skilled trailer drivers specializing in vehicle freight.</p>
+                                <h5>Transit Insurance Assurance</h5>
+                                <p>Comprehensive cargo transit insurance guaranteeing total financial protection against any road incident.</p>
                             </div>
                         </div>
                     </div>
@@ -168,13 +165,13 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "I shipped my Hyundai Creta from <?= $city ?> using <?= $company3 ?>. The process was super smooth, they updated me every day with transit locations, and the vehicle was delivered scratch-free. Highly recommended!"
+                            "I shipped my Hyundai Creta from <?= $city ?> to Pune using <?= $company3 ?>. The team was courteous, provided a clear inspection copy, and delivered my car right outside my apartment complex without a single scratch or extra kilometer driven. Truly professional!"
                         </p>
                         <div class="review-user">
                             <div class="user-avatar">P</div>
                             <div class="user-name">
                                 <h6>Priya Mehta</h6>
-                                <span><?= $city ?>, India</span>
+                                <span>Car Owner in <?= $city ?></span>
                             </div>
                         </div>
                     </div>
@@ -182,44 +179,59 @@ $this->load->view('about/dynamic_breadcrumbs', [
                     <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Can I keep personal goods inside the car during transit from <?= $city ?>?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ct-1" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">Can I keep personal luggage or household goods inside the car?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-1" class="collapse">
+                            <div id="faq-ct-1" class="collapse">
                                 <div class="faq-card-body">
-                                    No. Packing personal items, luggage, or valuables inside the vehicle is strictly prohibited due to cargo regulations and safety policies. This also prevents internal items from shifting and causing damage.
+                                    No. Loading luggage or heavy items inside the car is strictly forbidden by RTO interstate transit rules. Loose goods can also bounce and damage interior windshields or upholstery during highway turns.
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
+
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">How much fuel should be left in the car tank?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ct-2" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">What documents are mandatory for car transportation in <?= $city ?>?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-2" class="collapse">
+                            <div id="faq-ct-2" class="collapse">
                                 <div class="faq-card-body">
-                                    We recommend keeping the fuel level at around one-quarter (1/4) of the tank capacity. This is sufficient for driving the car during loading, unloading, and local delivery while minimizing extra weight and hazard risks.
+                                    You need to submit copies of: 1) Vehicle Registration Certificate (RC Book), 2) Valid Car Insurance Policy, 3) Pollution Under Control (PUC) certificate, and 4) Owner ID Proof (Aadhaar/PAN).
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
+
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">How long does it take to ship a car to another state?</span>
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ct-3" aria-expanded="false" role="button">
+                                <i class="bi bi-question-circle-fill faq-card-icon"></i>
+                                <span class="flex-grow-1">How much fuel should remain in the car tank before dispatch?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-s-3" class="collapse">
+                            <div id="faq-ct-3" class="collapse">
                                 <div class="faq-card-body">
-                                    The delivery timeline varies based on distance. Usually, local intercity deliveries take 2-3 days, while long-distance state-to-state relocations (e.g. <?= $city ?> to Delhi/Bangalore) can take 5-8 days.
+                                    Please keep approximately 10 to 15 liters (around 1/4th tank) of fuel. This is adequate for loading, unloading, and local doorstep delivery while minimizing fire hazard and weight inside the carrier.
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Quick Booking CTA Banner -->
+                    <div class="service-quick-cta-banner">
+                        <div>
+                            <h4>Need Safe Car Transportation in <?= $city ?>?</h4>
+                            <p>Get a guaranteed quote with free doorstep vehicle pickup today.</p>
+                        </div>
+                        <div class="cta-action-btns">
+                            <a href="<?= $phonehtml ?>" class="btn-banner-call">
+                                <i class="bi bi-telephone-fill"></i> Call <?= $phone ?>
+                            </a>
+                            <button type="button" class="btn-banner-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+                                <i class="bi bi-calculator"></i> Car Moving Quote
+                            </button>
                         </div>
                     </div>
 

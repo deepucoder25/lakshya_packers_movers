@@ -28,57 +28,60 @@ $state = [
 ];
 ?>
 
-<!-- Branch Section -->
-<section class="portfolio-area py-5 bg-light">
+<!-- Modern Branch Section -->
+<section class="st-branches-section py-5">
     <div class="container">
 
         <!-- Section Heading -->
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">
-                Our Presence Across <span class="pm-states-title-span">India</span>
+        <div class="text-center mb-5 st-header-wrap">
+            <h2 class="st-sec-title">
+                Our Presence Across <span class="st-title-highlight">India</span>
             </h2>
-            <p class="text-muted">
+            <p class="st-sec-desc">
                 Reliable packing and moving services available in major states.
             </p>
         </div>
 
-        <div class="row g-4">
-
+        <!-- 3 Modern Cards in a Centered Row -->
+        <div class="row g-4 justify-content-center">
             <?php foreach ($state as $item): ?>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="st-card h-100">
 
-                <!-- 4 Columns in One Row on Desktop -->
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Image Container with Hover Zoom & Badge -->
+                        <div class="st-img-box">
+                            <img src="<?= base_url('assets/img/state/' . $item['image']) ?>" alt="<?= htmlspecialchars($item['category']) ?>" class="st-img">
+                            <div class="st-img-overlay"></div>
+                            <span class="st-hub-badge">
+                                <i class="bi bi-geo-alt-fill text-orange"></i> <?= htmlspecialchars($item['category']) ?>
+                            </span>
+                        </div>
 
-                    <div class="pm-states-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                        <!-- Card Content Body (Clean & Minimal) -->
+                        <div class="st-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h3 class="st-name mb-0">
+                                    <a href="<?= site_url($item['link']) ?>"><?= htmlspecialchars($item['category']) ?></a>
+                                </h3>
+                                <span class="st-active-dot">
+                                    <span class="st-dot-core"></span>
+                                    Active Branch
+                                </span>
+                            </div>
 
-                        <!-- Image -->
-                        <div class="pm-states-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="<?= base_url() ?>/assets/img/state/<?= $item['image'] ?>"
-                                alt="<?= $item['category'] ?>">
-
-                            <div class="pm-states-overlay">
-                                <a href="<?= site_url($item['link']) ?>" class="btn btn-warning btn-sm rounded-pill px-3">
-                                    View
+                            <!-- Card Action Button -->
+                            <div class="st-btn-wrap mt-auto">
+                                <a href="<?= site_url($item['link']) ?>" class="st-action-btn">
+                                    <span>View Cities</span>
+                                    <i class="bi bi-arrow-right-short"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Content -->
-                        <div class="p-3 text-start d-flex align-items-center gap-2">
-                            <span class="pm-states-yellow-dash"></span>
-                            <h6 class="fw-semibold mb-0">
-                                <a href="<?= site_url($item['link']) ?>" class="text-dark text-decoration-none">
-                                    <?= htmlspecialchars($item['category']) ?>
-                                </a>
-                            </h6>
-                        </div>
-
                     </div>
-
                 </div>
-
             <?php endforeach; ?>
-
         </div>
+
     </div>
 </section>

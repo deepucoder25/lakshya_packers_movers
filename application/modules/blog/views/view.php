@@ -18,22 +18,30 @@ $this->load->view('about/dynamic_breadcrumbs', [
                 <!-- Main Content -->
                 <div class="col-lg-8">
                     <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
-                        <!-- Image -->
-                        <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
-                            <?php 
-                            $image_path = FCPATH . 'uploads/blogs/' . @$query[0]->image;
-                            if (@$query[0]->image && file_exists($image_path)): ?>
-                                <img src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
-                            <?php else: ?>
-                                <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
-                            <?php endif; ?>
-                        </div>
+                        <!-- Image (Only displayed if uploaded from admin) -->
+                        <?php 
+                        $main_img = null;
+                        if (!empty(@$query[0]->image)) {
+                            $raw_img = @$query[0]->image;
+                            if (substr($raw_img, 0, 4) === 'http') {
+                                $main_img = $raw_img;
+                            } elseif (file_exists(FCPATH . 'assets/uploads/blog/' . $raw_img)) {
+                                $main_img = base_url('assets/uploads/blog/' . $raw_img);
+                            } elseif (file_exists(FCPATH . 'uploads/blogs/' . $raw_img)) {
+                                $main_img = base_url('uploads/blogs/' . $raw_img);
+                            }
+                        }
+                        if (!empty($main_img)): ?>
+                            <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
+                                <img src="<?= $main_img ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
+                            </div>
+                        <?php endif; ?>
                         
                         <!-- Meta Info -->
                         <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 pb-3 border-bottom">
                             <div class="d-flex gap-3 text-muted small">
                                 <span class="d-flex align-items-center gap-2"><i class="bi bi-calendar-event blog-icon-primary"></i> <?= date('M d, Y', strtotime(@$query[0]->created_at)) ?></span>
-                                <span class="d-flex align-items-center gap-2"><i class="bi bi-person-circle text-success"></i> By Admin</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-person-circle text-success"></i> By <?= !empty(@$query[0]->author) ? htmlspecialchars(@$query[0]->author) : 'Admin' ?></span>
                             </div>
                             <div>
                                 <button class="btn btn-sm px-3 rounded-pill fw-bold blog-btn-share" data-bs-toggle="modal" data-bs-target="#shareModal">
@@ -53,43 +61,81 @@ $this->load->view('about/dynamic_breadcrumbs', [
                 <!-- Sidebar -->
                 <div class="col-lg-4">
                     <aside class="blog-sidebar sticky-top blog-sidebar-sticky">
-                        <div class="bg-white p-4 rounded-4 shadow-sm mb-4">
-                            <h5 class="fw-bold mb-4 pb-2 border-bottom blog-icon-primary">Recent Posts</h5>
+                        <!-- Recent Posts Widget -->
+                        <div class="sidebar-widget widget-recent-posts mb-4">
+                            <div class="widget-header-line d-flex align-items-center justify-content-between mb-3">
+                                <h3 class="widget-title mb-0">
+                                    <i class="bi bi-newspaper text-orange me-2"></i>Recent Posts
+                                </h3>
+                                <span class="badge-post-count"><?= count($recent_posts) ?> Updates</span>
+                            </div>
                             <div class="recent-posts-list">
                                 <?php if (!empty($recent_posts)): ?>
                                     <?php foreach ($recent_posts as $post_arr): $post = (object)$post_arr; ?>
                                         <?php
                                         $image_file = $post->image;
-                                        $full_path = FCPATH . 'uploads/blogs/' . $image_file;
-                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('uploads/blogs/' . $image_file) : base_url('assets/images/about/packers_movers.jpg');
+                                        $post_img = null;
+                                        if (!empty($image_file)) {
+                                            if (substr($image_file, 0, 4) === 'http') {
+                                                $post_img = $image_file;
+                                            } elseif (file_exists(FCPATH . 'assets/uploads/blog/' . $image_file)) {
+                                                $post_img = base_url('assets/uploads/blog/' . $image_file);
+                                            } elseif (file_exists(FCPATH . 'uploads/blogs/' . $image_file)) {
+                                                $post_img = base_url('uploads/blogs/' . $image_file);
+                                            }
+                                        }
                                         $custom_slug = !empty($post->slug) ? $post->slug : rtrim(str_replace("--", "-", urlencode(str_replace(" ", "-", str_replace(",", " ", $post->title)))), "-");
+                                        $is_active = (isset($query[0]->id) && $query[0]->id == $post->id) || (isset($query[0]->b_id) && $query[0]->b_id == $post->id);
                                         ?>
-                                        <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item blog-post-link-item">
-                                            <div class="flex-shrink-0">
-                                                <img src="<?= $imagePath ?>" alt="thumb" class="rounded-3 shadow-sm blog-recent-post-img">
-                                            </div>
-                                            <div>
-                                                <h6 class="fw-bold text-dark mb-1 blog-post-title"><?= $post->title ?></h6>
-                                                <small class="text-muted"><i class="bi bi-clock me-1"></i> <?= date('M d, Y', strtotime($post->created_at)) ?></small>
+                                        <a href="<?= site_url('blog/'.$custom_slug) ?>" class="recent-post-card <?= $is_active ? 'active-post' : '' ?>">
+                                            <?php if (!empty($post_img)): ?>
+                                                <div class="recent-post-thumb-wrap">
+                                                    <img src="<?= $post_img ?>" alt="<?= htmlspecialchars($post->title) ?>" class="recent-post-thumb" loading="lazy">
+                                                    <span class="thumb-overlay-icon"><i class="bi bi-arrow-right-short"></i></span>
+                                                </div>
+                                            <?php else: ?>
+                                                <div class="recent-post-thumb-wrap post-thumb-icon">
+                                                    <i class="bi bi-newspaper"></i>
+                                                </div>
+                                            <?php endif; ?>
+                                            <div class="recent-post-body">
+                                                <h4 class="recent-post-title text-truncate-2"><?= htmlspecialchars($post->title) ?></h4>
+                                                <div class="recent-post-meta">
+                                                    <span class="meta-date"><i class="bi bi-calendar3 me-1"></i><?= date('M d, Y', strtotime($post->created_at)) ?></span>
+                                                    <span class="meta-dot">&bull;</span>
+                                                    <span class="meta-read"><i class="bi bi-clock me-1"></i>3 min</span>
+                                                </div>
                                             </div>
                                         </a>
                                     <?php endforeach; ?>
                                 <?php else: ?>
-                                    <p class="text-muted">No recent posts available.</p>
+                                    <div class="empty-recent-posts p-4 text-center text-muted">
+                                        <i class="bi bi-journal-x fs-3 d-block mb-2 text-muted"></i>
+                                        <p class="mb-0 small">No other posts available.</p>
+                                    </div>
                                 <?php endif; ?>
                             </div>
                         </div>
 
-                        <!-- Sticky CTA Widget -->
-                        <div class="bg-light p-4 rounded-4 shadow-sm text-center border-top border-4 blog-border-warning">
-                            <div class="mb-3">
-                                <i class="bi bi-headset blog-icon-lg-primary"></i>
+                        <!-- Modern Need Help Relocation CTA Widget -->
+                        <div class="sidebar-widget widget-blog-cta text-center">
+                            <div class="cta-inner-card">
+                                <div class="cta-badge-online">Fast Response Guaranteed</div>
+                                <div class="cta-icon-box">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <h3 class="cta-title">Need Moving Help?</h3>
+                                <p class="cta-desc">Get a quick, customized estimate for your home or office relocation from our verified moving experts.</p>
+                                
+                                <div class="cta-buttons d-flex flex-column gap-3">
+                                    <button type="button" class="btn-sidebar-cta btn-sidebar-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+                                        <i class="bi bi-file-earmark-text me-2"></i> Get a Free Quote
+                                    </button>
+                                    <a href="<?= isset($phonehtml) ? $phonehtml : 'tel:' . (isset($phone) ? $phone : '') ?>" class="btn-sidebar-cta btn-sidebar-call">
+                                        <i class="bi bi-telephone-fill me-2"></i> Call: <?= isset($phone) ? $phone : 'Direct Support' ?>
+                                    </a>
+                                </div>
                             </div>
-                            <h5 class="fw-bold mb-3">Need Moving Help?</h5>
-                            <p class="text-muted small mb-4">Get a quick and free estimate for your relocation directly from our experts.</p>
-                            <button class="btn w-100 fw-bold py-2 rounded-pill shadow-sm blog-btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
-                                <i class="bi bi-file-earmark-text me-2"></i> Get a Free Quote
-                            </button>
                         </div>
                     </aside>
                 </div>

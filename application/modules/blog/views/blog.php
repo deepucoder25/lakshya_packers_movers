@@ -35,8 +35,17 @@
                         $custom_slug = !empty($b->slug) ? $b->slug : rtrim(str_replace("--", "-", urlencode(str_replace(" ", "-", str_replace(",", " ", $b->title)))), "-");
                         $link = strtolower(site_url('blog/' . $custom_slug));
 
-                        $image_path = FCPATH . 'uploads/blogs/' . $b->image;
-                        $img = ($b->image && file_exists($image_path)) ? base_url("uploads/blogs/{$b->image}") : base_url('assets/images/about/packers_movers.jpg');
+                        // Check image location (admin uploads to assets/uploads/blog/)
+                        $img = null;
+                        if (!empty($b->image)) {
+                            if (substr($b->image, 0, 4) === 'http') {
+                                $img = $b->image;
+                            } elseif (file_exists(FCPATH . 'assets/uploads/blog/' . $b->image)) {
+                                $img = base_url('assets/uploads/blog/' . $b->image);
+                            } elseif (file_exists(FCPATH . 'uploads/blogs/' . $b->image)) {
+                                $img = base_url('uploads/blogs/' . $b->image);
+                            }
+                        }
 
                         // Handle date parsing
                         $created_at = isset($b->created_at) ? $b->created_at : date('Y-m-d H:i:s');
@@ -47,11 +56,11 @@
                             "@context" => "https://schema.org",
                             "@type" => "BlogPosting",
                             "headline" => $b->title,
-                            "image" => $img,
+                            "image" => $img ?: base_url('assets/img/packing_moving.jpg'),
                             "datePublished" => $created_at,
                             "author" => [
                                 "@type" => "Person",
-                                "name" => "Admin"
+                                "name" => !empty($b->author) ? $b->author : "Admin"
                             ],
                             "publisher" => [
                                 "@type" => "Organization",
@@ -67,20 +76,22 @@
                         <div class="col-md-6 col-lg-4">
                             <div
                                 class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card blog-transition-hover">
-                                <div class="position-relative">
-                                    <a href="<?= $link ?>">
-                                        <img src="<?= $img ?>" class="card-img-top blog-card-img"
-                                            alt="<?= htmlspecialchars($b->title) ?>">
-                                    </a>
-                                    <div
-                                        class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-2 rounded-bottom-start shadow-sm blog-date-badge">
-                                        <?= $day ?>         <?= $month ?>
+                                <?php if (!empty($img)): ?>
+                                    <div class="position-relative">
+                                        <a href="<?= $link ?>">
+                                            <img src="<?= $img ?>" class="card-img-top blog-card-img"
+                                                alt="<?= htmlspecialchars($b->title) ?>">
+                                        </a>
+                                        <div
+                                            class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-2 rounded-bottom-start shadow-sm blog-date-badge">
+                                            <?= $day ?> <?= $month ?>
+                                        </div>
                                     </div>
-                                </div>
+                                <?php endif; ?>
                                 <div class="card-body p-4 d-flex flex-column">
                                     <div class="d-flex align-items-center gap-3 mb-3 text-muted small">
                                         <span class="d-flex align-items-center gap-1"><i
-                                                class="bi bi-person-circle blog-icon-primary"></i> By Admin</span>
+                                                class="bi bi-person-circle blog-icon-primary"></i> By <?= !empty($b->author) ? htmlspecialchars($b->author) : 'Admin' ?></span>
                                         <span class="d-flex align-items-center gap-1"><i
                                                 class="bi bi-patch-check-fill text-success"></i> Verified</span>
                                     </div>

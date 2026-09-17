@@ -14,6 +14,55 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
+        // First try loading from database
+        try {
+            $this->load->database();
+            if ($this->db->table_exists('blog')) {
+                $query = $this->db->order_by('b_id', 'DESC')->get('blog');
+                if ($query && $query->num_rows() > 0) {
+                    $rows = $query->result_array();
+                    $blogs = [];
+                    foreach ($rows as $r) {
+                        $date_raw = $r['date'] ?? '';
+                        $created_at = $r['timestamp'] ?? '';
+                        if (empty($created_at) && !empty($date_raw)) {
+                            // Check if dd/mm/yyyy
+                            if (preg_match('/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/', $date_raw, $m)) {
+                                $created_at = $m[3] . '-' . $m[2] . '-' . $m[1] . ' ' . ($r['time'] ?? '00:00:00');
+                            } else {
+                                $created_at = date('Y-m-d H:i:s', strtotime($date_raw));
+                            }
+                        }
+                        if (empty($created_at)) {
+                            $created_at = date('Y-m-d H:i:s');
+                        }
+
+                        $blogs[] = [
+                            'id'          => $r['b_id'],
+                            'b_id'        => $r['b_id'],
+                            'title'       => $r['title'],
+                            'main_title'  => $r['main_title'] ?? $r['title'],
+                            'slug'        => !empty($r['slug']) ? $r['slug'] : $this->slugify($r['title']),
+                            'description' => $r['description'] ?? '',
+                            'content'     => $r['description'] ?? '',
+                            'image'       => $r['image'] ?? '',
+                            'date'        => $r['date'] ?? '',
+                            'time'        => $r['time'] ?? '',
+                            'author'      => $r['author'] ?? 'Admin',
+                            'tags'        => $r['tags'] ?? '',
+                            'meta_title'  => $r['meta_title'] ?? '',
+                            'meta_desc'   => $r['meta_desc'] ?? '',
+                            'created_at'  => $created_at
+                        ];
+                    }
+                    return $blogs;
+                }
+            }
+        } catch (Exception $e) {
+            log_message('error', 'Error loading blogs from database: ' . $e->getMessage());
+        }
+
+        // Fallback to JSON file if database has no rows
         $path = FCPATH . 'admin_data/blogs.json';
         if (!file_exists($path)) return [];
         return json_decode(file_get_contents($path), true) ?: [];
@@ -27,7 +76,7 @@ class Blog extends MX_Controller {
         $this->load->library('pagination');
         $this->load->helper('text'); 
 
-        $all_blogs = array_reverse($this->loadBlogs());
+        $all_blogs = $this->loadBlogs();
         $total_rows = count($all_blogs);
         $per_page = 6;
         $offset = (int) $this->uri->segment(3);
@@ -70,6 +119,21 @@ class Blog extends MX_Controller {
         echo Modules::run('template/layout2', $data);
     }
 
+    public static function get_image_url($image_name) {
+        if (empty($image_name)) return null;
+        if (substr($image_name, 0, 4) === 'http') return $image_name;
+
+        // Admin uploads to assets/uploads/blog/
+        if (file_exists(FCPATH . 'assets/uploads/blog/' . $image_name)) {
+            return base_url('assets/uploads/blog/' . $image_name);
+        }
+        // Fallback for older uploads/blogs/
+        if (file_exists(FCPATH . 'uploads/blogs/' . $image_name)) {
+            return base_url('uploads/blogs/' . $image_name);
+        }
+        return null;
+    }
+
     function read($slug = '') {
         // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
@@ -96,13 +160,13 @@ class Blog extends MX_Controller {
 
         if ($selected_blog) {
             $data['query'] = [$selected_blog];
-            $data['recent_posts'] = array_slice(array_reverse($all_blogs), 0, 5);
+            $data['recent_posts'] = array_slice($all_blogs, 0, 5);
             
-            $data['title'] = ucfirst($selected_blog->title);
-            $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
+            $data['title'] = !empty($selected_blog->meta_title) ? $selected_blog->meta_title : ucfirst($selected_blog->title);
+            $data['description'] = !empty($selected_blog->meta_desc) ? $selected_blog->meta_desc : word_limiter(strip_tags($selected_blog->description), 200);
             
-            $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $img_url = self::get_image_url($selected_blog->image);
+            $data['img'] = $img_url ?: base_url('assets/img/packing_moving.jpg');
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 

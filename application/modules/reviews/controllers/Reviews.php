@@ -194,4 +194,103 @@ class Reviews extends MX_Controller
             redirect('reviews');
         }
     }
+
+    public function review()
+    {
+        if ($this->input->method() !== 'post') {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode(['err' => 1, 'msg' => 'Invalid request method.']));
+        }
+
+        $this->load->database();
+
+        $name = trim($this->input->post('name', TRUE));
+        $email = trim($this->input->post('email', TRUE));
+        $title = trim($this->input->post('title', TRUE));
+        $stars = (int) $this->input->post('stars');
+        $desc = trim($this->input->post('desc', TRUE));
+
+        if (empty($name)) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode(['err' => 1, 'msg' => 'Please enter your full name.']));
+        }
+
+        if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode(['err' => 1, 'msg' => 'Please enter a valid email address.']));
+        }
+
+        if (empty($desc)) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode(['err' => 1, 'msg' => 'Please enter your review or feedback description.']));
+        }
+
+        if ($stars < 1 || $stars > 5) {
+            $stars = 5;
+        }
+
+        $uploaded_image = '';
+        if (isset($_FILES['img']) && !empty($_FILES['img']['name']) && $_FILES['img']['error'] === UPLOAD_ERR_OK) {
+            $upload_path = FCPATH . 'assets/uploads/reviewimg/';
+            $thumb_path = FCPATH . 'assets/uploads/reviewimg/thumb/';
+            if (!is_dir($upload_path)) @mkdir($upload_path, 0777, true);
+            if (!is_dir($thumb_path)) @mkdir($thumb_path, 0777, true);
+
+            $tmp_name = $_FILES['img']['tmp_name'];
+            $orig_name = $_FILES['img']['name'];
+            $ext = strtolower(pathinfo($orig_name, PATHINFO_EXTENSION));
+            $allowed_exts = ['jpg', 'jpeg', 'png', 'webp'];
+
+            if (in_array($ext, $allowed_exts)) {
+                $clean_ext = ($ext === 'jpeg') ? 'jpg' : $ext;
+                $new_name = 'rev_' . time() . '_' . mt_rand(1000, 9999) . '.' . $clean_ext;
+                $dest = $upload_path . $new_name;
+                $dest_thumb = $thumb_path . $new_name;
+
+                if (move_uploaded_file($tmp_name, $dest)) {
+                    @copy($dest, $dest_thumb);
+                    $uploaded_image = $new_name;
+                }
+            }
+        }
+
+        $data = array(
+            'b_id'        => 0,
+            'name'        => $name,
+            'email'       => $email,
+            'r_title'     => !empty($title) ? $title : 'Verified Customer Review',
+            'r_desc'      => $desc,
+            'r_img'       => $uploaded_image,
+            'stars'       => $stars,
+            'views'       => 0,
+            'status'      => 1, // 1 = Approved/Active so it is immediately visible on testimonials page and in admin
+            'posted_date' => date('Y-m-d H:i:s'),
+            'timestamp'   => date('Y-m-d H:i:s'),
+            'r_type'      => 'Customer',
+            'admin_reply' => null,
+            'city'        => !empty($title) ? $title : null
+        );
+
+        $inserted = $this->db->insert('reviews', $data);
+
+        if ($inserted) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode([
+                    'err' => 0,
+                    'msg' => 'Thank you! Your review has been submitted successfully and is now live on our website.'
+                ]));
+        } else {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode([
+                    'err' => 1,
+                    'msg' => 'Unable to save your review at this time. Please try again.'
+                ]));
+        }
+    }
 }

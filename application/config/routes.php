@@ -12,6 +12,7 @@ $route['photo-gallery'] = "gallery/photo_gallery";
 $route['video-gallery'] = "gallery/video_gallery";
 $route['testimonials'] = 'about/testimonials';
 $route['reviews'] = 'reviews/index';
+$route['reviews/review'] = 'reviews/review';
 $route['about/submit_review'] = 'reviews/submit';
 $route['blog/view'] = 'blog/view';
 $route['blog/view/(:num)'] = 'blog/view/$1';

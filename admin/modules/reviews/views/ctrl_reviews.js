@@ -8,10 +8,13 @@ app.controller('ctrl_reviews',function($scope,$http){
 	$scope.editForm={};
 	$scope.update=function(rid,st){
 		$http.get("reviews/save?id="+rid+"&status="+st).success(function(data){
-			console.log(data);
-			messages("success", "Success!","Review Updated Successfully", 3000);
-		})
-	}
+			$http.get("reviews/view_data").success(function(d){
+				$scope.datadb=d;
+			});
+			var msg = (st == 1 || st == '1') ? "Review is now visible on website" : "Review is now hidden from website";
+			messages("success", "Success!", msg, 3000);
+		});
+	};
 	$scope.openEdit=function(r){
 		$scope.editForm={
 			r_id: r.r_id,

@@ -25,7 +25,7 @@
 						<th>Posted on</th>
 						<th>Status</th>
 						<th style="width:100px">Timestamp</th>
-						<th style="width:140px">Action</th>
+						<th style="width:190px">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -49,6 +49,8 @@
 						<td>{{y.tm}}</td>
 						<td>
 						  <button class="btn btn-xs btn-primary" style="margin-top:6px;" ng-click="openEdit(y)">Reply</button>
+						  <button class="btn btn-xs btn-warning" style="margin-top:6px;" ng-if="y.st == 1" ng-click="update(y.r_id, 0)" title="Hide review from website">Hide</button>
+						  <button class="btn btn-xs btn-success" style="margin-top:6px;" ng-if="y.st == 0" ng-click="update(y.r_id, 1)" title="Show review on website">Unhide</button>
 						  <button class="btn btn-xs btn-danger" style="margin-top:6px;" ng-click="deleteReview(y.r_id)">Delete</button>
 						</td>
 					</tr>

@@ -6691,86 +6691,181 @@ body.gallery-lightbox-open .site-main-navbar {
   transform: rotate(90deg);
 }
 
-/* Form Group & Icons */
-#rvwmdl .form-group {
-  margin-bottom: 4px;
+/* ==========================================================================
+   MODERN FLOATING LABELS & STYLES FOR REVIEW MODAL (#rvwmdl)
+   ========================================================================== */
+#rvwmdl .reviews-modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 20px 50px rgba(12, 35, 64, 0.25);
+  background: #ffffff;
 }
 
-#rvwmdl .form-icon {
-  position: relative;
+#rvwmdl .reviews-modal-header {
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 14px;
+  margin-bottom: 6px;
+}
+
+#rvwmdl .reviews-modal-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #0c2340;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-#rvwmdl .form-icon > i {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ff5f00;
-  font-size: 1.05rem;
-  pointer-events: none;
-  z-index: 2;
-  transition: color 0.2s ease;
+#rvwmdl .reviews-modal-title-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.12) 0%, rgba(234, 88, 12, 0.22) 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ea580c;
+  font-size: 1.15rem;
+  flex-shrink: 0;
 }
 
-#rvwmdl .form-icon > i.bi-chat-left-text {
-  top: 18px;
-  transform: none;
+/* Floating Label Inputs */
+#rvwmdl .rvw-floating {
+  position: relative;
 }
 
-#rvwmdl .form-control {
-  width: 100%;
+#rvwmdl .rvw-floating > .form-control {
+  height: 58px;
+  min-height: 58px;
+  line-height: 1.25;
+  padding: 1.625rem 1rem 0.5rem 1rem;
   background-color: #f8fafc;
   border: 1.5px solid #e2e8f0;
   border-radius: 12px;
-  padding: 12px 16px 12px 46px;
-  font-size: 0.92rem;
-  color: #1e293b;
+  font-size: 0.95rem;
   font-weight: 500;
+  color: #1e293b;
   transition: all 0.25s ease;
 }
 
-#rvwmdl .form-control::placeholder {
-  color: #94a3b8;
-  font-weight: 400;
+#rvwmdl .rvw-floating > textarea.form-control {
+  min-height: 120px;
+  height: 120px;
+  padding-top: 1.75rem;
+  resize: vertical;
 }
 
-#rvwmdl .form-control:focus {
+#rvwmdl .rvw-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.05rem 1rem;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: none;
+  background: transparent !important;
+  transform-origin: 0 0;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out, color 0.15s ease-in-out;
+  color: #64748b;
+  font-size: 0.90rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#rvwmdl .rvw-floating > label::after {
+  background-color: transparent !important;
+}
+
+#rvwmdl .rvw-floating > label i {
+  color: #ea580c;
+  font-size: 1rem;
+}
+
+#rvwmdl .rvw-floating > .form-control:focus,
+#rvwmdl .rvw-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.5rem;
+}
+
+#rvwmdl .rvw-floating > .form-control:focus ~ label,
+#rvwmdl .rvw-floating > .form-control:not(:placeholder-shown) ~ label {
+  opacity: 0.95;
+  transform: scale(0.78) translateY(-0.55rem) translateX(0.15rem);
+  color: #ea580c;
+  font-weight: 700;
+}
+
+#rvwmdl .rvw-floating > .form-control:focus {
   background-color: #ffffff;
-  border-color: #ff5f00;
-  box-shadow: 0 0 0 4px rgba(255, 95, 0, 0.12);
+  border-color: #ea580c;
+  box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.14);
   outline: none;
 }
 
-#rvwmdl textarea.form-control {
-  min-height: 100px;
-  resize: vertical;
-  padding-top: 13px;
+/* Matching 58px Height Rating Card for Row 2 */
+#rvwmdl .rvw-rating-card {
+  height: 58px;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: all 0.25s ease;
 }
 
-/* Labels */
-#rvwmdl .reviews-modal-label {
-  font-size: 0.88rem;
+#rvwmdl .rvw-rating-card:hover {
+  border-color: #cbd5e1;
+  background: #ffffff;
+}
+
+#rvwmdl .rvw-rating-card-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rvwmdl .rvw-rating-card-label .micro-label {
+  font-size: 0.70rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #ea580c;
+  line-height: 1;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#rvwmdl .rvw-rating-card-label .rating-status-text {
+  font-size: 0.82rem;
   font-weight: 700;
-  color: #334155;
-  margin-bottom: 8px;
-  display: block;
+  color: #0f172a;
+  line-height: 1;
 }
 
-/* Interactive Star Ratings */
 #rvwmdl .reviews-rating {
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-end;
-  gap: 6px;
-  background: #f8fafc;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 8px 14px;
-  width: 100%;
-  height: 48px;
+  gap: 3px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
 }
 
 #rvwmdl .reviews-rating input[type="radio"] {
@@ -6779,8 +6874,8 @@ body.gallery-lightbox-open .site-main-navbar {
 
 #rvwmdl .reviews-rating label {
   cursor: pointer;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6788,7 +6883,7 @@ body.gallery-lightbox-open .site-main-navbar {
   padding: 0;
   font-size: 1.45rem;
   color: #cbd5e1;
-  transition: color 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: color 0.15s ease, transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 #rvwmdl .reviews-rating label::before {
@@ -6802,46 +6897,76 @@ body.gallery-lightbox-open .site-main-navbar {
 }
 
 #rvwmdl .reviews-rating label:hover {
-  transform: scale(1.25);
+  transform: scale(1.22);
 }
 
-/* File Upload input */
-#rvwmdl .reviews-modal-file {
-  padding: 9px 14px;
+/* Upload Photo Card */
+#rvwmdl .rvw-upload-card {
   background: #f8fafc;
-  border-radius: 12px;
   border: 1.5px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+#rvwmdl .rvw-upload-card:hover {
+  border-color: #ea580c;
+  background: #fffaf5;
+}
+
+#rvwmdl .rvw-upload-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 0.88rem;
+  color: #334155;
+}
+
+#rvwmdl .rvw-upload-info i {
+  font-size: 1.4rem;
+  color: #ea580c;
+}
+
+#rvwmdl .rvw-upload-info strong {
+  font-size: 0.9rem;
+}
+
+#rvwmdl .rvw-file-input {
+  max-width: 260px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  background: #ffffff;
   cursor: pointer;
 }
 
-#rvwmdl .reviews-modal-file:hover {
-  border-color: #ff5f00;
-  background: #fff9f5;
-}
-
-/* Submit & Clear Buttons */
+/* Submit & Clear Action Buttons */
 #rvwmdl .theme-btn.reviews-modal-submit {
-  background: linear-gradient(135deg, #ff5f00 0%, #e04800 100%);
+  background: linear-gradient(135deg, #ff5f00 0%, #ea580c 100%);
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 700;
   border: none;
   border-radius: 50px;
-  padding: 12px 32px;
+  padding: 12px 34px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 8px 20px rgba(255, 95, 0, 0.32);
-  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(234, 88, 12, 0.32);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
-  margin-right: 8px;
 }
 
 #rvwmdl .theme-btn.reviews-modal-submit:hover {
-  background: linear-gradient(135deg, #e04800 0%, #c43800 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
   transform: translateY(-2px);
-  box-shadow: 0 12px 26px rgba(255, 95, 0, 0.42);
+  box-shadow: 0 12px 26px rgba(234, 88, 12, 0.44);
 }
 
 #rvwmdl .theme-btn.reviews-modal-clear {
@@ -6861,7 +6986,7 @@ body.gallery-lightbox-open .site-main-navbar {
 
 #rvwmdl .theme-btn.reviews-modal-clear:hover {
   background: #e2e8f0;
-  color: #1e293b;
+  color: #0f172a;
   transform: translateY(-1px);
 }
 

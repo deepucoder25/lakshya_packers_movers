@@ -182,7 +182,8 @@
                     'service' => 'Verified Client Review',
                     'stars' => $stars,
                     'date' => $pdate,
-                    'review' => $r->r_desc
+                    'review' => $r->r_desc,
+                    'img' => !empty($r->r_img) ? $r->r_img : ''
                 ];
             }
         }
@@ -215,13 +216,22 @@
 
                     <!-- Rating Stars -->
                     <div class="testi-stars">
-                        <?= str_repeat('★', $testi['stars']) ?>
+                        <?php 
+                        $st = max(1, min(5, (int)$testi['stars']));
+                        echo str_repeat('★', $st) . str_repeat('☆', 5 - $st);
+                        ?>
                     </div>
 
                     <!-- Review Text -->
                     <p class="testi-quote-text">
                         "<?= htmlspecialchars($testi['review']) ?>"
                     </p>
+
+                    <?php if (!empty($testi['img'])): ?>
+                    <div class="testi-user-img-box mb-3">
+                        <img src="<?= (strpos($testi['img'], '/') !== false) ? base_url($testi['img']) : base_url('assets/uploads/reviewimg/' . $testi['img']) ?>" alt="Review photo by <?= htmlspecialchars($testi['name']) ?>" class="rounded border shadow-sm" style="max-height: 120px; max-width: 100%; object-fit: cover;">
+                    </div>
+                    <?php endif; ?>
 
                     <!-- Author Info Footer -->
                     <div class="testi-author-row">

@@ -93,7 +93,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             </div>
                             <p class="pricing-note"><i class="bi bi-info-circle me-1"></i> Exact quotation may vary based on exact floor, lift availability, packing layers, and distance.</p>
                         </div>
-                    </div>      </div>
+                    </div>
 
                     <!-- Step-by-Step Moving Process -->
                     <h2 class="service-section-title mt-5">Our Local Shifting Process in <?= $city ?></h2>

@@ -11,9 +11,19 @@ class Gallery extends MX_Controller {
         $data['title'] = "Photo Gallery | " . $this->comp['company3'];
         $data['description'] = "Explore visual highlights of our cargo handling, warehouse storage, specialized container fleets, and global logistics operations at " . $this->comp['company3'] . ".";
         
-        $this->db->where('status', 1);
-        $this->db->order_by('auto_id', 'DESC');
-        $data['photos'] = $this->db->get('gallery')->result();
+        $data['photos'] = [];
+        try {
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('gallery')) {
+                $this->db->where('status', 1);
+                $this->db->order_by('auto_id', 'DESC');
+                $query = $this->db->get('gallery');
+                if ($query && method_exists($query, 'result')) {
+                    $data['photos'] = $query->result();
+                }
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'Failed loading photos: ' . $e->getMessage());
+        }
         
         $data['module'] = "gallery";
         $data['view_file'] = "photo-gallery";
@@ -25,9 +35,19 @@ class Gallery extends MX_Controller {
         $data['title'] = "Video Gallery | " . $this->comp['company3'];
         $data['description'] = "Watch our step-by-step cargo handling processes, transport safety standards, and global freight forwarding operations in action at " . $this->comp['company3'] . ".";
         
-        $this->db->where('status', 1);
-        $this->db->order_by('auto_id', 'DESC');
-        $data['videos'] = $this->db->get('video_gallery')->result();
+        $data['videos'] = [];
+        try {
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('video_gallery')) {
+                $this->db->where('status', 1);
+                $this->db->order_by('auto_id', 'DESC');
+                $query = $this->db->get('video_gallery');
+                if ($query && method_exists($query, 'result')) {
+                    $data['videos'] = $query->result();
+                }
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'Failed loading videos: ' . $e->getMessage());
+        }
         
         $data['module'] = "gallery";
         $data['view_file'] = "video-gallery";

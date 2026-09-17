@@ -30,10 +30,20 @@ class About extends MX_Controller
 
     function testimonials()
     {
-        $this->load->database();
-        $this->db->where('status', 1);
-        $this->db->order_by('r_id', 'DESC');
-        $data['reviews'] = $this->db->get('reviews')->result();
+        $data['reviews'] = [];
+        try {
+            $this->load->database();
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('reviews')) {
+                $this->db->where('status', 1);
+                $this->db->order_by('r_id', 'DESC');
+                $query = $this->db->get('reviews');
+                if ($query && method_exists($query, 'result')) {
+                    $data['reviews'] = $query->result();
+                }
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'Failed loading testimonials: ' . $e->getMessage());
+        }
 
         $data['title'] = "Customer Reviews & Testimonials | " . $this->comp['company3'];
         $data['description'] = "Read genuine client testimonials and feedback about " . $this->comp['company3'] . " home shifting, vehicle transportation, and office relocation services.";

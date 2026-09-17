@@ -17,18 +17,18 @@ class Blog extends MX_Controller {
         // First try loading from database
         try {
             $this->load->database();
-            if ($this->db->table_exists('blog')) {
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('blog')) {
                 $query = $this->db->order_by('b_id', 'DESC')->get('blog');
-                if ($query && $query->num_rows() > 0) {
+                if ($query && method_exists($query, 'num_rows') && $query->num_rows() > 0) {
                     $rows = $query->result_array();
                     $blogs = [];
                     foreach ($rows as $r) {
-                        $date_raw = $r['date'] ?? '';
-                        $created_at = $r['timestamp'] ?? '';
+                        $date_raw = isset($r['date']) ? $r['date'] : '';
+                        $created_at = isset($r['timestamp']) ? $r['timestamp'] : '';
                         if (empty($created_at) && !empty($date_raw)) {
                             // Check if dd/mm/yyyy
                             if (preg_match('/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/', $date_raw, $m)) {
-                                $created_at = $m[3] . '-' . $m[2] . '-' . $m[1] . ' ' . ($r['time'] ?? '00:00:00');
+                                $created_at = $m[3] . '-' . $m[2] . '-' . $m[1] . ' ' . (isset($r['time']) ? $r['time'] : '00:00:00');
                             } else {
                                 $created_at = date('Y-m-d H:i:s', strtotime($date_raw));
                             }
@@ -41,24 +41,24 @@ class Blog extends MX_Controller {
                             'id'          => $r['b_id'],
                             'b_id'        => $r['b_id'],
                             'title'       => $r['title'],
-                            'main_title'  => $r['main_title'] ?? $r['title'],
+                            'main_title'  => isset($r['main_title']) ? $r['main_title'] : $r['title'],
                             'slug'        => !empty($r['slug']) ? $r['slug'] : $this->slugify($r['title']),
-                            'description' => $r['description'] ?? '',
-                            'content'     => $r['description'] ?? '',
-                            'image'       => $r['image'] ?? '',
-                            'date'        => $r['date'] ?? '',
-                            'time'        => $r['time'] ?? '',
-                            'author'      => $r['author'] ?? 'Admin',
-                            'tags'        => $r['tags'] ?? '',
-                            'meta_title'  => $r['meta_title'] ?? '',
-                            'meta_desc'   => $r['meta_desc'] ?? '',
+                            'description' => isset($r['description']) ? $r['description'] : '',
+                            'content'     => isset($r['description']) ? $r['description'] : '',
+                            'image'       => isset($r['image']) ? $r['image'] : '',
+                            'date'        => isset($r['date']) ? $r['date'] : '',
+                            'time'        => isset($r['time']) ? $r['time'] : '',
+                            'author'      => isset($r['author']) ? $r['author'] : 'Admin',
+                            'tags'        => isset($r['tags']) ? $r['tags'] : '',
+                            'meta_title'  => isset($r['meta_title']) ? $r['meta_title'] : '',
+                            'meta_desc'   => isset($r['meta_desc']) ? $r['meta_desc'] : '',
                             'created_at'  => $created_at
                         ];
                     }
                     return $blogs;
                 }
             }
-        } catch (Exception $e) {
+        } catch (\Throwable $e) {
             log_message('error', 'Error loading blogs from database: ' . $e->getMessage());
         }
 

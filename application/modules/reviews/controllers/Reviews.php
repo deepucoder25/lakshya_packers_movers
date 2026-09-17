@@ -10,17 +10,25 @@ class Reviews extends MX_Controller
 
     function index()
     {
-        $this->load->database();
         $this->load->library('pagination');
         
         $star_filter = $this->input->get('star');
-        
-        // Count total active reviews for pagination
-        $this->db->where('status', 1);
-        if ($star_filter) {
-            $this->db->where('stars', $star_filter);
+        $total_rows = 0;
+        $reviews_result = null;
+
+        try {
+            $this->load->database();
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('reviews')) {
+                // Count total active reviews for pagination
+                $this->db->where('status', 1);
+                if ($star_filter) {
+                    $this->db->where('stars', $star_filter);
+                }
+                $total_rows = (int) $this->db->count_all_results('reviews');
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'Failed counting reviews: ' . $e->getMessage());
         }
-        $total_rows = $this->db->count_all_results('reviews');
         
         // Pagination Config
         $config['base_url'] = site_url('reviews');
@@ -54,15 +62,20 @@ class Reviews extends MX_Controller
         $offset = $this->input->get('per_page') ? (int) $this->input->get('per_page') : 0;
 
         // Fetch data
-        $this->db->order_by('r_id', 'desc');
-        $this->db->where('status', 1);
-        if ($star_filter) {
-            $this->db->where('stars', $star_filter);
+        try {
+            if ($this->db && method_exists($this->db, 'table_exists') && @$this->db->table_exists('reviews')) {
+                $this->db->order_by('r_id', 'desc');
+                $this->db->where('status', 1);
+                if ($star_filter) {
+                    $this->db->where('stars', $star_filter);
+                }
+                $reviews_result = $this->db->get('reviews', $config['per_page'], $offset);
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'Failed loading reviews: ' . $e->getMessage());
         }
         
-        $query = $this->db->get('reviews', $config['per_page'], $offset);
-        
-        $data['reviews'] = $query;
+        $data['reviews'] = $reviews_result;
         $data['pagination'] = $this->pagination->create_links();
         $data['title'] = "Customer Reviews & Ratings | " . $this->comp['company3'];
         $data['description'] = "Detailed feedback and ratings from our satisfied clients. Read real reviews about our freight forwarding services at " . $this->comp['company3'] . ".";
